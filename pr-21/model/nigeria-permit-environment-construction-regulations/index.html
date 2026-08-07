@@ -182,7 +182,7 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .brow.head{background:var(--soft);position:sticky;top:0;z-index:3}
 /* gap은 같은 셀에 세로로 쌓인 노드 사이로 화살표가 지나갈 통로다. 좁히면 화살촉이 뭉갠다. */
 .bcell{padding:14px 12px;border-right:1px solid var(--line);min-height:64px;
-  display:flex;flex-direction:column;gap:26px;justify-content:center}
+  display:flex;flex-direction:column;gap:32px;justify-content:center}
 .bcell:last-child{border-right:0}
 .brow .bcell:first-child{position:sticky;left:0;z-index:3;background:var(--bg);box-shadow:1px 0 0 var(--line)}
 .brow.head .bcell:first-child{z-index:5;background:var(--soft)}
@@ -429,7 +429,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · ad3bda6e83dc · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 987fad2c41bd · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -456,18 +456,19 @@ footer.site a{color:var(--muted)}
     <span class="badge plain muted">나이지리아 · Nigeria</span>
     <span class="badge plain muted">건축 법·제도</span>
     <span class="badge info">공식자료 연결</span>
+    <span class="badge warn">공식 절차 상세 미확인</span>
 
   </div>
   <h1>나이지리아 건축허가·환경심사</h1>
   <p class="one">주·FCT 계획·건축허가와 연방 EAD의 EIA 등록·스크리닝·permit 경로를 분리해 연결한다.</p>
   <div class="tiles">
-    <div class="tile"><b>7</b><span>업무절차</span></div>
-    <div class="tile info"><b>2</b><span>국가별 공식 결정 Gate</span></div>
-    <div class="tile"><b>3</b><span>행위 레인</span></div>
-    <div class="tile"><b>4</b><span>업무 구간</span></div>
+    <div class="tile"><b>1</b><span>절차 단계</span></div>
+    <div class="tile info"><b>0</b><span>공식 결정 Gate</span></div>
+    <div class="tile"><b>1</b><span>행위 레인</span></div>
+    <div class="tile"><b>1</b><span>절차 구간</span></div>
     <div class="tile ok"><b>2</b><span>공식 출처</span></div>
     <div class="tile bad"><b>2</b><span>출처 현행성 재확인</span></div>
-    <div class="tile warn"><b>6</b><span>현장 검증</span></div>
+    <div class="tile warn"><b>6</b><span>ODA 적용 확인</span></div>
   </div>
 </div>
 
@@ -475,53 +476,41 @@ footer.site a{color:var(--muted)}
 <section class="blk">
   <div class="hd-row">
     <div>
-      <h2>공통 ODA 준비·확인 업무구조도</h2>
-      <p class="desc">국가별 법정절차 자체가 아니라 ODA 사업팀의 준비·확인·설계통합 업무를 표시합니다. 레인은 ODA 주관 역할이며 국가기관은 카드 상세의 협의기관으로 분리했습니다. 외부기관의 공식 결정은 아래 국가별 Gate 확인대장에서 따로 확인합니다.</p>
+      <h2>업무구조도</h2>
+      <p class="desc">이 국가·제도축은 공식 진입점까지만 확인되어 상세 법정순서를 임의로 만들지 않았습니다. 관할기관의 현행 절차 원문이 확보되면 신청·심사·보완·결정 노드로 확장합니다.</p>
     </div>
     <div class="legend">
       <span><i style="background:var(--key)"></i>핵심 단계</span>
       <span><i style="background:var(--warn)"></i>유의</span>
-      <span><i style="background:var(--muted)"></i>업무 순서</span>
+      <span><i style="background:var(--muted)"></i>절차 순서</span>
       <span><i style="background:var(--info)"></i>기관 간 입력</span>
       <span><i style="background:var(--back)"></i>조건부 보완 회귀</span>
     </div>
   </div>
-  <div class="boardwrap"><div class="board" id="board" style="min-width:940px">
+  <div class="boardwrap"><div class="board" id="board" style="min-width:370px">
     <svg class="edges" id="edges"></svg>
-    <div class="brow head" style="grid-template-columns:180px repeat(4,minmax(190px,1fr))"><div class="bcell"><span class="lane-t">ODA 역할 \ 업무 구간</span></div><div class="bcell"><span class="stage-k">S4</span><span class="stage-t">신청인·사업분류</span></div><div class="bcell"><span class="stage-k">S5</span><span class="stage-t">환경·전문심사</span></div><div class="bcell"><span class="stage-k">S6</span><span class="stage-t">허가도서·관계협의</span></div><div class="bcell"><span class="stage-k">S7</span><span class="stage-t">접수·허가결정</span></div></div><div class="brow" style="grid-template-columns:180px repeat(4,minmax(190px,1fr))"><div class="bcell"><span class="lane-t">사업주·수원기관</span></div><div class="bcell" data-lane="사업주·수원기관" data-stage="S4 신청인·사업분류"><button class="node" data-id="B08" data-tone="key">
-  <span class="id"><span>B08</span><span class="tags"><span class="kind-tag">사업통제</span><span class="tag">핵심</span></span></span>
-  <span class="nm">건축주·신청인·관할 확정</span></button></div><div class="bcell" data-lane="사업주·수원기관" data-stage="S5 환경·전문심사"></div><div class="bcell" data-lane="사업주·수원기관" data-stage="S6 허가도서·관계협의"></div><div class="bcell" data-lane="사업주·수원기관" data-stage="S7 접수·허가결정"></div></div><div class="brow" style="grid-template-columns:180px repeat(4,minmax(190px,1fr))"><div class="bcell"><span class="lane-t">현지 설계·검증팀</span></div><div class="bcell" data-lane="현지 설계·검증팀" data-stage="S4 신청인·사업분류"><button class="node" data-id="B09" data-tone="key">
-  <span class="id"><span>B09</span><span class="tags"><span class="kind-tag">현지확인</span><span class="tag">핵심</span></span></span>
-  <span class="nm">책임설계자·시설·위험분류</span></button></div><div class="bcell" data-lane="현지 설계·검증팀" data-stage="S5 환경·전문심사"></div><div class="bcell" data-lane="현지 설계·검증팀" data-stage="S6 허가도서·관계협의"><button class="node" data-id="B12">
-  <span class="id"><span>B12</span><span class="tags"><span class="kind-tag">사업통제</span></span></span>
-  <span class="nm">허가도서·설계기준 통합</span></button></div><div class="bcell" data-lane="현지 설계·검증팀" data-stage="S7 접수·허가결정"></div></div><div class="brow" style="grid-template-columns:180px repeat(4,minmax(190px,1fr))"><div class="bcell"><span class="lane-t">ODA 인허가·환경 검증팀</span></div><div class="bcell" data-lane="ODA 인허가·환경 검증팀" data-stage="S4 신청인·사업분류"></div><div class="bcell" data-lane="ODA 인허가·환경 검증팀" data-stage="S5 환경·전문심사"><button class="node" data-id="B10" data-tone="warn">
-  <span class="id"><span>B10</span><span class="tags"><span class="kind-tag">현지확인</span><span class="tag">유의</span></span></span>
-  <span class="nm">환경평가 적용유형·공식결정 확보</span></button><button class="node" data-id="B11">
-  <span class="id"><span>B11</span><span class="tags"><span class="kind-tag">공식경로</span></span></span>
-  <span class="nm">건축·개발허가 공식경로 확인</span></button></div><div class="bcell" data-lane="ODA 인허가·환경 검증팀" data-stage="S6 허가도서·관계협의"><button class="node" data-id="B13">
-  <span class="id"><span>B13</span><span class="tags"><span class="kind-tag">현지확인</span></span></span>
-  <span class="nm">소방·안전·유틸리티 병렬협의</span></button></div><div class="bcell" data-lane="ODA 인허가·환경 검증팀" data-stage="S7 접수·허가결정"><button class="node" data-id="B14" data-tone="warn">
-  <span class="id"><span>B14</span><span class="tags"><span class="kind-tag">현지확인</span><span class="tag">유의</span></span></span>
-  <span class="nm">완비접수·수수료·허가결과 검증</span></button></div></div>
+    <div class="brow head" style="grid-template-columns:180px repeat(1,minmax(190px,1fr))"><div class="bcell"><span class="lane-t">행위주체 \ 절차 구간</span></div><div class="bcell"><span class="stage-k">G1</span><span class="stage-t">공식 절차 진입점</span></div></div><div class="brow" style="grid-template-columns:180px repeat(1,minmax(190px,1fr))"><div class="bcell"><span class="lane-t">도시계획·건축 허가기관</span></div><div class="bcell" data-lane="도시계획·건축 허가기관" data-stage="G1 공식 절차 진입점"><button class="node" data-id="B02" data-tone="warn">
+  <span class="id"><span>B01</span><span class="tags"><span class="kind-tag">현지확인</span><span class="tag">유의</span></span></span>
+  <span class="nm">주 계획허가·연방 EIA · 절차 상세 미확인</span></button></div></div>
   </div></div>
-  <div class="decision-branches"><div class="branch-hd"><b>공식결정 수령 후 ODA 대응(공통)</b><span>아래 세 갈래는 법정 처분유형·불복·재신청 절차가 아니라 ODA 사업팀의 내부 대응 상태입니다.</span></div><div class="decision-branch-grid"><div class="decision-branch" data-state="success"><span class="branch-arrow" aria-hidden="true">→</span><span class="badge ok">진행</span><b>승인결정 확인</b><span>결정문·승인도서·조건을 ODA 대장에 고정하고 착공준비 여부를 검토</span></div><div class="decision-branch" data-state="rework"><span class="branch-arrow" aria-hidden="true">↺</span><span class="badge back">보완 회귀</span><b>공식 보완요구 확인</b><span>ODA 제출도서와 관계기관 협의자료를 재통합하고 후속 공식절차는 관할기관 확인 후 반영</span></div><div class="decision-branch" data-state="reject"><span class="branch-arrow" aria-hidden="true">×</span><span class="badge bad">중단·재검토</span><b>불허결정 확인</b><span>법정 불복경로를 가정하지 않고 사업조건·설계안·부지 적합성을 재검토</span></div></div></div>
+
 </section>
 
 <section class="blk">
   <h2>한 장 캔버스</h2>
   <p class="desc">건축주·허가권자와 현지 책임설계자, 시설·위험 분류, 환경 스크리닝과 건축허가의 선후관계·서류·수수료·기간을 확인하는 제도축</p>
   <div class="cards">
-    <div class="card span2"><h3>공통 ODA 확인업무 · 7단계</h3><p class="workflow-disclosure">아래 7단계는 해당국 법정절차를 복제한 것이 아니라, ODA 사업팀이 수행할 관할확정·현지확인·설계통합·기관협의를 정리한 공통 준비·검증 업무다. 국가별 공식 결정은 별도 Gate 확인대장에서 구분한다.</p><ol class="steps"><li>B08 건축주·신청인·관할 확정 — 법적 건축주·토지소유자·신청인과 국가·지방·특구 관할을 확정한다. / 산출물: 신청주체·권한·관할 매트릭스</li><li>B09 책임설계자·시설·위험분류 — 현지 서명권자와 시설 용도·점유·규모·위험 분류 및 제출도서 책임을 확인한다. / 산출물: 책임설계·시설분류표</li><li>B10 환경평가 적용유형·공식결정 확보 — 관할 환경기관의 공식 분류·결정문을 확보해 적용유형·선행조건·유효성을 ODA 대장에 기록한다. / 산출물: 환경평가 적용유형·공식결정 확인대장</li><li>B11 건축·개발허가 공식경로 확인 — 공식 허가 안내와 법령을 대조해 건축·개발허가의 적용경로와 선행관계를 확인한다. / 산출물: 건축·개발허가 경로표</li><li>B12 허가도서·설계기준 통합 — 분류결정, 현지 서명요건과 최신 체크리스트를 설계·제출도서 목록에 통합한다. / 산출물: 허가도서·서명·설계기준 대장</li><li>B13 소방·안전·유틸리티 병렬협의 — 소방·안전·도로·물·전력 등 적용 기관과 동의서·NOC의 필요 여부 및 병렬처리 가능성을 확인한다. / 산출물: 관계기관 협의·선행동의 매트릭스</li><li>B14 완비접수·수수료·허가결과 검증 — 접수증·수수료 영수증·허가결정문을 확보하고 보완정지·실제 처리기간·승인조건을 ODA 일정·조건 대장에 기록한다. / 산출물: 완비접수·수수료·허가결과 검증대장</li></ol></div>
-    <div class="card span2"><h3>국가별 공식 결정 Gate · 2개</h3><p class="workflow-disclosure">국가 데이터에서 공식 근거와 연결된 외부기관 결정만 별도 확인대장으로 표시합니다. Gate 1/N 표시는 이 화면의 현지 번호이며, 공식 선후관계가 확인되기 전에는 법정 순서로 해석하지 않습니다.</p><ol class="official-gates"><li class="official-gate" data-source-order="2"><div class="gate-title"><span class="badge info">Gate 1/2</span><b>환경 스크리닝·평가 공식결정</b></div><p>관할 환경기관이 사업의 평가·허가 유형과 선행조건을 공식 분류하거나 비대상 여부를 확인한다.</p><dl class="gate-meta"><dt>결정기관</dt><dd>관할 환경기관</dd><dt>적용 관할·조건</dt><dd>주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업</dd><dt>산출물</dt><dd>환경 분류·승인·면제 또는 비대상 결정문</dd><dt>근거 수준</dt><dd>제도축 공통근거 · 세부 조문 미대조</dd><dt>연결 근거</dt><dd><span class="gate-basis"><span class="law-name"><a class="ref" href="https://ead.gov.ng/environmental-impact-assessment-division/" target="_blank" rel="noopener">환경영향평가법 Cap E12 LFN 2010(1992년 제86호)</a></span><span class="badge plain muted">법률</span><span class="badge bad">현행성 재확인</span><span class="badge info">원문 링크 연결</span></span><span class="gate-basis"><span class="law-name"><a class="ref" href="https://epp.lagosstate.gov.ng/Home/Checklist" target="_blank" rel="noopener">라고스주 전자 계획허가·건축통제 절차</a></span><span class="badge plain muted">공식 안내</span><span class="badge bad">현행성 재확인</span><span class="badge info">공식자료 연결</span></span></dd></dl></li><li class="official-gate" data-source-order="3"><div class="gate-title"><span class="badge info">Gate 2/2</span><b>관할 건축·개발기관의 허가결정</b></div><p>관할 건축·개발기관이 완비도서와 관계기관 의견을 심사해 허가, 조건부 허가, 보완 또는 불허를 공식 결정한다.</p><dl class="gate-meta"><dt>결정기관</dt><dd>관할 건축·개발기관</dd><dt>적용 관할·조건</dt><dd>주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업</dd><dt>산출물</dt><dd>건축·개발 허가결정문과 승인도서·조건</dd><dt>근거 수준</dt><dd>제도축 공통근거 · 세부 조문 미대조</dd><dt>연결 근거</dt><dd><span class="gate-basis"><span class="law-name"><a class="ref" href="https://ead.gov.ng/environmental-impact-assessment-division/" target="_blank" rel="noopener">환경영향평가법 Cap E12 LFN 2010(1992년 제86호)</a></span><span class="badge plain muted">법률</span><span class="badge bad">현행성 재확인</span><span class="badge info">원문 링크 연결</span></span><span class="gate-basis"><span class="law-name"><a class="ref" href="https://epp.lagosstate.gov.ng/Home/Checklist" target="_blank" rel="noopener">라고스주 전자 계획허가·건축통제 절차</a></span><span class="badge plain muted">공식 안내</span><span class="badge bad">현행성 재확인</span><span class="badge info">공식자료 연결</span></span></dd></dl></li></ol></div>
+    <div class="card span2"><h3>국가별 건축 인허가 절차 · 1단계</h3><p class="workflow-disclosure">국가별 공식 절차의 순서·행위·분기까지 확인되지 않아 가상의 7단계를 만들지 않았다. 현재 카드는 확인된 제도 진입점이며, 관할기관의 현행 절차도·신청서·체크리스트를 확보해야 실제 업무구조도로 전환할 수 있다.</p><p class="workflow-disclosure"><b>적용 범위</b> · EAD의 2026년 현행 업무·접수안내와 라고스 공식 계획허가 예시를 확인했다. 대상 주의 추가 승인·수수료·접수관행은 현지 확인 대상이다.</p><ol class="steps"><li>B01 주 계획허가·연방 EIA · 절차 상세 미확인 — 개발·계획허가는 관할 주·FCT 기관이 처리하고, EIA Act 적용사업은 연방환경부 EAD에서 등록·현장확인·screening/scoping·평가서 심사와 EIA permit을 거친다. 주 환경승인과 소방·항공·교통 등 추가 clearance 여부도 사업유형·입지별로 확인한다. / 산출물: 관할기관의 현행 절차도·신청서·체크리스트 확인 필요</li></ol></div>
+
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업</p></div>
     <div class="card"><h3>법적 근거</h3><p style="margin:0;font-size:13px;line-height:1.65;color:var(--muted)">현행 법적 근거로 확정된 자료가 없습니다. 아래 현행성 확인대상을 사업 착수 시 재검증해야 합니다.</p></div>
     <div class="card"><h3>관련 공식자료·현행성 확인대상</h3><div class="law"><span class="nm"><a class="ref" href="https://ead.gov.ng/environmental-impact-assessment-division/" target="_blank" rel="noopener">환경영향평가법 Cap E12 LFN 2010(1992년 제86호)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span><span class="badge bad">현행성 재확인</span><span class="badge info">원문 링크 연결</span></div><div class="law"><span class="nm"><a class="ref" href="https://epp.lagosstate.gov.ng/Home/Checklist" target="_blank" rel="noopener">라고스주 전자 계획허가·건축통제 절차</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공식 안내</span><span class="badge bad">현행성 재확인</span><span class="badge info">공식자료 연결</span></div></div>
     <div class="card"><h3>권한 기관</h3><div class="auth"><b><a class="ref" href="https://epp.lagosstate.gov.ng/Home/About" target="_blank" rel="noopener">관할 주 또는 연방수도지구 계획허가기관</a></b><span>주법·계획에 따라 토지이용·개발·계획허가를 발급 <span class="badge info">공식자료 연결</span></span></div><div class="auth"><b><a class="ref" href="https://ead.gov.ng/" target="_blank" rel="noopener">연방환경부 환경평가국(EAD)</a></b><span>연방 EIA법에 따른 사업등록·스크리닝·평가·허가와 사후 모니터링을 담당 <span class="badge info">원문 링크 연결</span></span></div></div>
     <div class="card"><h3>이해관계자</h3><p style="margin:0;font-size:13.5px;line-height:1.7">관할 주 또는 연방수도지구 계획허가기관, 연방환경부 환경평가국(EAD)</p></div>
-    <div class="card"><h3>제출서류</h3><div class="docset"><b>02 환경 스크리닝·평가 공식결정</b><div class="chips"><span class="chip">환경 분류·승인·면제 또는 비대상 결정문</span></div></div><div class="docset"><b>03 관할 건축·개발기관의 허가결정</b><div class="chips"><span class="chip">건축·개발 허가결정문과 승인도서·조건</span></div></div></div>
+    <div class="card"><h3>제출서류</h3></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가? — 설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다. (필요 증빙: 건축주·신청인·주/FCT 관할, 계획·건축허가 체크리스트, EAD 등록·screening·EIA 결정, 주 환경·소방 등 선행동의와 실제 수수료·기간)</li><li>본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가? — 설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다. (필요 증빙: 관할기관 사전분류 회신, 현지 책임건축사·기술자 자격증빙, 환경 스크리닝 결정과 최신 허가 체크리스트·수수료표)</li></ul></div>
 
-    <div class="card"><h3>현장 검증 필요</h3><ul class="plain"><li>출국 전: 사업주체·연면적·층수·용도·재실인원·공공사업 여부를 정리해 사전분류 질문서를 보낸다. → 사업분류표와 기관 질의서</li><li>기관협의: 건축·환경기관과 최신 접수창구, 선행동의, 수수료, 보완정지와 실제 처리기간을 확인한다. → 인허가 일정·비용 매트릭스</li><li>보고서 반영: 건축허가·환경심사의 확인·미확인·조건부 항목을 분리하고 근거문서 번호와 설계·일정·예산 영향을 연결한다. → 건축허가·환경심사 근거대장·보고서 반영표</li><li>NGA-BLD-Q-004 본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가? — 영향: 설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.; 담당 수원기관·현지 건축전문가; 확인기관 관할 주 또는 연방수도지구 계획허가기관, 연방환경부 환경평가국(EAD); 필요 증빙 건축주·신청인·주/FCT 관할, 계획·건축허가 체크리스트, EAD 등록·screening·EIA 결정, 주 환경·소방 등 선행동의와 실제 수수료·기간</li><li>NGA-BLD-Q-005 본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가? — 영향: 설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.; 담당 수원기관·현지 건축전문가; 확인기관 관할 주 또는 연방수도지구 계획허가기관, 연방환경부 환경평가국(EAD); 필요 증빙 관할기관 사전분류 회신, 현지 책임건축사·기술자 자격증빙, 환경 스크리닝 결정과 최신 허가 체크리스트·수수료표</li><li>NGA-BLD-Q-006 주 계획허가·연방 EIA의 사업별 적용조건을 어떤 원본·공문·현장기록으로 입증할 것인가? — 영향: 공개된 국가 기본경로와 실제 필지·시설·관할의 적용판정을 분리해 보고서의 과단정을 막는다.; 담당 현지 건축전문가·조사총괄; 확인기관 관할 주 또는 연방수도지구 계획허가기관, 연방환경부 환경평가국(EAD); 필요 증빙 건축주·신청인·주/FCT 관할, 계획·건축허가 체크리스트, EAD 등록·screening·EIA 결정, 주 환경·소방 등 선행동의와 실제 수수료·기간</li></ul></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>출국 전: 사업주체·연면적·층수·용도·재실인원·공공사업 여부를 정리해 사전분류 질문서를 보낸다. → 사업분류표와 기관 질의서</li><li>기관협의: 건축·환경기관과 최신 접수창구, 선행동의, 수수료, 보완정지와 실제 처리기간을 확인한다. → 인허가 일정·비용 매트릭스</li><li>보고서 반영: 건축허가·환경심사의 확인·미확인·조건부 항목을 분리하고 근거문서 번호와 설계·일정·예산 영향을 연결한다. → 건축허가·환경심사 근거대장·보고서 반영표</li><li>NGA-BLD-Q-004 본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가? — 영향: 설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.; 담당 수원기관·현지 건축전문가; 확인기관 관할 주 또는 연방수도지구 계획허가기관, 연방환경부 환경평가국(EAD); 필요 증빙 건축주·신청인·주/FCT 관할, 계획·건축허가 체크리스트, EAD 등록·screening·EIA 결정, 주 환경·소방 등 선행동의와 실제 수수료·기간</li><li>NGA-BLD-Q-005 본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가? — 영향: 설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.; 담당 수원기관·현지 건축전문가; 확인기관 관할 주 또는 연방수도지구 계획허가기관, 연방환경부 환경평가국(EAD); 필요 증빙 관할기관 사전분류 회신, 현지 책임건축사·기술자 자격증빙, 환경 스크리닝 결정과 최신 허가 체크리스트·수수료표</li><li>NGA-BLD-Q-006 주 계획허가·연방 EIA의 사업별 적용조건을 어떤 원본·공문·현장기록으로 입증할 것인가? — 영향: 공개된 국가 기본경로와 실제 필지·시설·관할의 적용판정을 분리해 보고서의 과단정을 막는다.; 담당 현지 건축전문가·조사총괄; 확인기관 관할 주 또는 연방수도지구 계획허가기관, 연방환경부 환경평가국(EAD); 필요 증빙 건축주·신청인·주/FCT 관할, 계획·건축허가 체크리스트, EAD 등록·screening·EIA 결정, 주 환경·소방 등 선행동의와 실제 수수료·기간</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../nigeria-bidding-system/index.html">나이지리아 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../nigeria-procurement-governance/index.html">나이지리아 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../nigeria-oda-project-pipeline/index.html">나이지리아 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../nigeria-site-urban-construction-regulations/index.html">나이지리아 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../nigeria-control-completion-construction-regulations/index.html">나이지리아 기술검사·보험·준공제도</a></div></div>
   </div>
 </section>
@@ -567,8 +556,8 @@ footer.site a{color:var(--muted)}
   제도 추가·정정 제안 · Threads <a href="https://www.threads.net/@amnotyoung.k" target="_blank" rel="me noopener noreferrer">@amnotyoung.k</a>
 </div></footer>
 <script>
-var NODES={"B08":{"id":"B08","name":"건축주·신청인·관할 확정","lane":"사업주·수원기관","stage":"S4 신청인·사업분류","type":"task","status":"current","workflow_kind":"project-control","workflow_kind_label":"사업통제","basis_scope":"axis","actor":"사업주·수원기관","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"법적 건축주·토지소유자·신청인과 국가·지방·특구 관할을 확정한다.","deadline":"","output_documents":["신청주체·권한·관할 매트릭스"],"blocker":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가?","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-004","blocking":true,"question":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가?","why":"설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.","evidence":["건축주·신청인·주/FCT 관할","계획·건축허가 체크리스트","EAD 등록·screening·EIA 결정","주 환경·소방 등 선행동의와 실제 수수료·기간"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-004"],"gate_orders":[]},"B09":{"id":"B09","name":"책임설계자·시설·위험분류","lane":"현지 설계·검증팀","stage":"S4 신청인·사업분류","type":"task","status":"current","workflow_kind":"field-verification","workflow_kind_label":"현지확인","basis_scope":"axis","actor":"현지 설계·검증팀","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"현지 서명권자와 시설 용도·점유·규모·위험 분류 및 제출도서 책임을 확인한다.","deadline":"","output_documents":["책임설계·시설분류표"],"blocker":"본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가?","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-005","blocking":true,"question":"본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가?","why":"설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.","evidence":["관할기관 사전분류 회신","현지 책임건축사·기술자 자격증빙","환경 스크리닝 결정과 최신 허가 체크리스트·수수료표"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-005"],"gate_orders":[]},"B10":{"id":"B10","name":"환경평가 적용유형·공식결정 확보","lane":"ODA 인허가·환경 검증팀","stage":"S5 환경·전문심사","type":"gateway","status":"risk","workflow_kind":"field-verification","workflow_kind_label":"현지확인","basis_scope":"axis","actor":"ODA 인허가·환경 검증팀","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"관할 환경기관의 공식 분류·결정문을 확보해 적용유형·선행조건·유효성을 ODA 대장에 기록한다.","deadline":"","output_documents":["환경평가 적용유형·공식결정 확인대장"],"blocker":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가?","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-004","blocking":true,"question":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가?","why":"설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.","evidence":["건축주·신청인·주/FCT 관할","계획·건축허가 체크리스트","EAD 등록·screening·EIA 결정","주 환경·소방 등 선행동의와 실제 수수료·기간"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[{"order":2,"gate":"환경 스크리닝·평가 공식결정","decision":"관할 환경기관이 사업의 평가·허가 유형과 선행조건을 공식 분류하거나 비대상 여부를 확인한다.","depends_on":[],"output":"환경 분류·승인·면제 또는 비대상 결정문"}],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-004"],"gate_orders":[2]},"B11":{"id":"B11","name":"건축·개발허가 공식경로 확인","lane":"ODA 인허가·환경 검증팀","stage":"S5 환경·전문심사","type":"task","status":"waiting","workflow_kind":"official-guidance","workflow_kind_label":"공식경로","basis_scope":"axis","actor":"ODA 인허가·환경 검증팀","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"공식 허가 안내와 법령을 대조해 건축·개발허가의 적용경로와 선행관계를 확인한다.","deadline":"","output_documents":["건축·개발허가 경로표"],"blocker":"본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가?","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-005","blocking":true,"question":"본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가?","why":"설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.","evidence":["관할기관 사전분류 회신","현지 책임건축사·기술자 자격증빙","환경 스크리닝 결정과 최신 허가 체크리스트·수수료표"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-005"],"gate_orders":[]},"B12":{"id":"B12","name":"허가도서·설계기준 통합","lane":"현지 설계·검증팀","stage":"S6 허가도서·관계협의","type":"task","status":"waiting","workflow_kind":"project-control","workflow_kind_label":"사업통제","basis_scope":"axis","actor":"현지 설계·검증팀","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"분류결정, 현지 서명요건과 최신 체크리스트를 설계·제출도서 목록에 통합한다.","deadline":"","output_documents":["허가도서·서명·설계기준 대장"],"blocker":"","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-006","blocking":false,"question":"주 계획허가·연방 EIA의 사업별 적용조건을 어떤 원본·공문·현장기록으로 입증할 것인가?","why":"공개된 국가 기본경로와 실제 필지·시설·관할의 적용판정을 분리해 보고서의 과단정을 막는다.","evidence":["건축주·신청인·주/FCT 관할","계획·건축허가 체크리스트","EAD 등록·screening·EIA 결정","주 환경·소방 등 선행동의와 실제 수수료·기간"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-006"],"gate_orders":[]},"B13":{"id":"B13","name":"소방·안전·유틸리티 병렬협의","lane":"ODA 인허가·환경 검증팀","stage":"S6 허가도서·관계협의","type":"task","status":"waiting","workflow_kind":"field-verification","workflow_kind_label":"현지확인","basis_scope":"axis","actor":"ODA 인허가·환경 검증팀","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"소방·안전·도로·물·전력 등 적용 기관과 동의서·NOC의 필요 여부 및 병렬처리 가능성을 확인한다.","deadline":"","output_documents":["관계기관 협의·선행동의 매트릭스"],"blocker":"","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-006","blocking":false,"question":"주 계획허가·연방 EIA의 사업별 적용조건을 어떤 원본·공문·현장기록으로 입증할 것인가?","why":"공개된 국가 기본경로와 실제 필지·시설·관할의 적용판정을 분리해 보고서의 과단정을 막는다.","evidence":["건축주·신청인·주/FCT 관할","계획·건축허가 체크리스트","EAD 등록·screening·EIA 결정","주 환경·소방 등 선행동의와 실제 수수료·기간"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-006"],"gate_orders":[]},"B14":{"id":"B14","name":"완비접수·수수료·허가결과 검증","lane":"ODA 인허가·환경 검증팀","stage":"S7 접수·허가결정","type":"gateway","status":"risk","workflow_kind":"field-verification","workflow_kind_label":"현지확인","basis_scope":"axis","actor":"ODA 인허가·환경 검증팀","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"접수증·수수료 영수증·허가결정문을 확보하고 보완정지·실제 처리기간·승인조건을 ODA 일정·조건 대장에 기록한다.","deadline":"","output_documents":["완비접수·수수료·허가결과 검증대장"],"blocker":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가?","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-004","blocking":true,"question":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가?","why":"설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.","evidence":["건축주·신청인·주/FCT 관할","계획·건축허가 체크리스트","EAD 등록·screening·EIA 결정","주 환경·소방 등 선행동의와 실제 수수료·기간"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[{"order":3,"gate":"관할 건축·개발기관의 허가결정","decision":"관할 건축·개발기관이 완비도서와 관계기관 의견을 심사해 허가, 조건부 허가, 보완 또는 불허를 공식 결정한다.","depends_on":[],"output":"건축·개발 허가결정문과 승인도서·조건"}],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-004"],"gate_orders":[3]}};
-var EDGES=[{"id":"M05-E01","source":"B08","target":"B09","type":"sequence","label":"책임체계"},{"id":"M05-E02","source":"B09","target":"B10","type":"message","label":"환경분류"},{"id":"M05-E03","source":"B09","target":"B11","type":"sequence","label":"허가경로"},{"id":"M05-E04","source":"B10","target":"B12","type":"message","label":"환경조건"},{"id":"M05-E05","source":"B11","target":"B12","type":"sequence","label":"허가요건"},{"id":"M05-E06","source":"B12","target":"B13","type":"sequence","label":"관계협의"},{"id":"M05-E07","source":"B13","target":"B14","type":"sequence","label":"완비접수"},{"id":"M05-L01","source":"B14","target":"B12","type":"loop","label":"ODA 도서보완 필요 시 · 허가도서·관계협의 재통합"}];
+var NODES={"B02":{"id":"B02","display_id":"B01","name":"주 계획허가·연방 EIA · 절차 상세 미확인","lane":"도시계획·건축 허가기관","stage":"G1 공식 절차 진입점","type":"gateway","status":"risk","workflow_kind":"field-verification","workflow_kind_label":"현지확인","basis_scope":"axis","actor":"도시계획·건축 허가기관","consulted_authorities":"관할 주 또는 연방수도지구 계획허가기관 · 연방환경부 환경평가국(EAD)","action":"개발·계획허가는 관할 주·FCT 기관이 처리하고, EIA Act 적용사업은 연방환경부 EAD에서 등록·현장확인·screening/scoping·평가서 심사와 EIA permit을 거친다. 주 환경승인과 소방·항공·교통 등 추가 clearance 여부도 사업유형·입지별로 확인한다.","deadline":"","output_documents":["관할기관의 현행 절차도·신청서·체크리스트 확인 필요"],"blocker":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가? · 본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가?","legal_basis":[{"law":"환경영향평가법 Cap E12 LFN 2010(1992년 제86호)","article":"project registration, screening, scoping, review and permit","url":"https://ead.gov.ng/environmental-impact-assessment-division/","kind":"법률","status":"현행성 재확인","status_tone":"bad","verification":"원문 링크 연결","verification_tone":"info","note":"EAD가 사업등록·현장확인·screening/scoping·TOR·심사·EIA permit을 현행 업무로 명시한다."},{"law":"라고스주 전자 계획허가·건축통제 절차","article":"state planning-permit example","url":"https://epp.lagosstate.gov.ng/Home/Checklist","kind":"공식 안내","status":"현행성 재확인","status_tone":"bad","verification":"공식자료 연결","verification_tone":"info","note":"계획허가, 착공 전 Form C, 단계검사, 보험과 Certificate of Completion and Fitness for Habitation의 주 단위 집행 사례다."}],"evidence_status":"조건부","applicability":"주·FCT 계획허가가 필요한 사업 및 EIA Act·주 환경법 적용 가능 사업","report_use":"인허가 매트릭스, 현지 설계용역 범위, 일정·수수료와 수원기관 역할에 연결한다.","open_questions":[{"id":"NGA-BLD-Q-004","blocking":true,"question":"본 사업의 주·FCT 허가와 연방 EIA 유형, 주 환경·소방 등 추가승인의 선후관계는 무엇인가?","why":"설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.","evidence":["건축주·신청인·주/FCT 관할","계획·건축허가 체크리스트","EAD 등록·screening·EIA 결정","주 환경·소방 등 선행동의와 실제 수수료·기간"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]},{"id":"NGA-BLD-Q-005","blocking":true,"question":"본 사업의 건축주·신청인·허가권자, 시설분류와 환경평가 유형, 필수 선행동의는 무엇인가?","why":"설계 서명권, 제출도서, 관계기관 협의, 인허가 일정과 비용을 결정한다.","evidence":["관할기관 사전분류 회신","현지 책임건축사·기술자 자격증빙","환경 스크리닝 결정과 최신 허가 체크리스트·수수료표"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]},{"id":"NGA-BLD-Q-006","blocking":false,"question":"주 계획허가·연방 EIA의 사업별 적용조건을 어떤 원본·공문·현장기록으로 입증할 것인가?","why":"공개된 국가 기본경로와 실제 필지·시설·관할의 적용판정을 분리해 보고서의 과단정을 막는다.","evidence":["건축주·신청인·주/FCT 관할","계획·건축허가 체크리스트","EAD 등록·screening·EIA 결정","주 환경·소방 등 선행동의와 실제 수수료·기간"],"confirm_with":["관할 주 또는 연방수도지구 계획허가기관","연방환경부 환경평가국(EAD)"]}],"permit_gates":[],"requirement_ids":["NGA-BLD-REQ-005"],"question_ids":["NGA-BLD-Q-004","NGA-BLD-Q-005","NGA-BLD-Q-006"],"gate_orders":[]}};
+var EDGES=[];
 
 var _sel=document.getElementById('sel');
 if(_sel) _sel.addEventListener('change',function(){ location.href='../'+this.value+'/index.html'; });
@@ -674,38 +663,106 @@ function draw(){
     var e=pts[pts.length-1]; return d+' L'+rnd(e.x)+' '+rnd(e.y);
   }
 
-  function labelPoint(rt){
-    if(rt.label)return rt.label;
-    var pts=uniq(rt.pts),best={score:-1,x:0,y:0};
-    for(var i=0;i<pts.length-1;i++){
-      var a=pts[i],b=pts[i+1],horizontal=Math.abs(a.y-b.y)<0.5;
-      var length=Math.abs(a.x-b.x)+Math.abs(a.y-b.y);
-      var candidate=length+(horizontal?120:0);
-      if(candidate>best.score) best={score:candidate,x:(a.x+b.x)/2,y:(a.y+b.y)/2-(horizontal?6:0)};
-    }
-    return best;
-  }
-
+  var labelJobs=[];
   EDGES.forEach(function(ed){
     var a=box(ed.source),b=box(ed.target); if(!a||!b)return;
     var t=ed.type||'sequence', rt=route(a,b,ed);
     d+='<path d="'+orthPath(rt.pts)+'" fill="none" stroke="'+C[t]+'" stroke-width="1.5" opacity="'
       +(t==='sequence'?'.55':'.8')+'"'+(t!=='sequence'?' stroke-dasharray="4 3"':'')
       +' marker-end="url(#m-'+t+')"/>';
-    if(ed.label){
-      var lp=labelPoint(rt);
-      d+='<text class="edge-label" x="'+rnd(lp.x)+'" y="'+rnd(lp.y)+'" text-anchor="middle" '
-        +'dominant-baseline="central" fill="'+C[t]+'" stroke="'+BG+'" stroke-width="4" '
-        +'paint-order="stroke" stroke-linejoin="round" font-size="10" font-weight="700">'
-        +ed.label+'</text>';
-    }
+    if(ed.label) labelJobs.push({ed:ed,rt:rt,color:C[t]});
   });
   svg.innerHTML=d;
+
+  /* 라벨은 경로와 별도 2차 배치한다. 실제 글자 폭을 잰 뒤 카드·화살촉·
+     다른 라벨과 겹치지 않는 후보를 고르므로 세로선 중점에 긴 문구를
+     얹어 카드 뒤로 잘리던 문제를 막는다. */
+  var NS='http://www.w3.org/2000/svg', labelBoxes=[];
+  var arrowBoxes=labelJobs.map(function(job){
+    var pts=uniq(job.rt.pts),p=pts[pts.length-1];
+    return {x:p.x-11,y:p.y-11,r:p.x+11,b:p.y+11};
+  });
+  function overlaps(a,b){return a.x<b.r&&a.r>b.x&&a.y<b.b&&a.b>b.y;}
+  function overlapArea(a,b){
+    return Math.max(0,Math.min(a.r,b.r)-Math.max(a.x,b.x))*
+           Math.max(0,Math.min(a.b,b.b)-Math.max(a.y,b.y));
+  }
+  function labelCandidates(rt,w,h){
+    var pts=uniq(rt.pts),segs=[],fractions=[.5,.33,.67,.2,.8];
+    for(var i=0;i<pts.length-1;i++){
+      var a=pts[i],b=pts[i+1],horizontal=Math.abs(a.y-b.y)<.5;
+      var length=Math.abs(a.x-b.x)+Math.abs(a.y-b.y);
+      if(length>8) segs.push({a:a,b:b,horizontal:horizontal,length:length});
+    }
+    segs.sort(function(a,b){return (b.horizontal-a.horizontal)||b.length-a.length;});
+    var out=[];
+    if(rt.label) out.push({x:rt.label.x,y:rt.label.y,offset:0});
+    segs.forEach(function(seg){
+      fractions.forEach(function(f){
+        var x=seg.a.x+(seg.b.x-seg.a.x)*f,y=seg.a.y+(seg.b.y-seg.a.y)*f;
+        if(seg.horizontal){
+          [-(h/2+7),h/2+7,-(h/2+19),h/2+19].forEach(function(o){
+            out.push({x:x,y:y+o,offset:Math.abs(o)});
+          });
+        }else{
+          [-(w/2+8),w/2+8,-(w/2+20),w/2+20].forEach(function(o){
+            out.push({x:x+o,y:y,offset:Math.abs(o)});
+          });
+        }
+      });
+    });
+    return out;
+  }
+  function candidateBox(p,w,h){
+    return {x:p.x-w/2,y:p.y-h/2,r:p.x+w/2,b:p.y+h/2,w:w,h:h};
+  }
+  function labelPenalty(box,p){
+    var score=p.offset||0;
+    if(box.x<4)score+=(4-box.x)*100000;
+    if(box.y<4)score+=(4-box.y)*100000;
+    if(box.r>board.scrollWidth-4)score+=(box.r-board.scrollWidth+4)*100000;
+    if(box.b>board.scrollHeight-4)score+=(box.b-board.scrollHeight+4)*100000;
+    OB.forEach(function(o){
+      var padded={x:o.x-6,y:o.y-6,r:o.r+6,b:o.b+6};
+      if(overlaps(box,padded))score+=1000000+overlapArea(box,padded)*1000;
+    });
+    arrowBoxes.forEach(function(o){if(overlaps(box,o))score+=250000+overlapArea(box,o)*100;});
+    labelBoxes.forEach(function(o){if(overlaps(box,o))score+=750000+overlapArea(box,o)*1000;});
+    return score;
+  }
+  labelJobs.forEach(function(job){
+    var group=document.createElementNS(NS,'g'); group.setAttribute('class','edge-label-group');
+    var bg=document.createElementNS(NS,'rect'); bg.setAttribute('class','edge-label-bg');
+    bg.setAttribute('rx','4'); bg.setAttribute('fill',BG); bg.setAttribute('fill-opacity','.96');
+    var txt=document.createElementNS(NS,'text'); txt.setAttribute('class','edge-label');
+    txt.setAttribute('x','0'); txt.setAttribute('y','0'); txt.setAttribute('text-anchor','middle');
+    txt.setAttribute('dominant-baseline','central'); txt.setAttribute('fill',job.color);
+    txt.setAttribute('font-size','10'); txt.setAttribute('font-weight','700');
+    txt.style.visibility='hidden'; txt.textContent=job.ed.label;
+    var title=document.createElementNS(NS,'title'); title.textContent=txt.textContent;
+    group.appendChild(bg); group.appendChild(txt); group.appendChild(title); svg.appendChild(group);
+    var measured=txt.getBBox(),w=Math.max(measured.width,txt.getComputedTextLength())+10;
+    var h=Math.max(measured.height,12)+6,candidates=labelCandidates(job.rt,w,h);
+    var best=null,bestScore=Infinity;
+    candidates.forEach(function(p){
+      var b=candidateBox(p,w,h),s=labelPenalty(b,p);
+      if(s<bestScore){best={p:p,box:b};bestScore=s;}
+    });
+    if(!best){
+      var first=uniq(job.rt.pts)[0]; best={p:first,box:candidateBox(first,w,h)};
+    }
+    labelBoxes.push(best.box);
+    bg.setAttribute('x',rnd(best.box.x)); bg.setAttribute('y',rnd(best.box.y));
+    bg.setAttribute('width',rnd(w)); bg.setAttribute('height',rnd(h));
+    bg.setAttribute('stroke',job.color); bg.setAttribute('stroke-opacity','.18');
+    txt.setAttribute('x',rnd(best.p.x)); txt.setAttribute('y',rnd(best.p.y));
+    txt.style.visibility='visible';
+  });
 }
 
 function openNode(id){
   var n=NODES[id]; if(!n)return;
-  var h='<span class="badge plain muted">'+n.id+'</span> '
+  var h='<span class="badge plain muted">'+(n.display_id||n.id)+'</span> '
        +'<span class="badge plain muted">'+n.lane+'</span> '
        +'<span class="badge plain muted">'+n.stage+'</span>'
        +(n.workflow_kind_label?' <span class="badge info">'+n.workflow_kind_label+'</span>':'');
@@ -779,6 +836,7 @@ document.getElementById('dlg').addEventListener('click',function(ev){
 });
 
 addEventListener('load',draw); addEventListener('resize',draw);
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(draw);
 new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 </script>
 </body></html>

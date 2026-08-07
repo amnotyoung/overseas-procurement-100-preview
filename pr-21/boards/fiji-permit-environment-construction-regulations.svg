@@ -21,7 +21,7 @@
 <rect x="0" y="0" width="1800" height="240" fill="#07150f"/>
 <rect x="0" y="0" width="1800" height="9" fill="#18a87b"/>
 
-    <text x="1760" y="45" text-anchor="end" font-size="15" font-weight="700" fill="#8fa299">노드 7 · 레인 4 · 게이트 4</text>
+    <text x="1760" y="45" text-anchor="end" font-size="15" font-weight="700" fill="#8fa299">노드 7 · 레인 3 · 게이트 4</text>
     <text x="40" y="132" font-size="48" font-weight="850" fill="#ffffff">피지 건축허가·환경심사</text>
     <text x="40" y="174" font-size="19" font-weight="520" fill="#b7c7bf">개발허가·건축도면 승인과 EIA screening·처리를 BPAS에서 병행하고 소방·OHS·유틸리티 승인을 묶는다.</text>
     
@@ -30,170 +30,169 @@
 <rect x="38" y="260" width="190" height="100" rx="10" fill="#eaf2ee"/>
 <text x="58" y="299" font-size="17" font-weight="800" fill="#17231d">단계 ↓</text>
 <text x="58" y="332" font-size="15" font-weight="650" fill="#68776f">행위자 묶음 →</text>
-<rect x="38" y="360" width="1724" height="460" fill="#84baa9"/>
-<rect x="38" y="360" width="190" height="460" fill="#087452"/>
-<text x="58" y="392" class="mono" font-size="16" font-weight="800" fill="#ffffff">G4</text>
-<text x="58" y="425" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">신청인·사업분류</tspan></text>
-<rect x="38" y="820" width="1724" height="460" fill="#f5f8f6"/>
-<rect x="38" y="820" width="190" height="460" fill="#eef3f0"/>
-<text x="58" y="852" class="mono" font-size="16" font-weight="800" fill="#53645b">G5</text>
-<text x="58" y="885" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">환경·전문심사</tspan></text>
-<rect x="38" y="1280" width="1724" height="460" fill="#fbfcfb"/>
-<rect x="38" y="1280" width="190" height="460" fill="#eef3f0"/>
-<text x="58" y="1312" class="mono" font-size="16" font-weight="800" fill="#53645b">G6</text>
-<text x="58" y="1345" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">허가도서·관계협</tspan><tspan x="58" dy="22">의</tspan></text>
-<rect x="38" y="1740" width="1724" height="460" fill="#f5f8f6"/>
-<rect x="38" y="1740" width="190" height="460" fill="#eef3f0"/>
-<text x="58" y="1772" class="mono" font-size="16" font-weight="800" fill="#53645b">G7</text>
-<text x="58" y="1805" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">접수·허가결정</tspan></text>
-<rect x="228" y="260" width="383.5" height="100" fill="#f7faf8"/>
-<rect x="228" y="260" width="383.5" height="7" fill="#0f9f72"/>
-<text x="248" y="299" font-size="20" font-weight="800" fill="#17231d">사업주·수원기관</text>
-<text x="248" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="248" dy="0">사업주·수원기관</tspan></text>
-<rect x="611.5" y="260" width="383.5" height="100" fill="#f7faf8"/>
-<rect x="611.5" y="260" width="383.5" height="7" fill="#3b82f6"/>
-<text x="631.5" y="299" font-size="20" font-weight="800" fill="#17231d">현지 설계·조사팀</text>
-<text x="631.5" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="631.5" dy="0">현지 설계·조사팀</tspan></text>
-<rect x="995" y="260" width="383.5" height="100" fill="#f7faf8"/>
-<rect x="995" y="260" width="383.5" height="7" fill="#c78116"/>
-<text x="1015" y="299" font-size="20" font-weight="800" fill="#17231d">도시계획</text>
-<text x="1015" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="1015" dy="0">도시계획·건축 당국</tspan></text>
-<rect x="1378.5" y="260" width="383.5" height="100" fill="#f7faf8"/>
-<rect x="1378.5" y="260" width="383.5" height="7" fill="#0891b2"/>
-<text x="1398.5" y="299" font-size="20" font-weight="800" fill="#17231d">환경</text>
-<text x="1398.5" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="1398.5" dy="0">환경·안전·검사기관</tspan></text>
+<rect x="38" y="360" width="1724" height="431.5" fill="#fbfcfb"/>
+<rect x="38" y="360" width="190" height="431.5" fill="#eef3f0"/>
+<text x="58" y="392" class="mono" font-size="16" font-weight="800" fill="#53645b">G4</text>
+<text x="58" y="425" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">개발승인·환경심</tspan><tspan x="58" dy="22">사</tspan></text>
+<rect x="38" y="791.5" width="1724" height="431.5" fill="#f5f8f6"/>
+<rect x="38" y="791.5" width="190" height="431.5" fill="#eef3f0"/>
+<text x="58" y="823.5" class="mono" font-size="16" font-weight="800" fill="#53645b">G5</text>
+<text x="58" y="856.5" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">유틸리티·엔지니</tspan><tspan x="58" dy="22">어링</tspan></text>
+<rect x="38" y="1223" width="1724" height="545.5" fill="#84baa9"/>
+<rect x="38" y="1223" width="190" height="545.5" fill="#087452"/>
+<text x="58" y="1255" class="mono" font-size="16" font-weight="800" fill="#ffffff">G6</text>
+<text x="58" y="1288" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">소방·OHS 승인</tspan></text>
+<rect x="38" y="1768.5" width="1724" height="431.5" fill="#f5f8f6"/>
+<rect x="38" y="1768.5" width="190" height="431.5" fill="#eef3f0"/>
+<text x="58" y="1800.5" class="mono" font-size="16" font-weight="800" fill="#53645b">G7</text>
+<text x="58" y="1833.5" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">건축허가</tspan></text>
+<rect x="228" y="260" width="511.3" height="100" fill="#f7faf8"/>
+<rect x="228" y="260" width="511.3" height="7" fill="#0f9f72"/>
+<text x="248" y="299" font-size="20" font-weight="800" fill="#17231d">현지 설계</text>
+<text x="248" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="248" dy="0">현지 설계·시공 전문가</tspan></text>
+<rect x="739.3" y="260" width="511.3" height="100" fill="#f7faf8"/>
+<rect x="739.3" y="260" width="511.3" height="7" fill="#3b82f6"/>
+<text x="759.3" y="299" font-size="20" font-weight="800" fill="#17231d">도시계획</text>
+<text x="759.3" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="759.3" dy="0">도시계획·건축 허가기관</tspan></text>
+<rect x="1250.7" y="260" width="511.3" height="100" fill="#f7faf8"/>
+<rect x="1250.7" y="260" width="511.3" height="7" fill="#c78116"/>
+<text x="1270.7" y="299" font-size="20" font-weight="800" fill="#17231d">환경</text>
+<text x="1270.7" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="1270.7" dy="0">환경·소방·검사기관</tspan></text>
 <line x1="228" y1="260" x2="228" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
-<line x1="611.5" y1="260" x2="611.5" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
-<line x1="995" y1="260" x2="995" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
-<line x1="1378.5" y1="260" x2="1378.5" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="739.3" y1="260" x2="739.3" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="1250.7" y1="260" x2="1250.7" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
 <line x1="1762" y1="260" x2="1762" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
 <line x1="38" y1="360" x2="1762" y2="360" stroke="#b8c7bf" stroke-width="2"/>
 <line x1="38" y1="360" x2="1762" y2="360" stroke="#c8d3cd" stroke-width="1.5"/>
-<line x1="38" y1="820" x2="1762" y2="820" stroke="#c8d3cd" stroke-width="1.5"/>
-<line x1="38" y1="1280" x2="1762" y2="1280" stroke="#c8d3cd" stroke-width="1.5"/>
-<line x1="38" y1="1740" x2="1762" y2="1740" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="791.5" x2="1762" y2="791.5" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1223" x2="1762" y2="1223" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1768.5" x2="1762" y2="1768.5" stroke="#c8d3cd" stroke-width="1.5"/>
 <line x1="38" y1="2200" x2="1762" y2="2200" stroke="#b8c7bf" stroke-width="2"/>
-<path d="M 554.8 590 H 640.3 V 577 H 660.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 554.8 590 H 640.3 V 577 H 660.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 835.3 635 V 776 H 1560.3 V 997" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 835.3 635 V 776 H 1560.3 V 997" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 791.3 635 V 792 H 1170.8 V 997" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 791.3 635 V 792 H 1170.8 V 997" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 1568.3 1095 V 1252 H 813.3 V 1457" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 1568.3 1095 V 1252 H 813.3 V 1457" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 1196.8 1095 V 1268 H 773.3 V 1457" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 1196.8 1095 V 1268 H 773.3 V 1457" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 938.3 1529.5 H 1394.3 V 1511 H 1427.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 938.3 1529.5 H 1394.3 V 1511 H 1427.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 1580.3 1555 V 1696 H 1202.8 V 1917" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 1580.3 1555 V 1696 H 1202.8 V 1917" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 1051.8 1963.5 H 216 V 1720 H 787.3 V 1563" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 1051.8 1963.5 H 216 V 1720 H 787.3 V 1563" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<rect x="563.5" y="551.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="611.5" y="571.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">책임체계</text>
-<rect x="1149.8" y="744" width="96" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
-<text x="1197.8" y="764" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">환경분류</text>
-<rect x="933" y="760" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="981" y="780" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">허가경로</text>
-<rect x="1142.8" y="1220" width="96" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
-<text x="1190.8" y="1240" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">환경조건</text>
-<rect x="937" y="1236" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="985" y="1256" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">허가요건</text>
-<rect x="1138.8" y="1488.3" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="1186.8" y="1508.3" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">관계협의</text>
-<rect x="1343.5" y="1664" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="1391.5" y="1684" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">완비접수</text>
-<rect x="211.1" y="1866" width="149.9" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
-<text x="286" y="1886" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">도서·기관의견 보완</text>
+<path d="M 1130 571.8 H 1330.3 V 582.3 H 1363.3" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1130 571.8 H 1330.3 V 582.3 H 1363.3" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1017 620.8 V 747.5 H 1510.3 V 954.3" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1017 620.8 V 747.5 H 1510.3 V 954.3" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1496.3 620.8 V 779.5 H 457.7 V 954.3" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1496.3 620.8 V 779.5 H 457.7 V 954.3" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1371.3 1000.8 H 659.7 V 1012.3 H 626.7" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1371.3 1000.8 H 659.7 V 1012.3 H 626.7" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 523.7 1052.3 V 1179 H 1502.3 V 1385.8" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 523.7 1052.3 V 1179 H 1502.3 V 1385.8" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 497.7 1052.3 V 1163 H 1255.7 V 1548.8 H 1363.3" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 497.7 1052.3 V 1163 H 1255.7 V 1548.8 H 1363.3" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1371.3 1445.3 H 1268.7 V 1756.5 H 1015 V 1931.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1371.3 1445.3 H 1268.7 V 1756.5 H 1015 V 1931.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1504.3 1597.8 V 1740.5 H 983 V 1931.3" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1504.3 1597.8 V 1740.5 H 983 V 1931.3" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 860 1971.3 H 216 V 1203 H 443.7 V 1060.3" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 860 1971.3 H 216 V 1203 H 443.7 V 1060.3" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<rect x="1202.7" y="545" width="96" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="1250.7" y="565" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">병렬 EIA</text>
+<rect x="1210.8" y="715.5" width="105.8" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="1263.7" y="735.5" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">해당 시 연결</text>
+<rect x="929" y="747.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="977" y="767.5" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">환경조건</text>
+<rect x="947" y="974.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="995" y="994.5" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">연결조건</text>
+<rect x="965" y="1147" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1013" y="1167" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">기술도서</text>
+<rect x="816.8" y="1131" width="119.8" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="876.7" y="1151" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">작업장 용도 시</text>
+<rect x="1217.7" y="1724.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1265.7" y="1744.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">NFA 승인</text>
+<rect x="1195.7" y="1672.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="1243.7" y="1692.5" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">OHS 동의</text>
+<rect x="155.8" y="1578.6" width="260.5" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="286" y="1598.6" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">결함·불일치 통지 시 · 해당도서 보완</text>
 
     <g filter="url(#card-shadow)">
-      <rect x="280.8" y="541" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="284.8" y="545" width="270" height="90" rx="8" fill="#effaf5" stroke="#35a77d" stroke-width="2.3"/>
-      <rect x="284.8" y="545" width="6" height="90" rx="3" fill="#35a77d"/>
-      <text x="299.8" y="565" class="mono" font-size="12.5" font-weight="750" fill="#287a5c">B08</text>
-      <text x="351.8" y="565" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS·EIA screening</text>
-      <rect x="494.8" y="552" width="50" height="24" rx="5" fill="#35a77d" opacity="0.14"/>
-      <text x="519.8" y="569" text-anchor="middle" font-size="12" font-weight="800" fill="#123d2e">선행</text>
-      <text x="299.8" y="602" font-size="15.5" font-weight="800" fill="#123d2e"><tspan x="299.8" dy="0">건축주·신청인·관할 확정</tspan></text>
-      <text x="299.8" y="627" font-size="11" font-weight="650" fill="#287a5c">법적 건축주·토지소유자·신청인과 국가·지방·…</text>
+      <rect x="856" y="526.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="860" y="530.8" width="270" height="90" rx="8" fill="#effaf5" stroke="#35a77d" stroke-width="2.3"/>
+      <rect x="860" y="530.8" width="6" height="90" rx="3" fill="#35a77d"/>
+      <text x="875" y="550.8" class="mono" font-size="12.5" font-weight="750" fill="#287a5c">B02</text>
+      <text x="927" y="550.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS Approval to Develop</text>
+      <rect x="1070" y="537.8" width="50" height="24" rx="5" fill="#35a77d" opacity="0.14"/>
+      <text x="1095" y="554.8" text-anchor="middle" font-size="12" font-weight="800" fill="#123d2e">선행</text>
+      <text x="875" y="587.8" font-size="15.5" font-weight="800" fill="#123d2e"><tspan x="875" dy="0">BPAS Step 1 · 개발승인 신청</tspan></text>
+      <text x="875" y="612.8" font-size="11" font-weight="650" fill="#287a5c">토지소유자와 책임전문가가 IPA 이후 건축·…</text>
     </g>
   
 
     <g filter="url(#card-shadow)">
-      <rect x="664.3" y="541" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="668.3" y="545" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
-      <rect x="668.3" y="545" width="6" height="90" rx="3" fill="#087452"/>
-      <text x="683.3" y="565" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B09</text>
-      <text x="735.3" y="565" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS·EIA screening</text>
-      <rect x="878.3" y="552" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
-      <text x="903.3" y="569" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
-      <text x="683.3" y="602" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="683.3" dy="0">책임설계자·시설·위험분류</tspan></text>
-      <text x="683.3" y="627" font-size="11" font-weight="650" fill="#d8f4e8">현지 서명권자와 시설 용도·점유·규모·위험…</text>
+      <rect x="1367.3" y="526.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="530.8" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1371.3" y="530.8" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1386.3" y="550.8" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B03</text>
+      <text x="1438.3" y="550.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS EIA 절차</text>
+      <rect x="1581.3" y="537.8" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1606.3" y="554.8" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1386.3" y="577.8" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1386.3" dy="0">BPAS Step 2 · 환경</tspan><tspan x="1386.3" dy="18">스크리닝·EIA</tspan></text>
+      <text x="1386.3" y="612.8" font-size="11" font-weight="650" fill="#a96008">사업시행자가 제안서를 제출하면 환경국·EIA…</text>
     </g>
   
 
     <g filter="url(#card-shadow)">
-      <rect x="1431.3" y="1001" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="1435.3" y="1005" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
-      <rect x="1435.3" y="1005" width="6" height="90" rx="3" fill="#d9901a"/>
-      <text x="1450.3" y="1025" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B10</text>
-      <text x="1502.3" y="1025" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS·EIA screening</text>
-      <rect x="1645.3" y="1012" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
-      <text x="1670.3" y="1029" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
-      <text x="1450.3" y="1062" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1450.3" dy="0">환경 스크리닝·평가경로 결정</tspan></text>
-      <text x="1450.3" y="1087" font-size="11" font-weight="650" fill="#a96008">환경기관의 공식 분류로 평가유형, 선행조건,…</text>
+      <rect x="1367.3" y="958.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="962.3" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="1371.3" y="962.3" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="1386.3" y="982.3" class="mono" font-size="12.5" font-weight="750" fill="#627169">B04</text>
+      <text x="1438.3" y="982.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS Water and Wastewater Connection</text>
+      <rect x="1581.3" y="969.3" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="1606.3" y="986.3" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="1386.3" y="1009.3" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="1386.3" dy="0">BPAS Step 3 · 상수도·하수도</tspan><tspan x="1386.3" dy="18">연결</tspan></text>
+      <text x="1386.3" y="1044.3" font-size="11" font-weight="650" fill="#627169">신규 연결이 필요한 개발자가 권원·위치도·T…</text>
     </g>
   
 
     <g filter="url(#card-shadow)">
-      <rect x="1047.8" y="1001" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="1051.8" y="1005" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
-      <rect x="1051.8" y="1005" width="6" height="90" rx="3" fill="#b9c7bf"/>
-      <text x="1066.8" y="1025" class="mono" font-size="12.5" font-weight="750" fill="#627169">B11</text>
-      <text x="1118.8" y="1025" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS·EIA screening</text>
-      <rect x="1261.8" y="1012" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
-      <text x="1286.8" y="1029" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
-      <text x="1066.8" y="1062" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="1066.8" dy="0">건축·개발허가 공식경로 확인</tspan></text>
-      <text x="1066.8" y="1087" font-size="11" font-weight="650" fill="#627169">공식 허가 안내와 법령을 대조해 건축·개발허…</text>
+      <rect x="344.7" y="958.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="348.7" y="962.3" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="348.7" y="962.3" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="363.7" y="982.3" class="mono" font-size="12.5" font-weight="750" fill="#627169">B05</text>
+      <text x="415.7" y="982.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS Lodgement of Engineering Plans</text>
+      <rect x="558.7" y="969.3" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="583.7" y="986.3" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="363.7" y="1009.3" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="363.7" dy="0">BPAS Step 4 · 엔지니어링 도서</tspan><tspan x="363.7" dy="18">심사</tspan></text>
+      <text x="363.7" y="1044.3" font-size="11" font-weight="650" fill="#627169">등록 기술자가 도로·보도·배수·상수도·전력·…</text>
     </g>
   
 
     <g filter="url(#card-shadow)">
-      <rect x="664.3" y="1461" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="668.3" y="1465" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
-      <rect x="668.3" y="1465" width="6" height="90" rx="3" fill="#b9c7bf"/>
-      <text x="683.3" y="1485" class="mono" font-size="12.5" font-weight="750" fill="#627169">B12</text>
-      <text x="735.3" y="1485" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS·EIA screening</text>
-      <rect x="878.3" y="1472" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
-      <text x="903.3" y="1489" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
-      <text x="683.3" y="1522" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="683.3" dy="0">허가도서·설계기준 통합</tspan></text>
-      <text x="683.3" y="1547" font-size="11" font-weight="650" fill="#627169">분류결정, 현지 서명요건과 최신 체크리스트…</text>
+      <rect x="1367.3" y="1389.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="1393.8" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="1371.3" y="1393.8" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="1386.3" y="1413.8" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B06</text>
+      <text x="1438.3" y="1413.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS Structural Fire Safety</text>
+      <rect x="1581.3" y="1400.8" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="1606.3" y="1417.8" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="1386.3" y="1440.8" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="1386.3" dy="0">BPAS Step 5 · 구조적 화재안전</tspan><tspan x="1386.3" dy="18">승인</tspan></text>
+      <text x="1386.3" y="1475.8" font-size="11" font-weight="650" fill="#d8f4e8">개발자와 건축전문가가 SFS 신청서와 도서를…</text>
     </g>
   
 
     <g filter="url(#card-shadow)">
-      <rect x="1431.3" y="1461" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="1435.3" y="1465" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
-      <rect x="1435.3" y="1465" width="6" height="90" rx="3" fill="#b9c7bf"/>
-      <text x="1450.3" y="1485" class="mono" font-size="12.5" font-weight="750" fill="#627169">B13</text>
-      <text x="1502.3" y="1485" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS·EIA screening</text>
-      <rect x="1645.3" y="1472" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
-      <text x="1670.3" y="1489" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
-      <text x="1450.3" y="1522" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="1450.3" dy="0">소방·안전·유틸리티 병렬협의</tspan></text>
-      <text x="1450.3" y="1547" font-size="11" font-weight="650" fill="#627169">소방·안전·도로·물·전력 등 적용 기관과 동의…</text>
+      <rect x="1367.3" y="1503.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="1507.8" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="1371.3" y="1507.8" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="1386.3" y="1527.8" class="mono" font-size="12.5" font-weight="750" fill="#627169">B07</text>
+      <text x="1438.3" y="1527.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS Workplace Design</text>
+      <rect x="1581.3" y="1514.8" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="1606.3" y="1531.8" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="1386.3" y="1554.8" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="1386.3" dy="0">BPAS Step 6 · 작업장 설계</tspan><tspan x="1386.3" dy="18">심사</tspan></text>
+      <text x="1386.3" y="1589.8" font-size="11" font-weight="650" fill="#627169">작업장 용도의 신축·변경·해체이면 소유자가…</text>
     </g>
   
 
     <g filter="url(#card-shadow)">
-      <rect x="1047.8" y="1921" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="1051.8" y="1925" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
-      <rect x="1051.8" y="1925" width="6" height="90" rx="3" fill="#d9901a"/>
-      <text x="1066.8" y="1945" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B14</text>
-      <text x="1118.8" y="1945" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS·EIA screening</text>
-      <rect x="1261.8" y="1932" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
-      <text x="1286.8" y="1949" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
-      <text x="1066.8" y="1982" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1066.8" dy="0">완비접수·수수료·허가결정 Gate</tspan></text>
-      <text x="1066.8" y="2007" font-size="11" font-weight="650" fill="#a96008">완비 기준, 접수일, 수수료, 보완정지, 실제…</text>
+      <rect x="856" y="1935.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="860" y="1939.3" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="860" y="1939.3" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="875" y="1959.3" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B08</text>
+      <text x="927" y="1959.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · BPAS Approval to Construct on Site</text>
+      <rect x="1070" y="1946.3" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1095" y="1963.3" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="875" y="1986.3" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="875" dy="0">BPAS Step 7 · 현장 건축승인</tspan><tspan x="875" dy="18">신청·심사</tspan></text>
+      <text x="875" y="2021.3" font-size="11" font-weight="650" fill="#a96008">소유자와 책임전문가가 개발승인·관계기관 승…</text>
     </g>
   
 
@@ -211,7 +210,7 @@
     <line x1="1072" y1="2237" x2="1124" y2="2237" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)"/>
     <text x="1144" y="2243" font-size="15" fill="#526159">보완 회귀</text>
     <text x="38" y="2291" font-size="15.5" font-weight="650" fill="#56655d">단계는 위→아래, 행위자 묶음은 좌→우로 읽습니다.</text>
-    <text x="38" y="2321" font-size="14.5" fill="#68776f">원래 4개 행위자 레인을 4개 레이아웃 묶음으로 배치했으며, 7개 업무와 8개 연결 관계는 유지했습니다.</text>
+    <text x="38" y="2321" font-size="14.5" fill="#68776f">원래 3개 행위자 레인을 3개 레이아웃 묶음으로 배치했으며, 7개 업무와 9개 연결 관계는 유지했습니다.</text>
     <text x="38" y="2361" font-size="13.5" fill="#7b8881">출처: 해당 제도의 법률·시행령·시행규칙 기반 모델 · 실제 사건의 진행 상태나 법률 자문을 의미하지 않습니다.</text>
     
   
