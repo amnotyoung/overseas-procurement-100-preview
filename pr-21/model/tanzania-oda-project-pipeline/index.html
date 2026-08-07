@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -522,7 +545,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>국별협력·다자지원사업은 개별 부처·지방정부와 직접 사업발굴 가능, 단 재정기획부의 최종 원조사업요청 승인 필요</li><li>(연수사업) 대통령 직속 공공행정서비스실의 총괄 조정으로 연수생 추천</li><li>(민관협력사업) 후원기관과 약정·계약 체결 후 NGO 등록청에 제출하여 공식화</li><li>KOICA 수요가 있는 개별 부처가 사업요청서(PCP)를 KOICA에 제출</li><li>PCP를 근거로 사업수행부처 지원 하에 예비조사 실시 및 예비조사 보고서 작성</li><li>예비조사에서 타당성이 인정되면 사업수행부처와 기획조사 실시 및 사업집행계획서 고도화</li><li>사업수행부처 및 재정기획부(수원총괄기관)와 협의</li><li>재정기획부와 협의의사록(RD) 체결로 공식화</li><li>사업 수행 — 개별 부처가 실무 총괄·행정지원·예산 확보</li><li>관세·부가세 면세·환급은 재정기획부 승인 + 국세청(TRA) 협조로 진행</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">탄자니아 정부가 수원하는 개발협력사업에 적용된다. 무상원조의 경우 재정기획부는 정보·실적 관리 역할을 하고 실질 수원체계는 원조를 직접 받는 개별 부처가 담당한다. 사업 유형별로 경로가 다르다 — 국별협력·다자지원(부처 직접 발굴 + 재정기획부 승인), 연수(공공행정서비스실 조정), 민관협력(NGO 등록청 공식화), WFK 봉사단(개별부처 승인 + 고용노동부 노동허가 + 이민청 비자).</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm">협의의사록(Record of Discussion, RoD) — KOICA·재정기획부</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">양자합의</span></div><div class="law"><span class="nm">개발협력포럼(Development Cooperation Framework, DCF) 정책대화 체계</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm">원조관리플랫폼(Aid Management Platform, AMP) 운영</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm">KOICA 사업심사 가이드라인 및 PCP·예비조사·기획조사 절차</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.mof.go.tz/uploads/documents/en-1747807046-Development%20Cooperation%20Framework%20%28DCF%29.pdf" target="_blank" rel="noopener">Development Cooperation Framework 2017/18–2029/30 (revised 2022/23)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://mof.go.tz/divisions" target="_blank" rel="noopener">External Finance Division and Debt Management Division official mandates</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://repository.mof.go.tz/items/49afd5c3-5fc9-45a4-98d1-fcb99a9fe01d" target="_blank" rel="noopener">Guidelines for Project Planning and Negotiations for Raising Loans, Issuing Guarantees and Receiving Grants</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm">협의의사록(Record of Discussion, RoD) — KOICA·재정기획부</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">양자합의</span></div></div><div class="law"><div class="law-copy"><span class="nm">개발협력포럼(Development Cooperation Framework, DCF) 정책대화 체계</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm">원조관리플랫폼(Aid Management Platform, AMP) 운영</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm">KOICA 사업심사 가이드라인 및 PCP·예비조사·기획조사 절차</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.mof.go.tz/uploads/documents/en-1747807046-Development%20Cooperation%20Framework%20%28DCF%29.pdf" target="_blank" rel="noopener">Development Cooperation Framework 2017/18–2029/30 (revised 2022/23)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://mof.go.tz/divisions" target="_blank" rel="noopener">External Finance Division and Debt Management Division official mandates</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://repository.mof.go.tz/items/49afd5c3-5fc9-45a4-98d1-fcb99a9fe01d" target="_blank" rel="noopener">Guidelines for Project Planning and Negotiations for Raising Loans, Issuing Guarantees and Receiving Grants</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>재무부 대외금융국(External Finance Division)</b><span>무상원조·양허성차관 등 외부재원을 동원하고 개발협력 정책·협정·ODA 기록·사업모니터링을 담당한다.</span></div><div class="auth"><b>재무부 부채관리국</b><span>외부차입·보증·채무전략과 부채 데이터베이스를 담당한다.</span></div><div class="auth"><b>부문부처·실행기관</b><span>국가계획과 예산에 맞춰 사업을 제안·준비·집행·보고한다.</span></div><div class="auth"><b>정부·개발파트너 협의체</b><span>Development Cooperation Framework 아래 정책대화·공여조정을 수행한다.</span></div></div>
@@ -530,8 +553,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>개별 소관부처</b><div class="chips"><span class="chip">사업요청서(Project Concept Paper, PCP)</span><span class="chip">원조사업요청(재정기획부 승인 대상)</span><span class="chip">타당성조사 자료</span></div></div><div class="docset"><b>재정기획부</b><div class="chips"><span class="chip">원조사업요청 승인</span><span class="chip">협의의사록(RD)</span><span class="chip">면세·환급 승인</span></div></div><div class="docset"><b>KOICA</b><div class="chips"><span class="chip">예비조사 보고서</span><span class="chip">기획조사 결과</span><span class="chip">사업집행계획서</span></div></div><div class="docset"><b>민관협력 후원기관</b><div class="chips"><span class="chip">약정서·계약서(NGO 등록청 제출)</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>개별 부처와 직접 사업을 발굴하더라도 재정기획부의 최종 원조사업요청 승인이 없으면 진행되지 않는다</li><li>재정기획부는 총괄·조화 창구이나 실질 수원은 개별 부처라, 사업마다 소관부처와 재정기획부 양쪽과 협의해야 한다</li><li>면세·환급이 재정기획부 승인 + 국세청(TRA) 협조 이중 절차라 시간이 소요된다</li><li>본토와 잔지바르 자치정부의 이원 행정으로 관할·협의 대상이 갈릴 수 있다</li><li>탄자니아의 다소 느린 행정처리로 승인·조사 단계에 시간 여유가 필요하다</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>WFK 봉사단은 총괄 중앙부처가 없어 파견분야별 개별부처 승인 + 고용노동부 노동허가 + 이민청 비자를 각각 받아야 함</li><li>사업 예산 확보가 개별 부처 책임이라 부처 재정 여건에 좌우됨</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본규정·핵심 적용경로&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;현행 ODA 조달·정량요건·공여자 예외&#x27;, &#x27;question&#x27;: &#x27;DCF와 현행 PPA/PPR에서 조달 기준·기한·보증·이의·공여협정 예외를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../tanzania-bidding-system/index.html">탄자니아 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../tanzania-procurement-governance/index.html">탄자니아 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../tanzania-site-urban-construction-regulations/index.html">탄자니아 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../tanzania-permit-environment-construction-regulations/index.html">탄자니아 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../tanzania-control-completion-construction-regulations/index.html">탄자니아 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본규정·핵심 적용경로&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;현행 ODA 조달·정량요건·공여자 예외&#x27;, &#x27;question&#x27;: &#x27;DCF와 현행 PPA/PPR에서 조달 기준·기한·보증·이의·공여협정 예외를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 

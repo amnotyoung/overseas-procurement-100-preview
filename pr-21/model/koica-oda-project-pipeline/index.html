@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -530,7 +553,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>소관 사업부서장이 품목·세부규격·가격을 상세히 하여 조달의뢰 (규정 §9①)</li><li>추정가격 산정 (규정 §10)</li><li>예정가격 작성·봉서 또는 암호화 — 누설 금지 (규정 §11)</li><li>지정정보처리장치를 통한 입찰공고 (규정 §12)</li><li>입찰참가자격 확인 및 입찰보증금 (규정 §13, §14)</li><li>낙찰자 결정 — 최저가+계약이행능력/평가기준/협상/경쟁적 대화 (규정 §22, §25, §25-2)</li><li>계약체결 및 계약보증금 납부 (규정 §24, §26)</li><li>청렴계약 약정 (규정 §33)</li><li>이행 및 감독 (규정 §35①)</li><li>검사·검수 (규정 §35②③)</li><li>대가·선금 지급 — 검사 후 청구 접수일부터 5일 이내 (규정 §29)</li><li>하자담보 — 계약금액 2~10% 하자보수보증금, 하자담보책임기간 보관 (규정 §31)</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">KOICA의 물품 제조·구매, 용역(기술용역 포함), 공사 조달 전반에 적용된다. 현지계약은 소관 사업부서장이 조달·계약업무를 총괄하고 재외공관장·해외사무소장·주재원 등에게 계약업무를 위임·위탁할 수 있다(규정 §4①). 국제기구·비정부 간 국제기구·해외원조기관 등과 합의한 경우 조달업무를 해당기관에 위임·위탁할 수 있다(규정 §4②). 규정에 특별한 정함이 없으면 「공기업·준정부기관 계약사무규칙」을 따르고 「국가를 당사자로 하는 계약에 관한 법률」 및 그 시행령·시행규칙을 준용한다(규정 §39①).</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.law.go.kr/법령/한국국제협력단법시행령" target="_blank" rel="noopener">한국국제협력단법 시행령</a></span><span class="ar">제13조의4</span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7162&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정</a></span><span class="ar">제9조~제35조</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7165&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정 시행세칙</a></span><span class="ar">제41조, 제50조, 제62조, 제65조</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7167&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">국제조달규정</a></span><span class="ar">제31조, 제32조</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.law.go.kr/법령/국가를당사자로하는계약에관한법률" target="_blank" rel="noopener">국가를 당사자로 하는 계약에 관한 법률 및 같은 법 시행령</a></span><span class="ar">준용(규정 §39①)</span><span class="badge plain muted" style="margin-left:auto">법률</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.law.go.kr/법령/한국국제협력단법시행령" target="_blank" rel="noopener">한국국제협력단법 시행령</a></span><span class="ar">제13조의4</span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7162&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정</a></span><span class="ar">제9조~제35조</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7165&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정 시행세칙</a></span><span class="ar">제41조, 제50조, 제62조, 제65조</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7167&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">국제조달규정</a></span><span class="ar">제31조, 제32조</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.law.go.kr/법령/국가를당사자로하는계약에관한법률" target="_blank" rel="noopener">국가를 당사자로 하는 계약에 관한 법률 및 같은 법 시행령</a></span><span class="ar">준용(규정 §39①)</span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>소관 사업부서장</b><span>조달의뢰 — 품목·세부규격·가격을 상세히 작성해 현지사정·조달기간을 감안해 적기 의뢰(규정 §9①)</span></div><div class="auth"><b><a class="ref" href="https://www.koica.go.kr/sites/koica_kr/index.do" target="_blank" rel="noopener">조달부서장</a></b><span>조달 집행, 조달의뢰 보완요청, 계약심의 회부(규정 §9①, §38)</span></div><div class="auth"><b><a class="ref" href="https://www.koica.go.kr/sites/koica_kr/index.do" target="_blank" rel="noopener">계약담당자(해외사무소장 위임)</a></b><span>계약체결, 감독·검사·검수, 대가지급(규정 §4①, §35)</span></div><div class="auth"><b>물류전담업체</b><span>물자의 운송·포장·보관·하역·통관·보험 전담(규정 §7)</span></div><div class="auth"><b>전문검정기관·전문가</b><span>검사설비·전문지식을 갖춘 경우 감독·검사 업무 위탁 수행(규정 §35④)</span></div></div>
@@ -538,8 +561,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>소관 사업부서</b><div class="chips"><span class="chip">조달의뢰서 — 품목·세부규격·가격 (규정 §9①)</span></div></div><div class="docset"><b>입찰자·계약상대자</b><div class="chips"><span class="chip">입찰서 및 입찰보증금 (규정 §14)</span><span class="chip">계약보증금 또는 보증확약문서 (규정 §26, §36②)</span><span class="chip">청렴계약 약정 (규정 §33)</span><span class="chip">하자보수보증금 — 계약금액 2~10% (규정 §31②)</span></div></div><div class="docset"><b>계약담당자</b><div class="chips"><span class="chip">예정가격조서 (규정 §11②)</span><span class="chip">계약서 (규정 §24)</span><span class="chip">검사·검수조서 (규정 §35②③)</span><span class="chip">대가지급 결의 (규정 §29)</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>예정가격은 봉서 또는 암호화하여 누설되지 않도록 해야 한다 (규정 §11②)</li><li>계약상대자가 계약상 의무를 이행하지 않으면 계약보증금을 국고에 귀속시킨다 (규정 §26③)</li><li>정당한 이유 없이 계약상 의무를 지체하면 지체상금을 납부하게 한다 (규정 §30)</li><li>하자보수보증금은 계약금액의 100분의 2 이상 100분의 10 이하이며, 하자담보책임기간 동안 보관한다 (규정 §31②)</li><li>청렴계약을 지키지 않으면 입찰·낙찰 취소 또는 계약 해제·해지 대상이 된다 (규정 §33③)</li><li>대가는 검사 등을 거쳐 청구서 접수일부터 5일 이내에 지급하되 공휴일·토요일은 제외한다 (규정 §29①⑤)</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>규정에 정함이 없는 사항은 「공기업·준정부기관 계약사무규칙」과 「국가를 당사자로 하는 계약에 관한 법률」 계열을 준용하는 구조라 국내 계약법령 이해가 필요하다 (규정 §39①)</li><li>현지계약은 수원국 법령·현지관례·국제관행에 따라 달리 체결할 수 있어, 규정 절차와 현지 실무의 조정이 필요하다 (규정 §39②)</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>현지계약에서 수원국 법령·현지관례에 따라 달리 체결하는 부분(규정 §39②)과 이 집행 절차의 조정 방식</li><li>시행세칙의 선금지급 신청·검수·하자보수보증금 세부 서식</li><li>하자담보책임기간의 공종별 구체 기간 — 「건설산업기본법 시행령」 준용분 미대조</li><li>물류전담업체 지정(규정 §7)과 현지 통관·보험 실무의 연계</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../koica-bidding-system/index.html">KOICA 현지입찰 시공자 선정(적격심사)</a><a class="chip" style="text-decoration:none" href="../koica-procurement-governance/index.html">KOICA 국제조달 경로 선택·감독</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>현지계약에서 수원국 법령·현지관례에 따라 달리 체결하는 부분(규정 §39②)과 이 집행 절차의 조정 방식</li><li>시행세칙의 선금지급 신청·검수·하자보수보증금 세부 서식</li><li>하자담보책임기간의 공종별 구체 기간 — 「건설산업기본법 시행령」 준용분 미대조</li><li>물류전담업체 지정(규정 §7)과 현지 통관·보험 실무의 연계</li></ul></div>
   </div>
 </section>
 

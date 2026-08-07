@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -520,7 +543,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>발주기관 조달계획 수립 및 재원 구분(국내재원 GDPP / 외부재원 GDICDM·SOP 2019)</li><li>금액구간에 따른 입찰방식 선택 — 국제경쟁·국내경쟁·가격경쟁·비교견적·직접계약</li><li>사전적격심사 또는 사후적격심사 여부 결정 (공고문에 명시)</li><li>입찰공고 — 2023법 제42~43조에 따라 입찰서류에 제출기한을 명시하고 공고를 공개</li><li>입찰서 제출 — 입찰자 수 제한 없음(경쟁방식)</li><li>평가 — 품목 무관 동일 제도. 기술평가 기준 부재 시 가격평가에 의존</li><li>낙찰·계약 체결</li><li>(외부재원) DP 조달지침이 SOP에 우선하는 경우 그 절차를 따름</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">캄보디아 정부기관의 재화·공사·용역 조달에 적용된다. 2023법 제11조와 제85조에 따라 새 하위규정이 나올 때까지 Prakas 1866(2014)의 금액기준이 과도기 적용된다. 국제경쟁은 재화 KHR 50억 이상·공사 60억 이상·서비스 40억 이상, 국내경쟁은 재화 1억~50억·공사 1억~60억·서비스 1억~40억, shopping은 KHR 2천만~1억, canvassing은 2천만 미만이다. 제한경쟁·직접계약은 금액한도가 아니라 법정 사유와 MEF 사전승인으로 통제된다. 외부재원은 금융협정과 SOP 2019의 별도 기준을 적용한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm">Law on Public Procurement, 2023 (Royal Kram NS/RKM/0523/005)</span><span class="ar">15장 87조 (컨설팅 조달·이행절차·벌칙 신설)</span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Law on Public Procurement, 2012 (Royal Kram NS/RKM/0112/004) — 폐지</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Prakas No. 1866 MEF.PrK(조달방식 금액기준)·Prakas No. 986 MEF.PrK(입찰·이행보증) — 2023법 제85조 과도기 적용</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">외부재원 조달 표준운영절차(SOP on Procurement for All Externally Financed Projects/Programs, 2019)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">표준문서</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm">Law on Public Procurement, 2023 (Royal Kram NS/RKM/0523/005)</span><span class="ar">15장 87조 (컨설팅 조달·이행절차·벌칙 신설)</span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Law on Public Procurement, 2012 (Royal Kram NS/RKM/0112/004) — 폐지</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Prakas No. 1866 MEF.PrK(조달방식 금액기준)·Prakas No. 986 MEF.PrK(입찰·이행보증) — 2023법 제85조 과도기 적용</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">외부재원 조달 표준운영절차(SOP on Procurement for All Externally Financed Projects/Programs, 2019)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">표준문서</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b><a class="ref" href="http://gdpp.gov.kh/" target="_blank" rel="noopener">경제재무부(MEF) 공공조달국(GDPP)</a></b><span>국내재원 조달 정책·법제도 수립, 조달지침 제공, 감독·감사. 신법상 사후검토·부정기 검사권</span></div><div class="auth"><b>발주 정부기관</b><span>금액구간에 따라 입찰방식 선택, 공고·평가·계약. 재원별로 GDPP 또는 GDICDM 관할</span></div><div class="auth"><b>개발협력파트너(DP)</b><span>외부재원 사업에서 재정지원약정(Financing Agreement)의 특수조건으로 자체 조달지침을 우선 적용할 수 있음</span></div><div class="auth"><b>국토인프라교통부(MLIT)</b><span>외국인 건설업 면허 발급</span></div></div>
@@ -528,8 +551,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>입찰자(공통)</b><div class="chips"><span class="chip">입찰서</span><span class="chip">법인등록증(Certificate of Incorporation)</span><span class="chip">세금완납증명서(tax clearance certificate)</span><span class="chip">사업 실적·자격 서류</span></div></div><div class="docset"><b>외국인 건설업 참여자</b><div class="chips"><span class="chip">국토인프라교통부(MLIT) 건설업 면허 — 면허 종별 기술책임자·경력 요건 충족</span></div></div><div class="docset"><b>발주 정부기관</b><div class="chips"><span class="chip">입찰공고문</span><span class="chip">입찰서류</span><span class="chip">평가결과</span><span class="chip">계약서</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>현행 근거는 2023년 공공조달법(Royal Kram NS/RKM/0523/005)이며, 제85조에 따라 Prakas 1866·986 등 구 시행규정은 새 규정으로 대체될 때까지 과도기 적용된다</li><li>수의계약(직접계약) 비율이 높고 발주기관이 과업을 세분해 수의계약을 선호해, 공개입찰 공고가 적고 조달 정보 접근성이 낮다</li><li>기술평가 기준이 제시되지 않는 경우가 많아 가격평가에 의존하게 된다</li><li>제한경쟁 방식은 법에 있으나 실제 사례가 확인되지 않는다</li><li>외부재원 사업은 DP의 재정지원약정 특수조건으로 SOP가 수정·예외되거나 DP 자체 조달지침이 우선할 수 있다 — 발주 전 해당 DP의 유사 사업 이전 공고문 확인 필요</li><li>법인등록(평균 99일)·건설업 면허·세금완납증명 발급에 시일이 걸려 입찰 공고 전 사전 완비가 필요하다</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>외국인 건설업은 국토인프라교통부(MLIT) 면허 필요 — 면허 종별로 10년 이상 경력 건설기사·건축설계사 요건</li><li>법인 등록·운영 시 회계·실적·운영현황 보고서를 3개월~1년 단위로 제출하되, 사업분야·지역별 관할 부처·지방정부에 따라 제출서류·빈도·작성언어가 상이</li><li>투자법 개정 전이라 지분 매각·투자금 회수 절차가 법적으로 명확히 보호되지 않음</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>Prakas 1866을 대체하는 새 금액기준 규정이 공포됐는지는 공고 착수 시 재검색</li><li>개별 입찰서류가 제42조에 따라 정하는 제출기한·입찰보증 형식·계약 특수조건</li><li>직접계약은 제14조 열거사유와 MEF 사전승인 자료를 조달기록에 확보</li><li>사전/사후 적격심사 구분 기준</li><li>GDPP 공식 사이트(gdpp.gov.kh)가 해외에서 봇 차단(403)·타임아웃으로 접근이 불안정 — 현지에서 접속 가능 여부 확인 필요</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../cambodia-procurement-governance/index.html">캄보디아 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../cambodia-oda-project-pipeline/index.html">캄보디아 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../cambodia-site-urban-construction-regulations/index.html">캄보디아 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../cambodia-permit-environment-construction-regulations/index.html">캄보디아 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../cambodia-control-completion-construction-regulations/index.html">캄보디아 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>Prakas 1866을 대체하는 새 금액기준 규정이 공포됐는지는 공고 착수 시 재검색</li><li>개별 입찰서류가 제42조에 따라 정하는 제출기한·입찰보증 형식·계약 특수조건</li><li>직접계약은 제14조 열거사유와 MEF 사전승인 자료를 조달기록에 확보</li><li>사전/사후 적격심사 구분 기준</li><li>GDPP 공식 사이트(gdpp.gov.kh)가 해외에서 봇 차단(403)·타임아웃으로 접근이 불안정 — 현지에서 접속 가능 여부 확인 필요</li></ul></div>
   </div>
 </section>
 

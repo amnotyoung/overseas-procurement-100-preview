@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>발주기관이 계획·예정가·발주자 유형과 공여조건을 확정</li><li>계약당 BCR와 기술평가 필요성에 따라 전자상점·소액간이·경매·선정·입찰·2단계를 선택</li><li>조달위원회가 자격·평가·제안보증·계약이행보증 조건을 승인</li><li>특별정보포털·전자시스템에 방식별 법정기간으로 공고·문서를 게시</li><li>참가자가 전자제안·자격·기술·가격·보증을 제출</li><li>위원회가 공개된 기준으로 평가하고 낙찰·예비낙찰자를 결정</li><li>이의가 접수되면 상설위원회 심사 동안 절차를 정지</li><li>계약체결 후 5영업일 안에 결과를 공개하고 이행·감독 기록을 유지</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">ZRU-684은 국가·예산·기업 발주자의 공공조달과 투자프로그램 사업에 적용된다. 외국 무상원조·기술지원·차관의 공여조건이 별도 절차를 정하면 그 절차를 적용하되 결과는 특별정보포털에 공개하며, 국제조약의 상충 규칙은 조약이 우선한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중동·CIS)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm">Law No.ZRU-684 of 22 April 2021 On Public Procurement, current edition 24 July 2026</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://lex.uz/Pages/GetPdf.aspx?file=LexUz_7314267.pdf" target="_blank" rel="noopener">Cabinet Resolution No.865 of 20 December 2024 — Public Procurement Strategy 2025–2027</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중동·CIS)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm">Law No.ZRU-684 of 22 April 2021 On Public Procurement, current edition 24 July 2026</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://lex.uz/Pages/GetPdf.aspx?file=LexUz_7314267.pdf" target="_blank" rel="noopener">Cabinet Resolution No.865 of 20 December 2024 — Public Procurement Strategy 2025–2027</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>경제재정부</b><span>공공조달 국가규제·정책·감독과 특별정보포털 제도운영을 담당한다.</span></div><div class="auth"><b>국가발주기관·조달위원회</b><span>계획·절차선정·공고·평가·낙찰·계약을 수행한다.</span></div><div class="auth"><b>전자조달시스템 운영자</b><span>전자절차와 정보서비스를 제공하며 규제기관이 아니다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">조달계획</span><span class="chip">입찰공고</span><span class="chip">평가보고서</span><span class="chip">이의·분쟁 관련 문서</span><span class="chip">계약관리 기록</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>발주자 유형에 따라 동일 방식의 BCR 기준이 달라 예산 발주자 여부를 먼저 확정해야 한다.</li><li>입찰문서 변경 시 최소 10영업일 연장, 평가 최대 45영업일과 이의정지 최대 10영업일을 일정에 반영해야 한다.</li><li>직접계약은 Art.71 열거사유의 증빙과 계약 후 5영업일 내 공개가 필요하다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>공식 조달정보는 우즈베크어로 게시되며 다른 언어본은 우즈베크어 내용과 일치해야 한다.</li><li>전자시스템 등록, 수익소유자·세금체납·이해충돌 확인과 공고별 제안·이행보증 형식을 충족해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본법·핵심 적용범위&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;정량요건·하위규정·공여조건·개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 규정과 실제 공고에서 세부요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../uzbekistan-bidding-system/index.html">우즈베키스탄 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../uzbekistan-oda-project-pipeline/index.html">우즈베키스탄 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../uzbekistan-site-urban-construction-regulations/index.html">우즈베키스탄 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../uzbekistan-permit-environment-construction-regulations/index.html">우즈베키스탄 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../uzbekistan-control-completion-construction-regulations/index.html">우즈베키스탄 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본법·핵심 적용범위&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;정량요건·하위규정·공여조건·개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 규정과 실제 공고에서 세부요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 

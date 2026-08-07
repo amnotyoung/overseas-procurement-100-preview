@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>위원회는 정부조달법 시행령에 따라 기술·행정지원을 하는 별도 조직으로 Technical Support</li><li>전자조달시스템(Phil-GEPS) 성능·효과 모니터링</li><li>사전 조달회의 → 입찰공고 → 사전 입찰회의</li><li>단계로, PhilGEPS 또는 발주기관 홈페이지, 계약 규모가 큰 경우 신문에 공고</li><li>조달계획 수립</li><li>공고·전자조달 등록</li><li>입찰 집행</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">자료집에 기재된 필리핀의 공공조달 또는 개발협력 사업을 대상으로 한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(아시아 및 태평양)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm">외국인 투자법(RA7042)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Government Procurement Reform Act</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">로 정부조달법</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.gppb.gov.ph/wp-content/uploads/2026/05/IRR-of-RA-12009-1st-Edition.pdf" target="_blank" rel="noopener">Republic Act n.º 12009 — New Government Procurement Act</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.gppb.gov.ph/wp-content/uploads/2026/05/IRR-of-RA-12009-1st-Edition.pdf" target="_blank" rel="noopener">Implementing Rules and Regulations of RA 12009, effective 25 February 2025</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.gppb.gov.ph/wp-content/uploads/2025/10/GPPB-Resolution-No.-05-2025.pdf" target="_blank" rel="noopener">GPPB Circular on RA 12009 transitory provisions</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(아시아 및 태평양)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm">외국인 투자법(RA7042)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Government Procurement Reform Act</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">로 정부조달법</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.gppb.gov.ph/wp-content/uploads/2026/05/IRR-of-RA-12009-1st-Edition.pdf" target="_blank" rel="noopener">Republic Act n.º 12009 — New Government Procurement Act</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.gppb.gov.ph/wp-content/uploads/2026/05/IRR-of-RA-12009-1st-Edition.pdf" target="_blank" rel="noopener">Implementing Rules and Regulations of RA 12009, effective 25 February 2025</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.gppb.gov.ph/wp-content/uploads/2025/10/GPPB-Resolution-No.-05-2025.pdf" target="_blank" rel="noopener">GPPB Circular on RA 12009 transitory provisions</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>정부조달정책위원회(GPPB)·기술지원실(GPPB-TSO)</b><span>정부조달 정책·규정·표준서식·전문화를 총괄한다.</span></div><div class="auth"><b>조달기관·입찰낙찰위원회(BAC)</b><span>조달계획·시장조사·공고·평가·낙찰추천과 계약관리를 수행한다.</span></div><div class="auth"><b>PhilGEPS</b><span>공고·계획·낙찰정보와 공급자 등록을 제공하는 국가 전자조달시스템이다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">조달계획</span><span class="chip">입찰공고</span><span class="chip">평가보고서</span><span class="chip">이의·분쟁 관련 문서</span><span class="chip">계약관리 기록</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>자료집 기반 1차 구조화이므로 실제 참여 전 발주기관 공고와 현행 규정을 다시 확인해야 한다.</li><li>금액·기한·제출서류와 외국기업 참여요건은 개별 공고에서 재확인해야 한다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>외국 기업의 등록·인허가·현지어·현지대리인 요건은 개별 공고와 담당 기관에서 확인해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·법령 및 핵심 적용체계&#x27;, &#x27;question&#x27;: &#x27;연결한 공식 법령·기관 역할이 현재 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;현행 정량요건·보증·항의·예외&#x27;, &#x27;question&#x27;: &#x27;2026 통합 IRR에서 감독대상 정량요건과 항의경로를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../philippines-bidding-system/index.html">필리핀 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../philippines-oda-project-pipeline/index.html">필리핀 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../philippines-site-urban-construction-regulations/index.html">필리핀 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../philippines-permit-environment-construction-regulations/index.html">필리핀 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../philippines-control-completion-construction-regulations/index.html">필리핀 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·법령 및 핵심 적용체계&#x27;, &#x27;question&#x27;: &#x27;연결한 공식 법령·기관 역할이 현재 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;현행 정량요건·보증·항의·예외&#x27;, &#x27;question&#x27;: &#x27;2026 통합 IRR에서 감독대상 정량요건과 항의경로를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 

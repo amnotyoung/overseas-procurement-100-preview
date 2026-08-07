@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -528,7 +551,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>PPMO가 조달정책·법령 개선안을 네팔 정부에 권고 (§65(1)(a))</li><li>법 시행에 필요한 기술지침·매뉴얼 발간 (§65(1)(b))</li><li>표준입찰서류·사전자격서류·계약서·제안요청서 표준양식 제정 (§65(1)(c))</li><li>조달 웹사이트(e-GP) 설치·운영 및 법령·매뉴얼 상시 게시 (§65(1)(f), §70)</li><li>발주기관이 e-GP를 통해 공고·입찰서 접수·계약·대금지급 수행 (§69(1))</li><li>PPMO가 조달통계 수집 및 법령 준수 여부 기술감사 (§65(1)(d))</li><li>입찰자 이의신청 → 발주기관장이 절차 중지 후 5일 내 서면 결정 (§47(6))</li><li>불복 시 검토위원회 재심 → 통지 시 조달절차 중지 (§49, §51)</li><li>발주기관 요청에 따라 PPMO가 블랙리스트 심사·결정 (§63, r.141)</li><li>PPMO가 조달절차 연차보고서를 네팔 정부에 제출 (§65(1)(m))</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">네팔의 모든 공공기관(Public Entity) 조달에 적용된다. 다만 이의신청은 조달계약 발효 이전 절차에 한정되며(§47(2)), 규정 금액 미만 조달은 발주기관장 결정에 대해 검토위원회 재심을 신청할 수 없다(§47(8)).</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://ntnc.org.np/sites/default/files/doc_page/Public%20Procurement%20Act%202007.pdf" target="_blank" rel="noopener">Public Procurement Act, 2063 (2007)</a></span><span class="ar">§47, §48, §49, §50, §51, §63, §64, §65, §69, §70</span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://ntnc.org.np/sites/default/files/doc_page/Public%20Procurement%20Rules%202007.pdf" target="_blank" rel="noopener">Public Procurement Rules, 2064 (2007)</a></span><span class="ar">r.140, r.141, r.142, r.143</span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.bolpatra.gov.np/egp/" target="_blank" rel="noopener">e-GP(bolpatra) 전자조달 포털</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://ntnc.org.np/sites/default/files/doc_page/Public%20Procurement%20Act%202007.pdf" target="_blank" rel="noopener">Public Procurement Act, 2063 (2007)</a></span><span class="ar">§47, §48, §49, §50, §51, §63, §64, §65, §69, §70</span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://ntnc.org.np/sites/default/files/doc_page/Public%20Procurement%20Rules%202007.pdf" target="_blank" rel="noopener">Public Procurement Rules, 2064 (2007)</a></span><span class="ar">r.140, r.141, r.142, r.143</span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.bolpatra.gov.np/egp/" target="_blank" rel="noopener">e-GP(bolpatra) 전자조달 포털</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b><a class="ref" href="https://ppmo.gov.np/" target="_blank" rel="noopener">공공조달모니터링국(PPMO)</a></b><span>조달정책·법령 개선 권고, 기술지침·매뉴얼 발간, 표준입찰서류 제정, 조달통계 수집 및 기술감사, 조달 웹사이트 설치·운영, 블랙리스트 결정 및 해제기준 수립, 연차보고서 제출, 검토위원회 사무국</span></div><div class="auth"><b><a class="ref" href="https://opmcm.gov.np/" target="_blank" rel="noopener">총리실(OPMCM)</a></b><span>PPMO 소속 상급기관</span></div><div class="auth"><b>검토위원회(Review Committee)</b><span>발주기관장 결정에 대한 재심. 항소법원 판사 출신 또는 특별직 퇴직자가 위원장, 공학직 1급 퇴직자 및 조달 전문가가 위원. 임기 3년, 1회 연임 가능</span></div><div class="auth"><b>발주 공공기관장</b><span>1차 이의신청 심사. 오류 확인 시 조달절차 중지 후 5일 내 서면 결정</span></div><div class="auth"><b>재무총감사실(FCGO)</b><span>PPMO 설립 전 최대 6개월간 그 기능을 대행하도록 규정된 경과 기관</span></div></div>
@@ -536,8 +559,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>입찰자</b><div class="chips"><span class="chip">이의신청서(application for review) — 발주기관의 작위·부작위와 위반된 법령 조항을 명시 (§47(4))</span><span class="chip">검토위원회 재심신청서(application to the Review Committee, §49)</span><span class="chip">블랙리스트 절차 시 해명서 및 소명자료 (r.141(5))</span></div></div><div class="docset"><b>발주 공공기관</b><div class="chips"><span class="chip">이의신청 서면 결정문 및 향후 절차 안내 (§47(6)(7))</span><span class="chip">블랙리스트 요청서 — 사유·근거·관련서류 첨부 (r.141(1))</span></div></div><div class="docset"><b>PPMO</b><div class="chips"><span class="chip">표준입찰서류(standard bidding documents)</span><span class="chip">기술지침·매뉴얼(technical guidelines and manuals, §65(1)(b))</span><span class="chip">블랙리스트 결정 통지 및 공고 (r.141(3))</span><span class="chip">조달 연차보고서(annual report, §65(1)(m))</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>이의신청 기한이 사유 인지일로부터 7일로 매우 짧고, 기한을 넘긴 신청은 아예 처리되지 않는다 (§47(3)(5))</li><li>이의신청은 계약 발효 전 절차에만 가능해 계약 체결 후에는 이 경로로 다툴 수 없다 (§47(2))</li><li>규정 금액 미만 조달은 검토위원회 재심 통로가 차단된다 (§47(8))</li><li>PPMO는 타 공공기관의 조달절차에 관여하거나 분쟁을 해결할 수 없다 — 개별 입찰 민원을 PPMO에 제기해도 처리 권한이 없다 (§65(2))</li><li>블랙리스트는 즉시 참가배제(r.141(2)(3))가 가능해, 소명 30일(r.141(4))이 진행되는 동안 이미 입찰 참여가 막힐 수 있다</li><li>전자조달 전환은 네팔관보 고시로 정한 범위에서 이뤄지므로 기관·품목별로 적용 시점이 다를 수 있다 (§69(1))</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>e-GP(bolpatra) 포털이 네팔어·영어 혼용이라 공고 검색과 마감일 파악에 현지 지원이 필요</li><li>발주 공공기관이 연방·주·지방으로 분산돼 공고 채널을 단일 창구로 파악하기 어려움</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../nepal-bidding-system/index.html">네팔 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../nepal-oda-project-pipeline/index.html">네팔 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../nepal-site-urban-construction-regulations/index.html">네팔 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../nepal-permit-environment-construction-regulations/index.html">네팔 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../nepal-control-completion-construction-regulations/index.html">네팔 기술검사·보험·준공제도</a></div></div>
+
   </div>
 </section>
 

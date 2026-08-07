@@ -33,7 +33,7 @@
 <rect x="38" y="360" width="1724" height="403" fill="#84baa9"/>
 <rect x="38" y="360" width="190" height="403" fill="#087452"/>
 <text x="58" y="392" class="mono" font-size="16" font-weight="800" fill="#ffffff">G4</text>
-<text x="58" y="425" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">관할·허가도서</tspan></text>
+<text x="58" y="425" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">허가도서 작성</tspan></text>
 <rect x="38" y="763" width="1724" height="631" fill="#f5f8f6"/>
 <rect x="38" y="763" width="190" height="631" fill="#eef3f0"/>
 <text x="58" y="795" class="mono" font-size="16" font-weight="800" fill="#53645b">G5</text>
@@ -73,61 +73,48 @@
 <line x1="38" y1="1394" x2="1762" y2="1394" stroke="#c8d3cd" stroke-width="1.5"/>
 <line x1="38" y1="1797" x2="1762" y2="1797" stroke="#c8d3cd" stroke-width="1.5"/>
 <line x1="38" y1="2200" x2="1762" y2="2200" stroke="#b8c7bf" stroke-width="2"/>
-<path d="M 554.8 555 H 640.3 V 548.5 H 660.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 554.8 555 H 640.3 V 548.5 H 660.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 441.8 606.5 V 719 H 1566.3 V 911.5" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 441.8 606.5 V 719 H 1566.3 V 911.5" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 801.3 606.5 V 735 H 1554.3 V 911.5" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 801.3 606.5 V 735 H 1554.3 V 911.5" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 793.3 606.5 V 751 H 246 V 1522.5 H 409.8 V 1542.5" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 793.3 606.5 V 751 H 246 V 1522.5 H 409.8 V 1542.5" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
 <path d="M 1574.3 1009.5 V 1025.5 H 1584.3 V 1025.5" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
 <path d="M 1574.3 1009.5 V 1025.5 H 1584.3 V 1025.5" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
 <path d="M 1556.3 1123.5 V 1139.5 H 1596.3 V 1139.5" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
 <path d="M 1556.3 1123.5 V 1139.5 H 1596.3 V 1139.5" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 791.3 606.5 V 735 H 242 V 1522.5 H 403.8 V 1542.5" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 791.3 606.5 V 735 H 242 V 1522.5 H 403.8 V 1542.5" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 1550.3 1237.5 V 1382 H 1013 V 1925.5 H 1200.8 V 1945.5" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 1550.3 1237.5 V 1382 H 1013 V 1925.5 H 1200.8 V 1945.5" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 429.8 1640.5 V 1785 H 1166.8 V 1945.5" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 429.8 1640.5 V 1785 H 1166.8 V 1945.5" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 1435.3 1200 H 177 V 1086 H 1427.3" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 1435.3 1200 H 177 V 1086 H 1427.3" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<path d="M 1051.8 1998.5 H 216 V 695 H 805.3 V 614.5" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
-<path d="M 1051.8 1998.5 H 216 V 695 H 805.3 V 614.5" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
-<rect x="554.1" y="447.8" width="114.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="611.5" y="467.8" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">허가도서 작성</text>
-<rect x="956" y="687" width="96" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
-<text x="1004" y="707" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">환경관할</text>
+<path d="M 1550.3 1237.5 V 1382 H 1013 V 1925.5 H 1204.8 V 1945.5" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1550.3 1237.5 V 1382 H 1013 V 1925.5 H 1204.8 V 1945.5" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 429.8 1640.5 V 1785 H 1156.8 V 1945.5" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 429.8 1640.5 V 1785 H 1156.8 V 1945.5" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1435.3 1200 H 190 V 1086 H 1427.3" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1435.3 1200 H 190 V 1086 H 1427.3" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1051.8 1992 H 582.8 V 2007.5 H 562.8" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1051.8 1992 H 582.8 V 2007.5 H 562.8" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 554.8 1994.5 H 1010.8 V 2010 H 1043.8" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 554.8 1994.5 H 1010.8 V 2010 H 1043.8" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<rect x="1103.9" y="703" width="147.8" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="1177.8" y="723" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">병렬 환경절차 착수</text>
+<rect x="198" y="1121.8" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="246" y="1141.8" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">서명도서</text>
 <rect x="1622.1" y="862.5" width="126.4" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
 <text x="1685.3" y="882.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">IEE·EIA 제출</text>
 <rect x="1637.3" y="1264.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
 <text x="1685.3" y="1284.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">완비접수</text>
-<rect x="194" y="1113.8" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="242" y="1133.8" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">서명도서</text>
 <rect x="946.1" y="1638.8" width="133.8" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
 <text x="1013" y="1658.8" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">해당 시 환경조건</text>
-<rect x="750.3" y="1753" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
-<text x="798.3" y="1773" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">허가접수</text>
-<rect x="191.6" y="1156.5" width="168.8" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
-<text x="276" y="1176.5" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">추가자료·수정 요구 시</text>
-<rect x="158.2" y="1331.8" width="255.6" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
-<text x="286" y="1351.8" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">보완요구 시 · 허가도서 수정·재접수</text>
-
-    <g filter="url(#card-shadow)">
-      <rect x="280.8" y="512.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
-      <rect x="284.8" y="516.5" width="270" height="90" rx="8" fill="#effaf5" stroke="#35a77d" stroke-width="2.3"/>
-      <rect x="284.8" y="516.5" width="6" height="90" rx="3" fill="#35a77d"/>
-      <text x="299.8" y="536.5" class="mono" font-size="12.5" font-weight="750" fill="#287a5c">B02</text>
-      <text x="351.8" y="536.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CDA Building Plan 절차</text>
-      <rect x="494.8" y="523.5" width="50" height="24" rx="5" fill="#35a77d" opacity="0.14"/>
-      <text x="519.8" y="540.5" text-anchor="middle" font-size="12" font-weight="800" fill="#123d2e">선행</text>
-      <text x="299.8" y="573.5" font-size="15.5" font-weight="800" fill="#123d2e"><tspan x="299.8" dy="0">관할기관·신청권원 확정</tspan></text>
-      <text x="299.8" y="598.5" font-size="11" font-weight="650" fill="#287a5c">토지소유자·allottee 또는 위임대리인이 필…</text>
-    </g>
-  
+<rect x="745.3" y="1753" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="793.3" y="1773" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">허가접수</text>
+<rect x="175.2" y="1084.5" width="201.7" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="276" y="1104.5" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">환경자료 추가·수정 요구 시</text>
+<rect x="722.4" y="1967.8" width="161.8" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="803.3" y="1987.8" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">건축도서 보완요구 시</text>
+<rect x="738.8" y="2006.3" width="128.9" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="803.3" y="2026.3" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">보완도서 재접수</text>
 
     <g filter="url(#card-shadow)">
       <rect x="664.3" y="512.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
       <rect x="668.3" y="516.5" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
       <rect x="668.3" y="516.5" width="6" height="90" rx="3" fill="#087452"/>
-      <text x="683.3" y="536.5" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B03</text>
+      <text x="683.3" y="536.5" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B02</text>
       <text x="735.3" y="536.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CDA Building Plan 절차</text>
       <rect x="878.3" y="523.5" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
       <text x="903.3" y="540.5" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
@@ -140,7 +127,7 @@
       <rect x="1431.3" y="915.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
       <rect x="1435.3" y="919.5" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
       <rect x="1435.3" y="919.5" width="6" height="90" rx="3" fill="#d9901a"/>
-      <text x="1450.3" y="939.5" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B04</text>
+      <text x="1450.3" y="939.5" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B03</text>
       <text x="1502.3" y="939.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · PEPA 환경평가 의무</text>
       <rect x="1645.3" y="926.5" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
       <text x="1670.3" y="943.5" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
@@ -153,7 +140,7 @@
       <rect x="1431.3" y="1029.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
       <rect x="1435.3" y="1033.5" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
       <rect x="1435.3" y="1033.5" width="6" height="90" rx="3" fill="#b9c7bf"/>
-      <text x="1450.3" y="1053.5" class="mono" font-size="12.5" font-weight="750" fill="#627169">B05</text>
+      <text x="1450.3" y="1053.5" class="mono" font-size="12.5" font-weight="750" fill="#627169">B04</text>
       <text x="1502.3" y="1053.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Pak-EPA IEE/EIA 검토규정</text>
       <rect x="1645.3" y="1040.5" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
       <text x="1670.3" y="1057.5" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
@@ -166,7 +153,7 @@
       <rect x="1431.3" y="1143.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
       <rect x="1435.3" y="1147.5" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
       <rect x="1435.3" y="1147.5" width="6" height="90" rx="3" fill="#d9901a"/>
-      <text x="1450.3" y="1167.5" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B06</text>
+      <text x="1450.3" y="1167.5" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B05</text>
       <text x="1502.3" y="1167.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · PEPA 환경결정</text>
       <rect x="1645.3" y="1154.5" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
       <text x="1670.3" y="1171.5" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
@@ -179,7 +166,7 @@
       <rect x="280.8" y="1546.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
       <rect x="284.8" y="1550.5" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
       <rect x="284.8" y="1550.5" width="6" height="90" rx="3" fill="#b9c7bf"/>
-      <text x="299.8" y="1570.5" class="mono" font-size="12.5" font-weight="750" fill="#627169">B07</text>
+      <text x="299.8" y="1570.5" class="mono" font-size="12.5" font-weight="750" fill="#627169">B06</text>
       <text x="351.8" y="1570.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CDA Building Plan 접수</text>
       <rect x="494.8" y="1557.5" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
       <text x="519.8" y="1574.5" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
@@ -192,12 +179,25 @@
       <rect x="1047.8" y="1949.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
       <rect x="1051.8" y="1953.5" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
       <rect x="1051.8" y="1953.5" width="6" height="90" rx="3" fill="#d9901a"/>
-      <text x="1066.8" y="1973.5" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B08</text>
+      <text x="1066.8" y="1973.5" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B07</text>
       <text x="1118.8" y="1973.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CDA Building Plan 심사</text>
       <rect x="1261.8" y="1960.5" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
       <text x="1286.8" y="1977.5" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
       <text x="1066.8" y="2010.5" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1066.8" dy="0">건축·구조·용도 기술심사</tspan></text>
       <text x="1066.8" y="2035.5" font-size="11" font-weight="650" fill="#a96008">CDA Building Control 또는 관할기관이…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="280.8" y="1949.5" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="284.8" y="1953.5" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="284.8" y="1953.5" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="299.8" y="1973.5" class="mono" font-size="12.5" font-weight="750" fill="#627169">B08</text>
+      <text x="351.8" y="1973.5" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CDA Building Plan 보완·재심사</text>
+      <rect x="494.8" y="1960.5" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="519.8" y="1977.5" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="299.8" y="2010.5" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="299.8" dy="0">보완도서 제출·재심사</tspan></text>
+      <text x="299.8" y="2035.5" font-size="11" font-weight="650" fill="#627169">CDA 또는 관할기관의 공식 보완요구를 받은…</text>
     </g>
   
 

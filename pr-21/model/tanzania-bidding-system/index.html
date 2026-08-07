@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -524,7 +547,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>발주기관 조달계획 수립 및 조달방식 선택 — 경쟁입찰 원칙, force account는 법정 문턱 내에서만 (PPA §76, §81)</li><li>입찰공고 및 표준입찰서류 발행 — NeST를 통한 전자조달 (PPA §83, §84)</li><li>입찰서류에 보증 금액·형태·조건 명시 (PPR 2024 reg.23(6))</li><li>입찰서 제출 시 입찰보증(bid security) 또는 입찰보증선언(bid securing declaration) 동봉 (PPR 2024 reg.23)</li><li>개찰 및 입찰서 접수 (PPA §88)</li><li>평가기준에 따른 평가·비교 — 지역업체·현지생산품 우대 반영 (PPA §87, §89)</li><li>낙찰 결정 및 통지</li><li>낙찰자 이행보증(performance security) 제출 후 계약 체결 (PPR 2024 reg.29)</li><li>선금 지급 시 선금보증 확보 (PPR 2024)</li><li>하자담보기간 동안 하자보증 유지</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">탄자니아 공공기관의 물품(goods)·용역(services)·공사(works) 조달에 적용된다. 경쟁입찰이 원칙이며, force account(직영)는 PPA 2023 §76이 정한 범위 안에서 허용된다. 전 조달은 국가전자조달시스템(NeST)으로 처리한다. 입찰보증(reg.23(6))·이행보증(reg.29(2))의 금액·형태는 입찰서류가 정하고, 하자보증은 계약상 유보금 방식(reg.329(2)), 하자담보기간은 계약별 기간(reg.329(7))을 따른다. 규정상 확정 수치는 선금 30% 상한(reg.315(2))과 지체상금 물품 0.10~0.20%/일·공사 0.10~0.15%/일(reg.318(2))이다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.ppra.go.tz/uploads/documents/en-1736861173-THE%20PUBLIC%20PROCUREMENT%20ACT.pdf" target="_blank" rel="noopener">Public Procurement Act, No. 10 of 2023</a></span><span class="ar">§74(price cap), §76(force account), §81(competitive tendering), §83~§86(입찰공고·서류·보증), §131(폐지)</span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.mof.go.tz/uploads/documents/en-1758539549-GN%20No.%20261%20OF%202025%20-%20THE%20PUBLIC%20PROCUREMENT%20REGULATIONS%20%20-%20ENGLISH%20VERSION.pdf" target="_blank" rel="noopener">Public Procurement Regulations, 2024 (English version: GN No. 261 of 2025)</a></span><span class="ar">reg.23~29(보증), reg.5</span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">Public Procurement Regulations, 2013 (연혁 참고)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">PPRA 표준입찰서류(Standard Tender Documents)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">표준문서</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.ppra.go.tz/uploads/documents/en-1736861173-THE%20PUBLIC%20PROCUREMENT%20ACT.pdf" target="_blank" rel="noopener">Public Procurement Act, No. 10 of 2023</a></span><span class="ar">§74(price cap), §76(force account), §81(competitive tendering), §83~§86(입찰공고·서류·보증), §131(폐지)</span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.mof.go.tz/uploads/documents/en-1758539549-GN%20No.%20261%20OF%202025%20-%20THE%20PUBLIC%20PROCUREMENT%20REGULATIONS%20%20-%20ENGLISH%20VERSION.pdf" target="_blank" rel="noopener">Public Procurement Regulations, 2024 (English version: GN No. 261 of 2025)</a></span><span class="ar">reg.23~29(보증), reg.5</span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">Public Procurement Regulations, 2013 (연혁 참고)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">PPRA 표준입찰서류(Standard Tender Documents)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">표준문서</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b><a class="ref" href="https://www.ppra.go.tz/" target="_blank" rel="noopener">공공조달규제청(PPRA)</a></b><span>조달 가이드라인·표준입찰서류 제정, 법 이행 모니터링, 가격상한(price cap) 설정, 부당행위 조사, NeST 운영 감독</span></div><div class="auth"><b>발주 공공기관(procuring entity)</b><span>입찰공고·서류작성·개찰·평가·낙찰·계약, 보증 금액·형태를 입찰서류에 명시</span></div><div class="auth"><b>재정기획부(MoF)</b><span>PPRA 소관 부처. 조달 규정 제정</span></div><div class="auth"><b>은행·보험사</b><span>입찰보증·이행보증·선금보증·하자보증 발행. 외국 발행분도 입찰서류 요건 충족 시 거부 불가</span></div></div>
@@ -532,8 +555,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>입찰자(공통)</b><div class="chips"><span class="chip">입찰서(NeST 전자제출)</span><span class="chip">입찰보증(bid security) 또는 입찰보증선언 — 인증수표·신용장·은행지급보증·보험증서 (PPR 2024 reg.23(5), Third Schedule)</span><span class="chip">사업자등록(BRELA) 규정준수 인증서</span><span class="chip">납세자식별번호(TIN) 인증서</span><span class="chip">유효한 세금공제 인증서</span><span class="chip">TIC 서비스 이용료 지불 영수증</span></div></div><div class="docset"><b>낙찰자</b><div class="chips"><span class="chip">이행보증(performance security) (reg.29)</span><span class="chip">선금보증(선금 수령 시)</span><span class="chip">하자보증(하자담보기간)</span></div></div><div class="docset"><b>발주 공공기관</b><div class="chips"><span class="chip">표준입찰서류</span><span class="chip">입찰공고</span><span class="chip">평가보고서</span><span class="chip">낙찰통지서</span><span class="chip">조달계약서</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>현행 PPA 2023과 PPR 2024를 기준으로 입찰방법·전자조달·보증 요건을 확인해야 한다</li><li>보증 금액은 규정에 고정되지 않고 입찰서류와 계약에 위임되므로(reg.23(6), reg.29(2), reg.329), 발주 건별 확인이 필요하다</li><li>전 조달의 NeST(국가전자조달시스템) 처리가 의무화돼, 시스템 등록·전자입찰 역량이 없으면 참여 자체가 막힌다</li><li>PPA 2023이 지역업체·현지생산품 우대를 강화해, 외국 기업은 현지 파트너십 없이는 평가에서 불리할 수 있다</li><li>탄자니아의 다소 느린 행정처리로 인허가·등록에 시간 여유가 필요하다</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>지사의 모든 주주·발기인이 탄자니아 국적이어도 외국 기업으로 분류 — 외국인 조달 규율 적용</li><li>선적 전 적합성 확인(PVoC) 제도로 수입 기자재에 CoC(적합성인증서) 필요, 검사비 FOB의 0.25~0.50%</li><li>낮은 노동 생산성</li><li>본토와 잔지바르 자치정부의 이원 행정</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 법령·정량요건·이의·예외&#x27;, &#x27;question&#x27;: &#x27;PPA 2023과 PPR 2024의 현행 조문·부속표에서 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;NeST 전자조달 의무&#x27;, &#x27;question&#x27;: &#x27;PPR reg.11에서 전자조달시스템 사용 의무를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../tanzania-procurement-governance/index.html">탄자니아 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../tanzania-oda-project-pipeline/index.html">탄자니아 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../tanzania-site-urban-construction-regulations/index.html">탄자니아 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../tanzania-permit-environment-construction-regulations/index.html">탄자니아 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../tanzania-control-completion-construction-regulations/index.html">탄자니아 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 법령·정량요건·이의·예외&#x27;, &#x27;question&#x27;: &#x27;PPA 2023과 PPR 2024의 현행 조문·부속표에서 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;NeST 전자조달 의무&#x27;, &#x27;question&#x27;: &#x27;PPR reg.11에서 전자조달시스템 사용 의무를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 

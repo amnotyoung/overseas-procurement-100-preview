@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -522,7 +545,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>수원부처·정부기관과 개발파트너가 국가·부문·지역계획에 맞는 사업수요와 선도기관을 정한다.</li><li>사업개념서와 관련 문서를 FERD 단일창구에 제출하고 주·지역 제안은 해당 최고책임자의 사전승인을 받는다(2020 DAP §6.2, Annex A §10.1).</li><li>FERD가 관계부처 의견과 DACU·필요한 고위 승인 절차를 조정한 뒤 승인된 제안을 개발파트너에 공식 전달한다.</li><li>개발파트너의 심사와 함께 수원기관이 설계·예산·조달계획을 구체화하고 FERD가 협정·MoU·교환각서 초안의 법률의견과 협상을 조정한다.</li><li>권한기관 승인과 서명 후 FERD·AIMS에 사업정보를 등록하고 PMU·PSC가 실행·분기보고를 담당한다(2020 DAP §§6.3~6.4, Annex A §§10.2~10.4).</li><li>사업 조달은 재원 제공기관의 별도 규정이 있으면 이를 적용하고, 없으면 제1/2022호와 충돌하지 않는 범위의 제1/2017호를 적용한다(제1/2017호 ¶48(g), 제1/2022호 ¶28).</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">미얀마 정부기관과 공식 협정·MoU·교환각서로 연결되는 무상·양허성 차관·기술협력 사업의 발굴·승인·실행에 적용한다. 정부 승인 없이 개발파트너가 독립 집행하는 사업은 DAP 정부승인 경로 밖이며, 정부조달은 재원협정의 별도 조달규정 또는 국내 지침을 적용한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://lift-fund.org/sites/lift-fund.org/files/publication/gov_myanmar-dap_2020-compressed.pdf" target="_blank" rel="noopener">Myanmar Development Assistance Policy, September 2020</a></span><span class="ar">§§6.1-6.4, Annex A §§10.1-10.4</span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://mifer.gov.mm/en/about-ferd" target="_blank" rel="noopener">MIFER/FERD official functions and responsibilities</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm">양자 개발협력협정·MoU·Exchange of Notes</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">양자합의</span></div><div class="law"><span class="nm">개발파트너별 사업형성·승인·조달 규정</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm">MIFER/FERD current official functions and approval route</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.moi.gov.mm/ppd/sites/default/files/book-pdf/2022-04/Vol-75%2CNo-16.pdf" target="_blank" rel="noopener">Office of the State Administration Council Directive No. 1/2022</a></span><span class="ar">¶¶1~16, 25~28</span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.mopf.gov.mm/sites/default/files/upload_pdf/2018/12/Procurement%20Directive.pdf" target="_blank" rel="noopener">President’s Office Directive No. 1/2017</a></span><span class="ar">¶¶3~50 (제1/2022호와 충돌하지 않는 범위)</span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm">재원 제공 국제·협력기관의 조달규정</span><span class="ar">Directive No. 1/2017 ¶48(g)</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://lift-fund.org/sites/lift-fund.org/files/publication/gov_myanmar-dap_2020-compressed.pdf" target="_blank" rel="noopener">Myanmar Development Assistance Policy, September 2020</a></span><span class="ar">§§6.1-6.4, Annex A §§10.1-10.4</span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://mifer.gov.mm/en/about-ferd" target="_blank" rel="noopener">MIFER/FERD official functions and responsibilities</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm">양자 개발협력협정·MoU·Exchange of Notes</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">양자합의</span></div></div><div class="law"><div class="law-copy"><span class="nm">개발파트너별 사업형성·승인·조달 규정</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm">MIFER/FERD current official functions and approval route</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.moi.gov.mm/ppd/sites/default/files/book-pdf/2022-04/Vol-75%2CNo-16.pdf" target="_blank" rel="noopener">Office of the State Administration Council Directive No. 1/2022</a></span><span class="ar">¶¶1~16, 25~28</span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.mopf.gov.mm/sites/default/files/upload_pdf/2018/12/Procurement%20Directive.pdf" target="_blank" rel="noopener">President’s Office Directive No. 1/2017</a></span><span class="ar">¶¶3~50 (제1/2022호와 충돌하지 않는 범위)</span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm">재원 제공 국제·협력기관의 조달규정</span><span class="ar">Directive No. 1/2017 ¶48(g)</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>투자대외경제관계부(MIFER) 대외경제관계국(FERD)</b><span>외부 무상·차관·기술지원의 정부 초점기관으로 제안 상신·협상·협정·정부 간 조정·AIMS와 사업모니터링을 담당한다.</span></div><div class="auth"><b>개발원조조정단위(DACU)</b><span>FERD를 사무국으로 두고 개발원조 정책·효과성 조정을 수행한다.</span></div><div class="auth"><b>경제위원회·국가행정평의회 관련 승인회의</b><span>MIFER 현행 공식 페이지에 따라 서명 전 협정안 등 고위 승인을 담당한다.</span></div><div class="auth"><b>수원부처·주·지역정부·실행기관</b><span>사업을 제안·준비하고 예산·PMU/PSC·분기보고를 통해 실행한다.</span></div></div>
@@ -530,8 +553,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>선도 수원부처·정부기관</b><div class="chips"><span class="chip">Concept Proposal Form 또는 사업개념서</span><span class="chip">사업/프로그램 설계문서</span><span class="chip">재원·예산계획</span><span class="chip">예비 조달계획</span><span class="chip">협정·MoU 초안</span><span class="chip">주/지역 정부 제안의 최고책임자 사전승인</span></div></div><div class="docset"><b>FERD·DACU·고위 승인기관</b><div class="chips"><span class="chip">관계기관 검토의견</span><span class="chip">DACU 검토·승인 또는 고위 승인 상신안</span><span class="chip">법률의견 취합본</span><span class="chip">최종 협정·MoU·Exchange of Notes 승인안</span></div></div><div class="docset"><b>개발파트너·수원부처</b><div class="chips"><span class="chip">서명된 Grant/Concessional Loan Agreement·MoU·Exchange of Notes</span><span class="chip">AIMS 사업등록 정보</span><span class="chip">PMU·PSC 회의록</span><span class="chip">분기 이행보고서</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>제1/2017호 제46~47항은 이의신청·결정 기한과 자동 정지효를 두지 않으므로 실제 공고와 발주기관의 접수절차를 확인해야 한다.</li><li>외부재원·국제입찰은 재원협정, 제재·대표성 검토, 공고의 등록·통화·보증은행·서류언어 요건을 함께 확인해야 한다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>외국기업은 낙찰 후 계약 전 미얀마 법인등록, 현지 세무·인허가, 공고별 대사관 확인·언어·보증은행 및 제재 준수요건을 확인해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;공식 관보 원문·시행·후속 적용&#x27;, &#x27;question&#x27;: &#x27;제1/2022호의 관보 원문, 종전 지침과의 우선관계 및 2025·2026년 계속 적용을 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;기준금액·기한·입찰/이행보증·이의·예외&#x27;, &#x27;question&#x27;: &#x27;6개 정량·절차 항목을 제1/2022호와 비충돌 제1/2017호에서 조문별로 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../myanmar-bidding-system/index.html">미얀마 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../myanmar-procurement-governance/index.html">미얀마 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../myanmar-site-urban-construction-regulations/index.html">미얀마 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../myanmar-permit-environment-construction-regulations/index.html">미얀마 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../myanmar-control-completion-construction-regulations/index.html">미얀마 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;공식 관보 원문·시행·후속 적용&#x27;, &#x27;question&#x27;: &#x27;제1/2022호의 관보 원문, 종전 지침과의 우선관계 및 2025·2026년 계속 적용을 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;기준금액·기한·입찰/이행보증·이의·예외&#x27;, &#x27;question&#x27;: &#x27;6개 정량·절차 항목을 제1/2022호와 비충돌 제1/2017호에서 조문별로 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 

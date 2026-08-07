@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>수원부처가 PND Paraguay 2050·부문계획과 공여기관 지침에 맞춰 PCP·사업요청서를 작성한다.</li><li>MEF VEP–DGCID가 수요를 취합하고 국가우선순위, 중복, 실행역량과 협력유형을 검토한다.</li><li>재원 유입·상대국 부담이 있으면 MEF가 예산·재정영향과 승인 필요성을 검토한다.</li><li>VEP–DGCID와 MRE가 비상환 협력의 공여기관 협의·공식요청 경로를 조정한다.</li><li>KOICA가 예비조사·기획·심사와 예산절차를 수행하고 수원기관과 사업조건을 확정한다.</li><li>MRE·MEF·수원기관·KOICA가 Agreement, RD/MOU 등으로 역할·재원·면세·이행조건을 공식화한다.</li><li>후속 조달은 공여협정이 정한 특별절차 또는 보충적으로 Ley 7021 현행 체계를 적용한다.</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">자료집에 기재된 파라과이의 공공조달 또는 개발협력 사업을 대상으로 한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중남미)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.contrataciones.gov.py/dncp/wp-content/uploads/2026/01/digesto_ley_7021.pdf" target="_blank" rel="noopener">Ley N.º 7021/2022 de Suministro y Contrataciones Públicas</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.contrataciones.gov.py/dncp/wp-content/uploads/2026/01/digesto_ley_7021.pdf" target="_blank" rel="noopener">Decreto N.º 2264/2024 reglamentario de la Ley 7021</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">Resolución DNCP N.º 230/2025</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">Resolución DNCP N.º 234/2025, as amended</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.bacn.gov.py/leyes-paraguayas/11893/ley-n-7158-crea-el-ministerio-de-economia-y-finanzas" target="_blank" rel="noopener">Ley N.º 7158/2023 que crea el Ministerio de Economía y Finanzas</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중남미)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.contrataciones.gov.py/dncp/wp-content/uploads/2026/01/digesto_ley_7021.pdf" target="_blank" rel="noopener">Ley N.º 7021/2022 de Suministro y Contrataciones Públicas</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.contrataciones.gov.py/dncp/wp-content/uploads/2026/01/digesto_ley_7021.pdf" target="_blank" rel="noopener">Decreto N.º 2264/2024 reglamentario de la Ley 7021</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">Resolución DNCP N.º 230/2025</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">Resolución DNCP N.º 234/2025, as amended</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.bacn.gov.py/leyes-paraguayas/11893/ley-n-7158-crea-el-ministerio-de-economia-y-finanzas" target="_blank" rel="noopener">Ley N.º 7158/2023 que crea el Ministerio de Economía y Finanzas</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>경제재정부(MEF)</b><span>국가공공공급체계 정책과 재정·기획을 총괄하고, VEP–DGCID를 통해 MRE와 무상 국제협력을 조정한다.</span></div><div class="auth"><b>국가공공계약국(DNCP)</b><span>조달규범·표준문서·SICP·전자입찰을 운영하고 사전검증, 계약모니터링, 이의·조사·제재를 담당한다.</span></div><div class="auth"><b>발주기관·계약운영단위(UOC)</b><span>PAC, 시장조사·예정가·조달전략, 공고·평가·낙찰·계약·정산을 수행한다.</span></div><div class="auth"><b>외교부(MRE)·수원부처·KOICA</b><span>개발협력의 외교경로, 부문수요·상대국 부담, 조사·심사와 Agreement/RD 공식화를 분담한다.</span></div><div class="auth"><b>SICP·STJE</b><span>각각 조달정보·전자입찰과 전자 이의·재심을 처리하는 시스템이며 독립 승인기관은 아니다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">사업요청서 또는 PCP</span><span class="chip">검토·우선순위 문서</span><span class="chip">예비조사 보고서</span><span class="chip">사업기획 문서</span><span class="chip">RD 또는 MOU</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>자료집 기반 1차 구조화이므로 실제 참여 전 발주기관 공고와 현행 규정을 다시 확인해야 한다.</li><li>금액·기한·제출서류와 외국기업 참여요건은 개별 공고에서 재확인해야 한다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>외국 기업의 등록·인허가·현지어·현지대리인 요건은 개별 공고와 담당 기관에서 확인해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행법·시행령 폐지·결의 개정상태&#x27;, &#x27;question&#x27;: &#x27;Ley 7021, Decreto 2264와 2025 DNCP 결의의 현행성 및 Decreto 9823 폐지를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;기준금액·기한·입찰/이행보증·이의·예외&#x27;, &#x27;question&#x27;: &#x27;6개 정량·절차 영역을 DNCP 2026 통합법령집에서 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;ODA 총괄기관·공식요청 경로&#x27;, &#x27;question&#x27;: &#x27;Ley 7158의 STP 흡수와 현행 VEP–DGCID/MRE 역할을 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../paraguay-bidding-system/index.html">파라과이 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../paraguay-procurement-governance/index.html">파라과이 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../paraguay-site-urban-construction-regulations/index.html">파라과이 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../paraguay-permit-environment-construction-regulations/index.html">파라과이 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../paraguay-control-completion-construction-regulations/index.html">파라과이 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행법·시행령 폐지·결의 개정상태&#x27;, &#x27;question&#x27;: &#x27;Ley 7021, Decreto 2264와 2025 DNCP 결의의 현행성 및 Decreto 9823 폐지를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;기준금액·기한·입찰/이행보증·이의·예외&#x27;, &#x27;question&#x27;: &#x27;6개 정량·절차 영역을 DNCP 2026 통합법령집에서 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;ODA 총괄기관·공식요청 경로&#x27;, &#x27;question&#x27;: &#x27;Ley 7158의 STP 흡수와 현행 VEP–DGCID/MRE 역할을 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 

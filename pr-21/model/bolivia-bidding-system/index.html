@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>구매기관이 PAC·예산·가격기준과 기관별 RE-SABS를 확인한다(arts.11, 16, 45).</li><li>Bs50,000 이하 소액, 그 초과 Bs1,000,000 이하 ANPE, 그 초과 공개입찰로 방법을 정한다(arts.13, 52, 55, 59).</li><li>ANPE·공개입찰은 DBC와 공고를 SICOES에 게시한다(arts.46, 49, 56, 62).</li><li>입찰자는 RUPE 및 DBC 자격서류와 해당 시 1% 입찰보증을 제출한다(arts.20~21, 42~43).</li><li>구매기관은 공개개찰·평가·낙찰 또는 유찰 결정을 하고 SICOES로 통지한다(arts.22~28, 51, 58, 62).</li><li>낙찰자는 7% 계약이행보증 또는 허용되는 대체 원천징수를 제공하고 계약을 체결한다(arts.21, 85~88).</li><li>적격 결정에 불복하면 3영업일 이내 RPC/RPA를 거쳐 MAE에 행정불복을 제기한다(arts.90~102).</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">자료집에 기재된 볼리비아의 공공조달 또는 개발협력 사업을 대상으로 한다. 자료집 발췌: 국내입찰의 경우 외국기업의 경우에도 현지 법인이나 법정대리인이 있어야 하나, 국제입찰로 진행/단기</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중남미)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm">Decreto Supremo No. 0181 — Normas Básicas del Sistema de Administración de Bienes y Servicios (NB-SABS), texto compilado actualizado a 2025</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중남미)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm">Decreto Supremo No. 0181 — Normas Básicas del Sistema de Administración de Bienes y Servicios (NB-SABS), texto compilado actualizado a 2025</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>경제재정부(MEFP, Ministry of Economy and Public Finance)</b><span>NB-SABS의 주무기관으로 조달 기본규범과 표준문서를 관리한다.</span></div><div class="auth"><b>국가계약정보시스템(SICOES)</b><span>조달계획·공고·낙찰·계약정보 공개와 국가공급업체등록(RUPE) 연계를 제공하는 정보시스템이다.</span></div><div class="auth"><b>구매기관(Entidad Pública Contratante)</b><span>기관별 규정과 NB-SABS에 따라 조달절차·평가·계약관리를 수행한다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">입찰공고</span><span class="chip">입찰서 및 자격증빙</span><span class="chip">가격·기술 제안</span><span class="chip">낙찰통지서</span><span class="chip">계약서</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>자료집 기반 1차 구조화이므로 실제 참여 전 발주기관 공고와 현행 규정을 다시 확인해야 한다.</li><li>금액·기한·제출서류와 외국기업 참여요건은 개별 공고에서 재확인해야 한다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>외국 기업의 등록·인허가·현지어·현지대리인 요건은 개별 공고와 담당 기관에서 확인해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../bolivia-procurement-governance/index.html">볼리비아 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../bolivia-oda-project-pipeline/index.html">볼리비아 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../bolivia-site-urban-construction-regulations/index.html">볼리비아 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../bolivia-permit-environment-construction-regulations/index.html">볼리비아 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../bolivia-control-completion-construction-regulations/index.html">볼리비아 기술검사·보험·준공제도</a></div></div>
+
   </div>
 </section>
 

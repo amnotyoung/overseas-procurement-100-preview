@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -530,7 +553,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>낙찰자 결정방법·적격심사기준 열람·심사서류·제출기한을 입찰공고에 함께 공고 (지침 §2)</li><li>세부심사기준·증빙서류 작성요령을 공고일부터 입찰서 제출마감일까지 열람·교부 (지침 §3)</li><li>개찰 후 예정가격 이하 최저가 입찰자에게 적격심사서류 제출 요구 — 통보일부터 7일 이내 (지침 §4①)</li><li>첨부 누락·불명확 시 보완 요구 — 통보일부터 3일 이내 (지침 §4②)</li><li>수행능력 심사 — 시공경험·기술능력·경영상태·신인도, 공사규모별 별표 1~5 적용 (지침 §5)</li><li>입찰가격 및 자재·인력조달가격 적정성 평가 (지침 §7①, 별표)</li><li>순공사원가(재료비·노무비·경비+부가세)의 98% 미만 입찰자 배제 — 100억원 미만 공사 (지침 §8)</li><li>하도급관리계획서 평가 — 추정가격 50억원 이상 공사 (지침 §7②④, 별표 9)</li><li>종합평점이 적격통과점수(100억원 이상 92점, 미만 95점) 이상이면 낙찰예정자 선정 (지침 §7①⑤)</li><li>미달 시 차순위 입찰자에 대해 동일 방법으로 심사 (지침 §7⑥)</li><li>부적격 통보자는 통보일부터 3일 내 재심사 요청 가능 (지침 §7①, §9)</li><li>부정·허위 서류 판명 시 낙찰 취소·계약 해지 및 입찰참가자격 제한 (지침 §11)</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">KOICA가 현지입찰로 집행하는 시설공사 계약에 적용된다. 공사규모는 추정가격 기준 5단계(100억원 이상 / 100억원 미만 50억원 이상 / 50억원 미만 10억원 이상 / 10억원 미만 3억원 이상 / 3억원 미만)로 나뉘어 각각 별표 1~5의 배점기준을 적용한다. 적격통과점수는 100억원 이상 92점, 100억원 미만 95점이다. 배점·금액구간이 원화(억원) 기준이라, 현지 시설공사는 규모가 작아 대부분 별표 4~5(10억원 미만)·통과점수 95점 구간에 든다. 물품·용역의 낙찰자 결정은 별도의 「물품구매 적격심사에 관한 지침」 소관으로 이 제도의 범위 밖이다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.law.go.kr/법령/한국국제협력단법시행령" target="_blank" rel="noopener">한국국제협력단법 시행령</a></span><span class="ar">제13조의4</span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7162&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정</a></span><span class="ar">제17조, 제22조</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7165&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정 시행세칙</a></span><span class="ar">제41조</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7167&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">국제조달규정</a></span><span class="ar">제28조</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7215&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">현지입찰 시공자 선정 적격심사지침</a></span><span class="ar">제1조~제12조, 별표 1~9</span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.law.go.kr/법령/한국국제협력단법시행령" target="_blank" rel="noopener">한국국제협력단법 시행령</a></span><span class="ar">제13조의4</span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7162&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정</a></span><span class="ar">제17조, 제22조</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7165&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">대외무상협력사업에 관한 조달 및 계약규정 시행세칙</a></span><span class="ar">제41조</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7167&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">국제조달규정</a></span><span class="ar">제28조</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.alio.go.kr/item/itemBoard21110.do?apbaId=C0146&amp;reportFormNo=21110&amp;table_name=COMM_RULE&amp;idx_name=RULE_NO&amp;idx=7215&amp;reportGbn=Y&amp;bid_type=K1400" target="_blank" rel="noopener">현지입찰 시공자 선정 적격심사지침</a></span><span class="ar">제1조~제12조, 별표 1~9</span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>계약담당자</b><span>입찰공고, 심사자료 요구, 적격심사 실시, 낙찰자 결정. 배점한도 가·감 조정 및 심사항목 추가·제외 권한(지침 §5⑥)</span></div><div class="auth"><b><a class="ref" href="https://www.koica.go.kr/sites/koica_kr/index.do" target="_blank" rel="noopener">해외사무소장</a></b><span>현지계약 위임전결. 부정·허위 서류 제출자에 대한 입찰참가자격 제한 조치(지침 §11②)</span></div><div class="auth"><b><a class="ref" href="https://www.koica.go.kr/sites/koica_kr/index.do" target="_blank" rel="noopener">KOICA 본부 조달부서</a></b><span>적격심사지침·물품구매 적격심사지침 등 낙찰 기준 총괄</span></div><div class="auth"><b>관련협회</b><span>시공실적증명서·연도별 시공실적·업종별 평균 재무비율 발급(지침 §5③, 별표 6·7)</span></div><div class="auth"><b><a class="ref" href="https://www.pps.go.kr" target="_blank" rel="noopener">조달청</a></b><span>준용 기준 제공 — 「조달청 시설공사 적격심사세부기준」·「(계약예규) 적격심사기준」(지침 §12①)</span></div></div>
@@ -538,8 +561,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>입찰자·공동수급체</b><div class="chips"><span class="chip">적격심사서류 — 시공경험·기술능력·경영상태·신인도 평가자료 (지침 §4①)</span><span class="chip">관련협회가 증명한 연도별 시공실적·시공실적증명서 (지침 §5③, 별표 6)</span><span class="chip">감사보고서 또는 검토보고서상의 재무제표 — 추정가격 50억원 이상 (지침 §5③, 별표 7)</span><span class="chip">국외공사 실적의 준공일 기준 매매기준율증명서 및 금융거래내역서 (별표 6)</span><span class="chip">외국어로 작성된 실적·증빙의 영어번역 및 공증서류 (별표 6)</span></div></div><div class="docset"><b>적격심사대상자(추정가격 50억원 이상)</b><div class="chips"><span class="chip">하도급관리 계획서 (별지 제1호 서식, 지침 §7②)</span><span class="chip">하도급관리 계획서(보완) — 통보일부터 14일 이내 (별지 제2호 서식)</span><span class="chip">당해공사 기술자 보유기준 충족 확인서류 — 통보일부터 7일 이내 (지침 §7③)</span></div></div><div class="docset"><b>계약담당자</b><div class="chips"><span class="chip">세부심사기준·증빙서류 작성요령 (지침 §3)</span><span class="chip">평가점수 통보 및 이의신청 안내 (지침 §7①)</span><span class="chip">낙찰예정자 통보</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>적격심사서류 제출 7일·보완 3일, 심사 7일(불가피 시 +3일)로 기한이 짧다 (지침 §4)</li><li>순공사원가(재료비·노무비·경비와 부가세)의 100분의 98 미만으로 입찰하면 100억원 미만 공사에서 심사대상에서 제외된다 (지침 §8①)</li><li>공동수급체 구성원 중 평가대상 업종 시공비율이 10% 미만인 자는 평가에서 제외되고 그 비율은 다른 구성원에게 배분되지 않는다 (지침 §6③)</li><li>부정·허위로 작성된 서류가 판명되면 계약 전에는 낙찰 취소, 계약 후에는 해제·해지되며 입찰참가자격 제한이 뒤따른다 (지침 §11)</li><li>관련협회가 없거나 실적관리를 하지 않는 국가에서는 시공실적·경영상태 증명을 입찰공고에서 정한 방식으로 대체해야 한다 (지침 §5③)</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>지침에 없는 사항은 「조달청 시설공사 적격심사세부기준」·「(계약예규) 적격심사기준」을 준용하는 구조라 현지 적용이 복잡하다 (지침 §12①)</li><li>신인도·자재 및 인력조달가격 적정성 평가가 조달청 기준을 준용하는데, 현지여건상 평가가 어려우면 항목을 제외하고 배점한도를 조정한다 (별표 주)</li><li>배점·통과점수·금액구간이 원화 기준이라 현지 통화·물가 규모와 직접 대응하지 않는다</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>신인도·자재 및 인력조달가격 적정성 평가는 「조달청 시설공사 적격심사세부기준」을 준용 — 조달청 기준 원문의 세부 배점은 이 카드에서 미대조</li><li>관련협회가 없는 국가에서 시공실적·경영상태 증명을 입찰공고로 대체하는 실제 운용 방식</li><li>현지여건상 자재·인력조달가격 적정성 평가를 제외할 때 배점한도 재조정의 실무 기준(별표 주)</li><li>원화 억원 기준 규모구간을 현지 통화 공사비에 적용하는 환산 실무</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../koica-procurement-governance/index.html">KOICA 국제조달 경로 선택·감독</a><a class="chip" style="text-decoration:none" href="../koica-oda-project-pipeline/index.html">KOICA 조달·계약 집행 절차</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>신인도·자재 및 인력조달가격 적정성 평가는 「조달청 시설공사 적격심사세부기준」을 준용 — 조달청 기준 원문의 세부 배점은 이 카드에서 미대조</li><li>관련협회가 없는 국가에서 시공실적·경영상태 증명을 입찰공고로 대체하는 실제 운용 방식</li><li>현지여건상 자재·인력조달가격 적정성 평가를 제외할 때 배점한도 재조정의 실무 기준(별표 주)</li><li>원화 억원 기준 규모구간을 현지 통화 공사비에 적용하는 환산 실무</li></ul></div>
   </div>
 </section>
 

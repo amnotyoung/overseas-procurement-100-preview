@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>조달 관련 법령 해석, 계약 검토, 분쟁 대응, 법률 자문 수행</li><li>국가 조달법(PPDA Act) 개정 검토, 규정 제·개정 자문, 계약 문서 검토, 조달</li><li>조달 성과 분석, 정책 이행 점검, 조달 규정 준수 여부 평가</li><li>각 정부 부처·지방정부·공공기관이 자체 조달부서를 통해 입찰 진행</li><li>입찰규모 22만미불(또는 8억 UGX) 초과, 반공개입찰 원칙(예외사항 제외)</li><li>사전 적격심사에 통과한 입찰자 대상으로 시행</li><li>입찰의향서(Expressions of Interest: EOIs)에 기반하여 용역계약에 주로 활용</li><li>지명입찰 ∙ 기술역량이 가격보다 중요시되며, 유사 사업 수행실적이 가장 큰 영향을 미침</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">자료집에 기재된 우간다의 공공조달 또는 개발협력 사업을 대상으로 한다. 자료집 발췌: 국제입찰 및 외국인의 입찰 참가 요건(입찰법 제53조 및 62조)</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(아프리카)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm">Public Procurement and Disposal of Public Assets Act</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Public Procurement and Disposal of Public Assets (Contracts</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">National Building (Building Standards) Code</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Public Procurement and Disposal of Public Assets Act, Cap. 205</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">PPDA legal update on the 7th Revised Edition and Cap. 205 citation</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(아프리카)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm">Public Procurement and Disposal of Public Assets Act</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Public Procurement and Disposal of Public Assets (Contracts</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">National Building (Building Standards) Code</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Public Procurement and Disposal of Public Assets Act, Cap. 205</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">PPDA legal update on the 7th Revised Edition and Cap. 205 citation</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>공공조달·공공자산처분청(PPDA)</b><span>PPDA Act Cap.205에 따른 국가 공공조달·자산처분의 규제·준수감독·시정조치를 담당한다.</span></div><div class="auth"><b>조달·처분기관의 회계책임자·계약위원회·조달부서</b><span>기관별 계획·입찰·평가·승인·계약관리를 수행한다.</span></div><div class="auth"><b>전자정부조달시스템(eGP)</b><span>조달절차를 처리·공개하는 전자시스템이며 담당기관이 아니다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">입찰공고</span><span class="chip">입찰서 및 자격증빙</span><span class="chip">가격·기술 제안</span><span class="chip">낙찰통지서</span><span class="chip">계약서</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>자료집 기반 1차 구조화이므로 실제 참여 전 발주기관 공고와 현행 규정을 다시 확인해야 한다.</li><li>금액·기한·제출서류와 외국기업 참여요건은 개별 공고에서 재확인해야 한다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>외국 기업의 등록·인허가·현지어·현지대리인 요건은 개별 공고와 담당 기관에서 확인해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·법령 및 핵심 적용체계&#x27;, &#x27;question&#x27;: &#x27;연결한 공식 법령·기관 역할이 현재 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;금액·기한·보증·제출서류와 개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 하위규정과 실제 공고에서 정량 요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;pending&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../uganda-procurement-governance/index.html">우간다 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../uganda-oda-project-pipeline/index.html">우간다 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../uganda-site-urban-construction-regulations/index.html">우간다 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../uganda-permit-environment-construction-regulations/index.html">우간다 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../uganda-control-completion-construction-regulations/index.html">우간다 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·법령 및 핵심 적용체계&#x27;, &#x27;question&#x27;: &#x27;연결한 공식 법령·기관 역할이 현재 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;금액·기한·보증·제출서류와 개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 하위규정과 실제 공고에서 정량 요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;pending&#x27;}</li></ul></div>
   </div>
 </section>
 

@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>조정위원회(Coordinating Council for Interaction with Development Partners)가 발족되었음</li><li>제안을 반드시 위원회 사무국에 제출해야 하며, 위원회 결정은 법적 구속력을 가짐.</li><li>중심으로, 다음과 같은 절차를 통해 발굴·추진됨</li><li>사업 발굴 단계에서는 개별 수원부처가 국가개발전략, 분야별 전략 및 지속가능발전목표(SDG)에</li><li>사업 검토・조정 단계에서는 무상원조의 경우 개발협력사업 제안서는 경제상업부 (국제원조 및 기술</li><li>지원 선정・승인위원회 사무국)에 제출하며, 유상원조의 경우 재무부를 중심으로 국가 전략 부합성,</li><li>중복 여부, 지속가능성 및 사업의 정책 적합성, 재정·경제성 및 타당성에 대한 검토가 이루어짐.</li><li>30만 불 미만 사업은 경제상업부가 검토・승인하며, 30만 불 이상 사업은 국제원조 및 기술 지원</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">자료집에 기재된 키르기스스탄의 공공조달 또는 개발협력 사업을 대상으로 한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중동·CIS)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.gov.kg/ru" target="_blank" rel="noopener">Cabinet of Ministers official legal and institutional framework</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.minfin.kg/" target="_blank" rel="noopener">Ministry of Finance public-finance and procurement functions</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중동·CIS)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.gov.kg/ru" target="_blank" rel="noopener">Cabinet of Ministers official legal and institutional framework</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.minfin.kg/" target="_blank" rel="noopener">Ministry of Finance public-finance and procurement functions</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>키르기스공화국 재무부</b><span>국가재정·대외차입·공공투자 재원을 관리하고 재정조건을 심사한다.</span></div><div class="auth"><b>경제상무부·부문 실행기관</b><span>국가개발·투자 우선순위와 사업제안·준비·실행을 조정한다.</span></div><div class="auth"><b>내각</b><span>정부 간 협정과 법정 중요 사업·재정결정을 승인한다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">사업요청서 또는 PCP</span><span class="chip">검토·우선순위 문서</span><span class="chip">예비조사 보고서</span><span class="chip">사업기획 문서</span><span class="chip">RD 또는 MOU</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>자료집 기반 1차 구조화이므로 실제 참여 전 발주기관 공고와 현행 규정을 다시 확인해야 한다.</li><li>금액·기한·제출서류와 외국기업 참여요건은 개별 공고에서 재확인해야 한다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>외국 기업의 등록·인허가·현지어·현지대리인 요건은 개별 공고와 담당 기관에서 확인해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본법·핵심 적용범위&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;정량요건·하위규정·공여조건·개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 규정과 실제 공고에서 세부요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;pending&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../kyrgyzstan-bidding-system/index.html">키르기스스탄 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../kyrgyzstan-procurement-governance/index.html">키르기스스탄 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../kyrgyzstan-site-urban-construction-regulations/index.html">키르기스스탄 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../kyrgyzstan-permit-environment-construction-regulations/index.html">키르기스스탄 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../kyrgyzstan-control-completion-construction-regulations/index.html">키르기스스탄 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본법·핵심 적용범위&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;정량요건·하위규정·공여조건·개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 규정과 실제 공고에서 세부요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;pending&#x27;}</li></ul></div>
   </div>
 </section>
 

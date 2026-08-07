@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -520,7 +543,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>(무상) 각 부처가 개발협력파트너와 협력사업 수요를 협의</li><li>부처가 구체화된 수요를 CDC/CRDB에 제출</li><li>CDC/CRDB가 국가발전전략·정책 우선순위를 검토하고 각 DP에 수요 전달(필요 시 DP와 사전협의)</li><li>DP별 내부 사업선정 절차 개시</li><li>(KOICA) CDC/CRDB 수요의 타당성을 검토해 PCP를 본부 검토위원회에 상정 — 수요제출 공식 서한 확인</li><li>PCP 검토위원회 통과 사업에 예비조사(문헌·현지답사·이해관계자 면담) 실시, 수원부처 참여</li><li>예비조사에서 타당한 사업의 PD 초안을 본부 심사위원회에 상정</li><li>PD 심사위원회 심사로 한국 예산당국 심사 대상 선정 — 공식 서한 재확인</li><li>(유상) MEF가 부처 사업요청서를 취합해 유상 DP별 정책협의로 후보사업 결정</li><li>신규사업 공식화 — 캄보디아 정부는 PCP·PD 제출과 사업수요 공식 서한으로, 한국은 시행기관 선정 후 주무부처·국무조정실·국회 심의로 확정</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">캄보디아 정부가 수원하는 개발협력사업에 적용되며, 무상은 CDC/CRDB, 유상은 MEF가 총괄한다. 2023년 수원규모는 15.45억불(무상 35%·유상 65%). 일부 캄보디아 재원도 동원되는 사업은 수원부처가 MEF에 별도 절차를 밟는다. 외부재원 조달은 GDICDM·SOP 2019 관할이므로, 사업 형성(CDC/CRDB·MEF)과 조달 집행(GDICDM)의 주체가 다르다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm">국가발전전략 및 개발협력 정책 우선순위(CDC/CRDB 검토 기준)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm">사업수요 공식 제출 서한 및 PCP·PD (양자 절차 문서)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">양자합의</span></div><div class="law"><span class="nm">KOICA 사업심사 가이드라인 및 PCP·예비조사·PD 심사 절차</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm"><a class="ref" href="https://oda.cdc.gov.kh/" target="_blank" rel="noopener">Cambodia ODA Database and CDCB development-cooperation mandate</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://gdde.mef.gov.kh/private/83c8a60785c28e" target="_blank" rel="noopener">Public Investment Management System and externally financed project framework</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm"><a class="ref" href="https://ppp.mef.gov.kh/project-development-facility" target="_blank" rel="noopener">Project Development Facility for externally financed public investments</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div><div class="law"><span class="nm">Law on Public Procurement 2023, art.2 (external-finance exception)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">SOP on Procurement for All Externally Financed Projects/Programs, 3rd ed. (2019)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">표준문서</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm">국가발전전략 및 개발협력 정책 우선순위(CDC/CRDB 검토 기준)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm">사업수요 공식 제출 서한 및 PCP·PD (양자 절차 문서)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">양자합의</span></div></div><div class="law"><div class="law-copy"><span class="nm">KOICA 사업심사 가이드라인 및 PCP·예비조사·PD 심사 절차</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://oda.cdc.gov.kh/" target="_blank" rel="noopener">Cambodia ODA Database and CDCB development-cooperation mandate</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://gdde.mef.gov.kh/private/83c8a60785c28e" target="_blank" rel="noopener">Public Investment Management System and externally financed project framework</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://ppp.mef.gov.kh/project-development-facility" target="_blank" rel="noopener">Project Development Facility for externally financed public investments</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div><div class="law"><div class="law-copy"><span class="nm">Law on Public Procurement 2023, art.2 (external-finance exception)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">SOP on Procurement for All Externally Financed Projects/Programs, 3rd ed. (2019)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">표준문서</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>캄보디아개발위원회(CDC) 캄보디아개발협력이사회(CDCB/구 CRDB)</b><span>개발협력 정책·파트너 조정과 정부 전체 ODA 데이터베이스를 관리한다.</span></div><div class="auth"><b>경제재무부(MEF)</b><span>외부재원 포함 공공투자 관리·재정심사·차관과 국가예산 연계를 담당한다.</span></div><div class="auth"><b>부문부처·실행기관</b><span>국가계획에 맞춰 사업을 발굴·준비·제출하고 승인 후 조달·실행한다.</span></div></div>
@@ -528,8 +551,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>각 수원부처·기관</b><div class="chips"><span class="chip">협력사업 수요서</span><span class="chip">사업수요 공식 제출 서한</span><span class="chip">(유상) 사업요청서</span></div></div><div class="docset"><b>CDC/CRDB · MEF</b><div class="chips"><span class="chip">국가발전전략·우선순위 검토 결과</span><span class="chip">DP 앞 수요 전달</span></div></div><div class="docset"><b>KOICA</b><div class="chips"><span class="chip">사업제안서(Project Concept Paper, PCP)</span><span class="chip">예비조사 보고서</span><span class="chip">사업계획서(Project Document, PD)</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>무상·유상 수원총괄기관이 분리돼 있어(무상 CDC/CRDB·유상 MEF) 사업 성격에 따라 총괄 창구가 다르다</li><li>사업 형성(CDC/CRDB·MEF)과 조달 집행(외부재원 GDICDM·SOP 2019)의 주체가 달라, 형성 단계와 집행 단계에서 상대하는 기관이 바뀐다</li><li>부처별 사업 추진 선호방식이 상이해 태세가 다르다</li><li>일부 캄보디아 재원이 동원되면 수원부처가 MEF 절차를 추가로 밟아야 한다</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>부처별·재원별로 절차가 갈려 사업 초기에 총괄기관(무상 CDC/CRDB·유상 MEF)을 정확히 특정해야 함</li><li>수요제출 공식 서한이 형성 단계마다 확인되므로 문서 절차 관리가 중요</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본규정·핵심 적용경로&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;하위규정·정량요건·개별 협정·공고&#x27;, &#x27;question&#x27;: &#x27;실제 사업 시점의 세부요건과 예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;pending&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../cambodia-bidding-system/index.html">캄보디아 공공조달 입찰제도</a><a class="chip" style="text-decoration:none" href="../cambodia-procurement-governance/index.html">캄보디아 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../cambodia-site-urban-construction-regulations/index.html">캄보디아 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../cambodia-permit-environment-construction-regulations/index.html">캄보디아 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../cambodia-control-completion-construction-regulations/index.html">캄보디아 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·기본규정·핵심 적용경로&#x27;, &#x27;question&#x27;: &#x27;공식 원문이 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;하위규정·정량요건·개별 협정·공고&#x27;, &#x27;question&#x27;: &#x27;실제 사업 시점의 세부요건과 예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;pending&#x27;}</li></ul></div>
   </div>
 </section>
 

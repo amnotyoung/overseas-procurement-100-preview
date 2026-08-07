@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>발주기관이 연간계획에 수요·예산·조달방식을 등록</li><li>기준금액과 point 13 예외 여부를 판정</li><li>물품·용역 10만 UAH, 경상수선 20만 UAH, 공사 150만 UAH 이상은 전시특례 공개입찰(물품은 전자카탈로그 가능)</li><li>Prozorro에 공고하고 물품·용역 최소 7일, 공사 최소 14일의 제출기간을 부여</li><li>전자제출·개찰 후 자격·기술·가격을 평가하고 낙찰의사를 공개</li><li>이의가 있으면 AMCU 행정패널 심사 동안 절차·계약체결을 정지</li><li>대기·이의절차 종료 후 계약을 체결하고 Prozorro에 공개</li><li>계약변경·이행·종료와 보증 반환을 Law 922-VIII 및 Resolution 1178에 따라 기록</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">2026년 7월 29일 현재 Law 922-VIII와 Resolution 1178의 전시특례가 운영 적용된다. Resolution 1178은 계엄기간과 종료·취소 후 90일까지 적용되며, 신법 No.4888-IX의 주요 조달규정은 공포 후 9개월의 유예 후 운영된다. 비준 국제협정의 별도 조달규칙과 Resolution 1178 point 13 예외를 공고별로 확인한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중동·CIS)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm">국제기준에 부합하는 조달규정</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">년에 우크라이나 공공조달법</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">가 조달정책 총괄기관으로서 국제기준에 부합하는 조달법</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Law of Ukraine No. 922-VIII On Public Procurement, current revision</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Cabinet Resolution No. 1178 of 2022 — wartime procurement features, as amended</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">Ministry of Economy public-procurement reform and authorized-body roles</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(중동·CIS)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm">국제기준에 부합하는 조달규정</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">년에 우크라이나 공공조달법</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">가 조달정책 총괄기관으로서 국제기준에 부합하는 조달법</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Law of Ukraine No. 922-VIII On Public Procurement, current revision</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Cabinet Resolution No. 1178 of 2022 — wartime procurement features, as amended</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">Ministry of Economy public-procurement reform and authorized-body roles</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>경제부(Ministry of Economy)</b><span>공공조달 분야의 권한기관으로 정책·법령·전자플랫폼 승인과 Prozorro 관련 국영기업 조정을 담당한다.</span></div><div class="auth"><b>조달기관의 권한담당자</b><span>계획·공고·절차·평가·계약공개를 수행한다.</span></div><div class="auth"><b>국영기업 Prozorro·전자조달시스템</b><span>공식 웹포털과 전자조달시스템의 운영을 담당하며 규제기관 자체는 아니다.</span></div><div class="auth"><b>반독점위원회(AMCU)·국가감사원</b><span>각각 조달 이의심사와 법정 범위의 통제를 담당한다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">입찰공고</span><span class="chip">입찰서 및 자격증빙</span><span class="chip">가격·기술 제안</span><span class="chip">낙찰통지서</span><span class="chip">계약서</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>Resolution 1178의 잦은 개정 때문에 공고일 현재 판본과 적용 전환규정을 고정해야 한다.</li><li>직접계약은 point 13의 구체적 사유·증빙·사후공개 요건을 충족해야 한다.</li><li>이의유형별 3일·5일·10일 기한이 달라 Prozorro 게시시각을 기준으로 즉시 계산해야 한다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>입찰문서의 우크라이나어 요건, 전자서명·Prozorro 등록과 제재·수익소유자 확인을 공고별로 충족해야 한다.</li><li>입찰보증과 이행보증의 요구 여부·형식은 Art.25·27 상한 안에서 개별 입찰문서가 정한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·법령 및 핵심 적용체계&#x27;, &#x27;question&#x27;: &#x27;연결한 공식 법령·기관 역할이 현재 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;금액·기한·보증·제출서류와 개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 하위규정과 실제 공고에서 정량 요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../ukraine-procurement-governance/index.html">우크라이나 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../ukraine-oda-project-pipeline/index.html">우크라이나 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../ukraine-site-urban-construction-regulations/index.html">우크라이나 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../ukraine-permit-environment-construction-regulations/index.html">우크라이나 건축허가·환경심사</a><a class="chip" style="text-decoration:none" href="../ukraine-control-completion-construction-regulations/index.html">우크라이나 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행 기관·법령 및 핵심 적용체계&#x27;, &#x27;question&#x27;: &#x27;연결한 공식 법령·기관 역할이 현재 모델의 핵심 경로와 일치하는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;금액·기한·보증·제출서류와 개별 공고&#x27;, &#x27;question&#x27;: &#x27;최신 하위규정과 실제 공고에서 정량 요건·예외가 동일하게 적용되는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 

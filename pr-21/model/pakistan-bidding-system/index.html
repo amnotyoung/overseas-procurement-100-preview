@@ -224,8 +224,9 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .kv dd{margin:3px 0 0}
 .kv code{font-size:12.5px;background:var(--soft);padding:1px 6px;border-radius:4px}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:11px;padding:17px 19px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:16px;align-items:start}
+.card{min-width:0;border:1px solid var(--line);border-radius:11px;padding:17px 19px}
 .card h3{margin:0 0 11px;font-size:13.5px;letter-spacing:.01em}
 .card.span2{grid-column:span 2}
 @media (max-width:820px){.card.span2{grid-column:span 1}}
@@ -244,21 +245,43 @@ ol.steps li{margin-bottom:5px}
 .gate-meta{display:grid;grid-template-columns:max-content 1fr;gap:5px 10px;margin:0;font-size:12.5px;line-height:1.55}
 .gate-meta dt{color:var(--muted);font-weight:700}.gate-meta dd{margin:0;min-width:0}
 .gate-basis{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.gate-basis a,.gate-basis .law-name{font-weight:700}
+.gate-basis a,.gate-basis .law-name{min-width:0;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.gate-basis .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
 ul.plain{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7}
 ul.plain li{margin-bottom:6px}
-.law{display:flex;gap:9px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.law{min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .law:last-child{border-bottom:0}
-.law .nm{font-weight:600}
-.law .ar{color:var(--muted);font-size:12.5px}
+.law-copy{min-width:0}
+.law .nm{display:block;min-width:0;font-weight:600;line-height:1.5;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar{display:block;min-width:0;margin-top:2px;color:var(--muted);font-size:12.5px;
+  word-break:keep-all;overflow-wrap:anywhere}
+.law .ar:empty{display:none}
+.law-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;margin-top:6px}
+.law-meta:empty{display:none}
+.law-meta .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+.law-meta .badge::before,.gate-basis .badge::before,.auth .badge::before{flex:none}
 .docset{margin-bottom:13px}
 .docset b{font-size:12.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .chip{font-size:12px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
-.auth{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.auth{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);gap:10px;
+  align-items:start;min-width:0;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .auth:last-child{border-bottom:0}
-.auth b{flex:none;max-width:42%;font-size:13px}
-.auth span{color:var(--muted);font-size:12.5px}
+.auth b{min-width:0;max-width:none;font-size:13px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.auth span{min-width:0;color:var(--muted);font-size:12.5px;word-break:keep-all;overflow-wrap:anywhere}
+.auth .badge{max-width:100%;white-space:normal;word-break:keep-all;line-height:1.35}
+@media (max-width:620px){.auth{grid-template-columns:1fr;gap:4px}}
+.field-application{grid-column:1/-1;padding:0}
+.field-application summary{display:flex;align-items:center;gap:12px;min-width:0;padding:17px 19px;
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:700}
+.field-application summary::-webkit-details-marker{display:none}
+.field-application summary small{margin-left:auto;color:var(--muted);font-size:11.5px;font-weight:600}
+.field-application summary::after{content:"⌄";color:var(--muted);font-size:16px;line-height:1;
+  transition:transform .15s ease}
+.field-application[open] summary::after{transform:rotate(180deg)}
+.field-application .field-application-body{padding:0 19px 17px}
+.field-application .workflow-disclosure{margin-top:0}
 
 .disc{border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:17px 19px;margin-bottom:15px}
 .disc[data-sev="high"]{border-left-color:var(--bad)}
@@ -429,7 +452,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · 7ead18381331 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #21 · 운영 사이트 아님 · f4cc2ae8bbf4 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/21">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -516,7 +539,7 @@ footer.site a{color:var(--muted)}
     <div class="card span2"><h3>절차</h3><ol class="steps"><li>PPR 제20~21조에 따라 공개경쟁을 기본으로 하고 제42조의 금액·요건에 맞춰 petty purchase, RFQ, 직접계약, negotiated tendering 또는 force account 여부를 결정한다.</li><li>PKR 500,000 초과는 PPRA/e-PADS에 공고하고 PKR 3,000,000 초과는 영어·우르두어 전국 일간지에도 게재한다.</li><li>국내경쟁은 최소 15일, 국제경쟁은 최소 30일의 응답기간을 두며 입찰자는 e-PADS에 등록해 전자제출한다.</li><li>입찰보증은 예정가의 최대 5% 고정액이고, 요구하지 않으면 표준 Bid Securing Declaration을 제출한다.</li><li>평가보고서를 공개하고 기술평가 이의 7일·최종평가 이의 5일, GRC 10일 처리와 PPRA 30일 항소 경로를 보장한다.</li><li>입찰서류에 명시한 이행보증은 계약가의 최대 10%이며 낙찰통지·계약·계약관리를 e-PADS에 기록한다.</li></ol></div>
 
     <div class="card"><h3>적용 대상</h3><p style="margin:0;font-size:13.5px;line-height:1.7">연방 부처·기관과 연방 소유·통제 기관의 물품·공사·서비스 조달에 적용한다. 주정부 조달은 주별 법제를, 공여협정과 충돌하는 부분은 PPR 제5조의 우선규칙을 적용한다.</p></div>
-    <div class="card"><h3>법적 근거</h3><div class="law"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(아시아 및 태평양)</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">공여기관 규정</span></div><div class="law"><span class="nm">Public Procurement Regulatory Authority Ordinance, 2002, as amended up to 7 July 2020</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">법률</span></div><div class="law"><span class="nm">Public Procurement Rules, 2004, as amended through S.R.O. 763(I)/2025</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">E-Pak-Procurement Regulations, 2023 (S.R.O. 296(I)/2023)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm">Redressal of Grievances Regulations, 2021 (S.R.O. 91(I)/2022)</span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm"><a class="ref" href="https://ead.gov.pk/Overview" target="_blank" rel="noopener">Rules of Business, 1973, Schedule II — Economic Affairs Division functions</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">시행규칙</span></div><div class="law"><span class="nm"><a class="ref" href="https://www.pc.gov.pk/uploads/archives/Manual-for-Development-Project-2024.pdf" target="_blank" rel="noopener">Manual for Development Projects 2024</a></span><span class="ar"></span><span class="badge plain muted" style="margin-left:auto">지침·정책</span></div></div>
+    <div class="card"><h3>법적 근거</h3><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.koica.go.kr/" target="_blank" rel="noopener">KOICA 2026 국가별 개발협력사업 참여전략 자료집(아시아 및 태평양)</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">공여기관 규정</span></div></div><div class="law"><div class="law-copy"><span class="nm">Public Procurement Regulatory Authority Ordinance, 2002, as amended up to 7 July 2020</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">법률</span></div></div><div class="law"><div class="law-copy"><span class="nm">Public Procurement Rules, 2004, as amended through S.R.O. 763(I)/2025</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">E-Pak-Procurement Regulations, 2023 (S.R.O. 296(I)/2023)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm">Redressal of Grievances Regulations, 2021 (S.R.O. 91(I)/2022)</span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://ead.gov.pk/Overview" target="_blank" rel="noopener">Rules of Business, 1973, Schedule II — Economic Affairs Division functions</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">시행규칙</span></div></div><div class="law"><div class="law-copy"><span class="nm"><a class="ref" href="https://www.pc.gov.pk/uploads/archives/Manual-for-Development-Project-2024.pdf" target="_blank" rel="noopener">Manual for Development Projects 2024</a></span><span class="ar"></span></div><div class="law-meta"><span class="badge plain muted">지침·정책</span></div></div></div>
 
 
     <div class="card"><h3>권한 기관</h3><div class="auth"><b>공공조달규제청(PPRA)</b><span>연방 조달법규를 제정·모니터링하고 e-PADS를 운영하며 GRC 결정에 대한 항소를 처리한다.</span></div><div class="auth"><b>연방 발주기관</b><span>조달계획·공고·평가·낙찰·계약관리, 홀수 GRC 구성과 1차 불만처리를 수행한다.</span></div><div class="auth"><b>경제부 경제사무국(EAD)</b><span>외국원조 수요평가·프로그램화·공식요청·협상과 원조활용·대외부채 모니터링을 맡는다.</span></div><div class="auth"><b>기획위원회·DDWP/CDWP/ECNEC</b><span>PCN·PC-II·PC-I를 검토하고 권한금액과 외자 여부에 따라 사업·concept clearance를 승인한다.</span></div><div class="auth"><b>e-PADS</b><span>계획부터 계약종료까지 처리하는 의무 전자조달시스템이며 독립 승인기관은 아니다.</span></div></div>
@@ -524,8 +547,8 @@ footer.site a{color:var(--muted)}
     <div class="card"><h3>제출서류</h3><div class="docset"><b>참여기관·입찰자</b><div class="chips"><span class="chip">입찰공고</span><span class="chip">입찰서 및 자격증빙</span><span class="chip">가격·기술 제안</span><span class="chip">낙찰통지서</span><span class="chip">계약서</span></div></div></div>
     <div class="card"><h3>유의사항 · 병목</h3><ul class="plain"><li>연방 규칙과 주별 조달법의 관할을 먼저 구분해야 한다.</li><li>입찰·이행보증의 실제 금액·형식·제출일은 법정 상한 안에서 공고별 BDS/SCC가 정한다.</li><li>외자사업은 Planning Commission의 concept clearance·PC-I 승인과 EAD의 공여기관 공식요청·협상을 혼동하면 안 된다.</li></ul></div>
     <div class="card"><h3>진입장벽</h3><ul class="plain"><li>입찰자는 e-PADS 등록과 공고별 자격·세무·전문면허 요건을 충족해야 한다.</li><li>국제협정의 우선조항, 연방/주 관할, 현지 표준입찰문서의 보증원본 요건을 공고별로 확인해야 한다.</li></ul></div>
-    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행법·개정·시행·폐지 상태&#x27;, &#x27;question&#x27;: &#x27;2002 Ordinance, 2004 Rules의 2025년까지 개정과 2023 e-PADS·2021 불만규정의 시행상태를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;기준금액·기한·입찰/이행보증·이의·예외&#x27;, &#x27;question&#x27;: &#x27;6개 정량·절차 영역을 현행 조문과 관보 규정에서 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;외자사업 형성·승인 경로&#x27;, &#x27;question&#x27;: &#x27;PCN·PC-II·PC-I, concept clearance, EAD 요청·협상과 승인기관을 2024 매뉴얼에서 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
     <div class="card"><h3>관련 제도</h3><div class="chips"><a class="chip" style="text-decoration:none" href="../pakistan-procurement-governance/index.html">파키스탄 조달 거버넌스·감독체계</a><a class="chip" style="text-decoration:none" href="../pakistan-oda-project-pipeline/index.html">파키스탄 ODA 사업 발굴·형성 절차</a><a class="chip" style="text-decoration:none" href="../pakistan-site-urban-construction-regulations/index.html">파키스탄 도시계획·부지규제</a><a class="chip" style="text-decoration:none" href="../pakistan-permit-environment-construction-regulations/index.html">파키스탄 건축허가·환경심사 — Islamabad/ICT 사례</a><a class="chip" style="text-decoration:none" href="../pakistan-control-completion-construction-regulations/index.html">파키스탄 기술검사·보험·준공제도</a></div></div>
+    <div class="card"><h3>ODA 사업 적용 확인사항</h3><ul class="plain"><li>{&#x27;item&#x27;: &#x27;현행법·개정·시행·폐지 상태&#x27;, &#x27;question&#x27;: &#x27;2002 Ordinance, 2004 Rules의 2025년까지 개정과 2023 e-PADS·2021 불만규정의 시행상태를 확인했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;기준금액·기한·입찰/이행보증·이의·예외&#x27;, &#x27;question&#x27;: &#x27;6개 정량·절차 영역을 현행 조문과 관보 규정에서 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li><li>{&#x27;item&#x27;: &#x27;외자사업 형성·승인 경로&#x27;, &#x27;question&#x27;: &#x27;PCN·PC-II·PC-I, concept clearance, EAD 요청·협상과 승인기관을 2024 매뉴얼에서 대조했는가?&#x27;, &#x27;status&#x27;: &#x27;confirmed&#x27;}</li></ul></div>
   </div>
 </section>
 
