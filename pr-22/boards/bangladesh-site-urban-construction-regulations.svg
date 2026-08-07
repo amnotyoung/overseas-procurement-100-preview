@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400">
+<defs>
+      <filter id="card-shadow" x="-20%" y="-25%" width="140%" height="160%">
+        <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#12271e" flood-opacity="0.10"/>
+      </filter>
+      <marker id="arrow-sequence" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#53675d" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <marker id="arrow-message" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#0f8a65" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <marker id="arrow-loop" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#3478db" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <style>
+        text { font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR", sans-serif; }
+        .mono { font-family: "SFMono-Regular", "Menlo", monospace; }
+      </style>
+    </defs>
+<rect width="1800" height="2400" fill="#ffffff"/>
+<rect x="0" y="0" width="1800" height="240" fill="#07150f"/>
+<rect x="0" y="0" width="1800" height="9" fill="#18a87b"/>
+
+    <text x="1760" y="45" text-anchor="end" font-size="15" font-weight="700" fill="#8fa299">노드 6 · 레인 2 · 게이트 4</text>
+    <text x="40" y="132" font-size="41.8" font-weight="850" fill="#ffffff">방글라데시 도시계획·부지규제 — 다카 RAJUK 계획허가 사례</text>
+    <text x="40" y="174" font-size="19" font-weight="520" fill="#b7c7bf">권원과 Land Use Clearance, DAP·master plan 적합성을 먼저 닫고 필지별 수치를 확정한다.</text>
+    
+  
+<rect x="38" y="260" width="1724" height="1940" rx="10" fill="#ffffff" stroke="#b8c7bf" stroke-width="2"/>
+<rect x="38" y="260" width="190" height="100" rx="10" fill="#eaf2ee"/>
+<text x="58" y="299" font-size="17" font-weight="800" fill="#17231d">단계 ↓</text>
+<text x="58" y="332" font-size="15" font-weight="650" fill="#68776f">행위자 묶음 →</text>
+<rect x="38" y="360" width="1724" height="460" fill="#84baa9"/>
+<rect x="38" y="360" width="190" height="460" fill="#087452"/>
+<text x="58" y="392" class="mono" font-size="16" font-weight="800" fill="#ffffff">G0</text>
+<text x="58" y="425" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">신청·초기심사</tspan></text>
+<rect x="38" y="820" width="1724" height="460" fill="#f5f8f6"/>
+<rect x="38" y="820" width="190" height="460" fill="#eef3f0"/>
+<text x="58" y="852" class="mono" font-size="16" font-weight="800" fill="#53645b">G1</text>
+<text x="58" y="885" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">측량·입지검토</tspan></text>
+<rect x="38" y="1280" width="1724" height="460" fill="#fbfcfb"/>
+<rect x="38" y="1280" width="190" height="460" fill="#eef3f0"/>
+<text x="58" y="1312" class="mono" font-size="16" font-weight="800" fill="#53645b">G2</text>
+<text x="58" y="1345" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">관계부서·보완</tspan></text>
+<rect x="38" y="1740" width="1724" height="460" fill="#f5f8f6"/>
+<rect x="38" y="1740" width="190" height="460" fill="#eef3f0"/>
+<text x="58" y="1772" class="mono" font-size="16" font-weight="800" fill="#53645b">G3</text>
+<text x="58" y="1805" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">계획결정</tspan></text>
+<rect x="228" y="260" width="767" height="100" fill="#f7faf8"/>
+<rect x="228" y="260" width="767" height="7" fill="#0f9f72"/>
+<text x="248" y="299" font-size="20" font-weight="800" fill="#17231d">건축주·신청인</text>
+<text x="248" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="248" dy="0">건축주·신청인</tspan></text>
+<rect x="995" y="260" width="767" height="100" fill="#f7faf8"/>
+<rect x="995" y="260" width="767" height="7" fill="#3b82f6"/>
+<text x="1015" y="299" font-size="20" font-weight="800" fill="#17231d">도시계획</text>
+<text x="1015" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="1015" dy="0">도시계획·건축 허가기관</tspan></text>
+<line x1="228" y1="260" x2="228" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="995" y1="260" x2="995" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="1762" y1="260" x2="1762" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="38" y1="360" x2="1762" y2="360" stroke="#b8c7bf" stroke-width="2"/>
+<line x1="38" y1="360" x2="1762" y2="360" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="820" x2="1762" y2="820" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1280" x2="1762" y2="1280" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1740" x2="1762" y2="1740" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="2200" x2="1762" y2="2200" stroke="#b8c7bf" stroke-width="2"/>
+<path d="M 746.5 590 H 1215.5 V 577 H 1235.5" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 746.5 590 H 1215.5 V 577 H 1235.5" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1398.5 635 V 776 H 1384.5 V 997" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1398.5 635 V 776 H 1384.5 V 997" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1386.5 1095 V 1252 H 1378.5 V 1457" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1386.5 1095 V 1252 H 1378.5 V 1457" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1398.5 1555 V 1712 H 1372.5 V 1917" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1398.5 1555 V 1712 H 1372.5 V 1917" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1358.5 1095 V 1268 H 611.5 V 1457" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1358.5 1095 V 1268 H 611.5 V 1457" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1243.5 1497 H 774.5 V 1525.5 H 754.5" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1243.5 1497 H 774.5 V 1525.5 H 754.5" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 476.5 1499.5 H 216 V 784 H 1366.5 V 643" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 476.5 1499.5 H 216 V 784 H 1366.5 V 643" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<rect x="947" y="551.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="995" y="571.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">전자접수</text>
+<rect x="1334.1" y="744" width="114.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1391.5" y="764" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">현장조사 배정</text>
+<rect x="1325.1" y="1220" width="114.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1382.5" y="1240" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">입지자료 완성</text>
+<rect x="1337.5" y="1680" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1385.5" y="1700" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">의견취합</text>
+<rect x="920.6" y="1236" width="128.9" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="985" y="1256" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">보고서 수정요구</text>
+<rect x="923.6" y="1479.3" width="142.9" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="995" y="1499.3" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">신청자료 소명요구</text>
+<rect x="221.6" y="1132" width="128.9" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="286" y="1152" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">수정자료 재심사</text>
+
+    <g filter="url(#card-shadow)">
+      <rect x="472.5" y="541" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="476.5" y="545" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="476.5" y="545" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="491.5" y="565" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B01</text>
+      <text x="543.5" y="565" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · RAJUK ECPS LUC 안내·체크리스트</text>
+      <rect x="686.5" y="552" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="711.5" y="569" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="491.5" y="592" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="491.5" dy="0">Planning Permit·LUC</tspan><tspan x="491.5" dy="18">전자신청</tspan></text>
+      <text x="491.5" y="627" font-size="11" font-weight="650" fill="#d8f4e8">토지소유자가 권원·mutation·세금·mouza m…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1239.5" y="541" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1243.5" y="545" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="1243.5" y="545" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="1258.5" y="565" class="mono" font-size="12.5" font-weight="750" fill="#627169">B02</text>
+      <text x="1310.5" y="565" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · RAJUK Planning Permit Process Manual</text>
+      <rect x="1453.5" y="552" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="1478.5" y="569" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="1258.5" y="602" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="1258.5" dy="0">DTP 초기 완비성·계획자료 심사</tspan></text>
+      <text x="1258.5" y="627" font-size="11" font-weight="650" fill="#627169">Deputy Town Planner가 신청자료·첨부·필…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1239.5" y="1001" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1243.5" y="1005" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1243.5" y="1005" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1258.5" y="1025" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B03</text>
+      <text x="1310.5" y="1025" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · RAJUK Planning Permit Process Manual</text>
+      <rect x="1453.5" y="1012" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1478.5" y="1029" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1258.5" y="1062" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1258.5" dy="0">ATP 검토·측량·상황도 작성</tspan></text>
+      <text x="1258.5" y="1087" font-size="11" font-weight="650" fill="#a96008">ATP가 DTP 의견을 검토하고 Surveyor와 T…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1239.5" y="1461" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1243.5" y="1465" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="1243.5" y="1465" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="1258.5" y="1485" class="mono" font-size="12.5" font-weight="750" fill="#627169">B04</text>
+      <text x="1310.5" y="1485" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · RAJUK Planning Permit Process Manual·ECPS 기능</text>
+      <rect x="1453.5" y="1472" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="1478.5" y="1489" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="1258.5" y="1512" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="1258.5" dy="0">외부 NOC·RAJUK 내부부서</tspan><tspan x="1258.5" dy="18">의견조회</tspan></text>
+      <text x="1258.5" y="1547" font-size="11" font-weight="650" fill="#627169">DTP가 필요 시 외부 compliance authorit…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="472.5" y="1461" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="476.5" y="1465" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="476.5" y="1465" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="491.5" y="1485" class="mono" font-size="12.5" font-weight="750" fill="#627169">B05</text>
+      <text x="543.5" y="1485" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · RAJUK Planning Permit Process Manual</text>
+      <rect x="686.5" y="1472" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="711.5" y="1489" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="491.5" y="1522" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="491.5" dy="0">조사보고서·신청자료 보완 재제출</tspan></text>
+      <text x="491.5" y="1547" font-size="11" font-weight="650" fill="#627169">ATP·DTP가 Request Report Correction…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1239.5" y="1921" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1243.5" y="1925" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1243.5" y="1925" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1258.5" y="1945" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B06</text>
+      <text x="1310.5" y="1945" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · RAJUK Planning Permit Process Manual</text>
+      <rect x="1453.5" y="1932" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1478.5" y="1949" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1258.5" y="1972" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1258.5" dy="0">Planning Permit·LUC 승인</tspan><tspan x="1258.5" dy="18">또는 거부</tspan></text>
+      <text x="1258.5" y="2007" font-size="11" font-weight="650" fill="#a96008">DTP가 조사·관계기관 의견과 적용 계획을 종…</text>
+    </g>
+  
+
+    <text x="38" y="2245" font-size="16" font-weight="800" fill="#18251e">읽는 법</text>
+    <rect x="118" y="2219" width="17" height="17" rx="4" fill="#35a77d"/><text x="144" y="2233" font-size="14.5" fill="#526159">선행</text>
+<rect x="216" y="2219" width="17" height="17" rx="4" fill="#087452"/><text x="242" y="2233" font-size="14.5" fill="#526159">핵심</text>
+<rect x="314" y="2219" width="17" height="17" rx="4" fill="#d9901a"/><text x="340" y="2233" font-size="14.5" fill="#526159">병목</text>
+<rect x="412" y="2219" width="17" height="17" rx="4" fill="#3478db"/><text x="438" y="2233" font-size="14.5" fill="#526159">회귀</text>
+    <rect x="500" y="2219" width="17" height="17" rx="4" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="526" y="2233" font-size="14.5" fill="#526159">조문</text>
+    <line x1="648" y1="2237" x2="700" y2="2237" stroke="#53675d" stroke-width="4" marker-end="url(#arrow-sequence)"/>
+    <text x="720" y="2243" font-size="15" fill="#526159">절차 순서</text>
+    <line x1="860" y1="2237" x2="912" y2="2237" stroke="#0f8a65" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-message)"/>
+    <text x="932" y="2243" font-size="15" fill="#526159">정보 전달</text>
+    <line x1="1072" y1="2237" x2="1124" y2="2237" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)"/>
+    <text x="1144" y="2243" font-size="15" fill="#526159">보완 회귀</text>
+    <text x="38" y="2291" font-size="15.5" font-weight="650" fill="#56655d">단계는 위→아래, 행위자 묶음은 좌→우로 읽습니다.</text>
+    <text x="38" y="2321" font-size="14.5" fill="#68776f">원래 2개 행위자 레인을 2개 레이아웃 묶음으로 배치했으며, 6개 업무와 7개 연결 관계는 유지했습니다.</text>
+    <text x="38" y="2361" font-size="13.5" fill="#7b8881">출처: 해당 제도의 법률·시행령·시행규칙 기반 모델 · 실제 사건의 진행 상태나 법률 자문을 의미하지 않습니다.</text>
+    
+  
+</svg>
