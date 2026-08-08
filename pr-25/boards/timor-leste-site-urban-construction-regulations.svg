@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400">
+<defs>
+      <filter id="card-shadow" x="-20%" y="-25%" width="140%" height="160%">
+        <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#12271e" flood-opacity="0.10"/>
+      </filter>
+      <marker id="arrow-sequence" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#53675d" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <marker id="arrow-message" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#0f8a65" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <marker id="arrow-loop" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#3478db" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <style>
+        text { font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR", sans-serif; }
+        .mono { font-family: "SFMono-Regular", "Menlo", monospace; }
+      </style>
+    </defs>
+<rect width="1800" height="2400" fill="#ffffff"/>
+<rect x="0" y="0" width="1800" height="240" fill="#07150f"/>
+<rect x="0" y="0" width="1800" height="9" fill="#18a87b"/>
+
+    <text x="1760" y="45" text-anchor="end" font-size="15" font-weight="700" fill="#8fa299">노드 8 · 레인 3 · 게이트 4</text>
+    <text x="40" y="132" font-size="34" font-weight="850" fill="#ffffff">동티모르 도시계획·부지규제 — 사전 도시계획정보 신청(Pedido de informação prévia, PIP)·기본설계안(anteprojeto) 심사</text>
+    <text x="40" y="174" font-size="19" font-weight="520" fill="#b7c7bf">토지권원과 관할 계획도·도시관리수단에 맞춘 개발 가능성을 건축허가 전에 확인한다.</text>
+    
+  
+<rect x="38" y="260" width="1724" height="1940" rx="10" fill="#ffffff" stroke="#b8c7bf" stroke-width="2"/>
+<rect x="38" y="260" width="190" height="100" rx="10" fill="#eaf2ee"/>
+<text x="58" y="299" font-size="17" font-weight="800" fill="#17231d">단계 ↓</text>
+<text x="58" y="332" font-size="15" font-weight="650" fill="#68776f">행위자 묶음 →</text>
+<rect x="38" y="360" width="1724" height="431.5" fill="#84baa9"/>
+<rect x="38" y="360" width="190" height="431.5" fill="#087452"/>
+<text x="58" y="392" class="mono" font-size="16" font-weight="800" fill="#ffffff">G0</text>
+<text x="58" y="425" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">사전</tspan><tspan x="58" dy="22">도시계획정보…</tspan></text>
+<rect x="38" y="791.5" width="1724" height="431.5" fill="#f5f8f6"/>
+<rect x="38" y="791.5" width="190" height="431.5" fill="#eef3f0"/>
+<text x="58" y="823.5" class="mono" font-size="16" font-weight="800" fill="#53645b">G1</text>
+<text x="58" y="856.5" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">계획조건 확정</tspan></text>
+<rect x="38" y="1223" width="1724" height="545.5" fill="#84baa9"/>
+<rect x="38" y="1223" width="190" height="545.5" fill="#087452"/>
+<text x="58" y="1255" class="mono" font-size="16" font-weight="800" fill="#ffffff">G2</text>
+<text x="58" y="1288" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">기본설계안 접수</tspan></text>
+<rect x="38" y="1768.5" width="1724" height="431.5" fill="#f5f8f6"/>
+<rect x="38" y="1768.5" width="190" height="431.5" fill="#eef3f0"/>
+<text x="58" y="1800.5" class="mono" font-size="16" font-weight="800" fill="#53645b">G3</text>
+<text x="58" y="1833.5" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">심사·결정</tspan></text>
+<rect x="228" y="260" width="511.3" height="100" fill="#f7faf8"/>
+<rect x="228" y="260" width="511.3" height="7" fill="#0f9f72"/>
+<text x="248" y="299" font-size="20" font-weight="800" fill="#17231d">건축주·신청인</text>
+<text x="248" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="248" dy="0">건축주·신청인</tspan></text>
+<rect x="739.3" y="260" width="511.3" height="100" fill="#f7faf8"/>
+<rect x="739.3" y="260" width="511.3" height="7" fill="#3b82f6"/>
+<text x="759.3" y="299" font-size="20" font-weight="800" fill="#17231d">현지 설계</text>
+<text x="759.3" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="759.3" dy="0">현지 설계·시공 전문가</tspan></text>
+<rect x="1250.7" y="260" width="511.3" height="100" fill="#f7faf8"/>
+<rect x="1250.7" y="260" width="511.3" height="7" fill="#c78116"/>
+<text x="1270.7" y="299" font-size="20" font-weight="800" fill="#17231d">도시계획</text>
+<text x="1270.7" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="1270.7" dy="0">도시계획·건축 허가기관</tspan></text>
+<line x1="228" y1="260" x2="228" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="739.3" y1="260" x2="739.3" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="1250.7" y1="260" x2="1250.7" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="1762" y1="260" x2="1762" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="38" y1="360" x2="1762" y2="360" stroke="#b8c7bf" stroke-width="2"/>
+<line x1="38" y1="360" x2="1762" y2="360" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="791.5" x2="1762" y2="791.5" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1223" x2="1762" y2="1223" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1768.5" x2="1762" y2="1768.5" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="2200" x2="1762" y2="2200" stroke="#b8c7bf" stroke-width="2"/>
+<path d="M 618.7 575.8 H 1343.3 V 569.3 H 1363.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 618.7 575.8 H 1343.3 V 569.3 H 1363.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1504.3 620.8 V 763.5 H 1504.3 V 954.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1504.3 620.8 V 763.5 H 1504.3 V 954.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1371.3 1003.3 H 1171 V 1013.8 H 1138" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1371.3 1003.3 H 1171 V 1013.8 H 1138" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 985 1052.3 V 1211 H 477.7 V 1385.8" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 985 1052.3 V 1211 H 477.7 V 1385.8" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 618.7 1454.3 H 1330.3 V 1500.8 H 1363.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 618.7 1454.3 H 1330.3 V 1500.8 H 1363.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1526.3 1540.8 V 1756.5 H 1506.3 V 1931.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1526.3 1540.8 V 1756.5 H 1506.3 V 1931.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1371.3 1487.8 H 672.7 V 1566.8 H 626.7" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1371.3 1487.8 H 672.7 V 1566.8 H 626.7" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 348.7 1546.3 H 216 V 1425.8 H 340.7" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 348.7 1546.3 H 216 V 1425.8 H 340.7" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<rect x="907.1" y="540.5" width="175.8" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="995" y="560.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">사전 도시계획정보 접수</text>
+<rect x="1446.9" y="731.5" width="114.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1504.3" y="751.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">계획조건 검토</text>
+<rect x="1182.7" y="976.5" width="135.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1250.7" y="996.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">유리·조건부 회신</text>
+<rect x="666.9" y="1179" width="128.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="731.3" y="1199" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">기본설계안 완성</text>
+<rect x="937.6" y="1445.5" width="114.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="995" y="1465.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">승인심사 개시</text>
+<rect x="1468.3" y="1724.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1516.3" y="1744.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">적합·완비</text>
+<rect x="913.1" y="1495.3" width="163.9" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="995" y="1515.3" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">누락·불일치 보완통지</text>
+<rect x="118.1" y="1480.8" width="175.8" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="206" y="1500.8" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">수정 기본설계안 재접수</text>
+
+    <g filter="url(#card-shadow)">
+      <rect x="344.7" y="526.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="348.7" y="530.8" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="348.7" y="530.8" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="363.7" y="550.8" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B01</text>
+      <text x="415.7" y="550.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="558.7" y="537.8" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="583.7" y="554.8" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="363.7" y="577.8" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="363.7" dy="0">권원·지적도 첨부 사전</tspan><tspan x="363.7" dy="18">도시계획정보 신청</tspan></text>
+      <text x="363.7" y="612.8" font-size="11" font-weight="650" fill="#d8f4e8">이해관계인이 토지권리 증명과 공식 지적도를…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1367.3" y="526.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="530.8" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="1371.3" y="530.8" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="1386.3" y="550.8" class="mono" font-size="12.5" font-weight="750" fill="#627169">B02</text>
+      <text x="1438.3" y="550.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="1581.3" y="537.8" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="1606.3" y="554.8" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="1386.3" y="577.8" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="1386.3" dy="0">적용 계획·보호구역·기반시설</tspan><tspan x="1386.3" dy="18">조건 조회</tspan></text>
+      <text x="1386.3" y="612.8" font-size="11" font-weight="650" fill="#627169">도시허가 담당기관이 효력 있는 도시·부문계…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1367.3" y="958.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="962.3" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1371.3" y="962.3" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1386.3" y="982.3" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B03</text>
+      <text x="1438.3" y="982.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="1581.3" y="969.3" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1606.3" y="986.3" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1386.3" y="1009.3" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1386.3" dy="0">사전 도시계획정보</tspan><tspan x="1386.3" dy="18">적합·조건·부적합 회신</tspan></text>
+      <text x="1386.3" y="1044.3" font-size="11" font-weight="650" fill="#a96008">담당기관이 신청일로부터 법정기간 안에 가능…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="856" y="958.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="860" y="962.3" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="860" y="962.3" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="875" y="982.3" class="mono" font-size="12.5" font-weight="750" fill="#627169">B04</text>
+      <text x="927" y="982.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="1070" y="969.3" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="1095" y="986.3" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="875" y="1009.3" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="875" dy="0">등록기술자 기본설계안·책임서</tspan><tspan x="875" dy="18">작성</tspan></text>
+      <text x="875" y="1044.3" font-size="11" font-weight="650" fill="#627169">등록된 건축·엔지니어링 기술자가 사전 도시…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="344.7" y="1389.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="348.7" y="1393.8" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="348.7" y="1393.8" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="363.7" y="1413.8" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B05</text>
+      <text x="415.7" y="1413.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="558.7" y="1400.8" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="583.7" y="1417.8" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="363.7" y="1450.8" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="363.7" dy="0">도시허가 총국에 기본설계안 접수</tspan></text>
+      <text x="363.7" y="1475.8" font-size="11" font-weight="650" fill="#d8f4e8">신청인이 토지권리·지적도·적법한 점유근거와…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1367.3" y="1446.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="1450.8" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1371.3" y="1450.8" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1386.3" y="1470.8" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B06</text>
+      <text x="1438.3" y="1470.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="1581.3" y="1457.8" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1606.3" y="1474.8" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1386.3" y="1497.8" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1386.3" dy="0">30일 내 완비·도시계획·관계기관</tspan><tspan x="1386.3" dy="18">심사</tspan></text>
+      <text x="1386.3" y="1532.8" font-size="11" font-weight="650" fill="#a96008">담당기관이 접수 후 30일 이내 누락·계획불일…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="344.7" y="1503.8" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="348.7" y="1507.8" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="348.7" y="1507.8" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="363.7" y="1527.8" class="mono" font-size="12.5" font-weight="750" fill="#627169">B07</text>
+      <text x="415.7" y="1527.8" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="558.7" y="1514.8" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="583.7" y="1531.8" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="363.7" y="1564.8" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="363.7" dy="0">누락·계획불일치 기본설계안 보완</tspan></text>
+      <text x="363.7" y="1589.8" font-size="11" font-weight="650" fill="#627169">보완통지를 받은 신청인과 기술자가 지정기간…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1367.3" y="1935.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1371.3" y="1939.3" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1371.3" y="1939.3" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1386.3" y="1959.3" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B08</text>
+      <text x="1438.3" y="1959.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · Decreto-Lei 9/2022</text>
+      <rect x="1581.3" y="1946.3" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1606.3" y="1963.3" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1386.3" y="1986.3" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1386.3" dy="0">기본설계안 승인·전문설계 요구</tspan><tspan x="1386.3" dy="18">또는 거부</tspan></text>
+      <text x="1386.3" y="2021.3" font-size="11" font-weight="650" fill="#a96008">담당기관이 기본설계안을 승인하고 후속 전문…</text>
+    </g>
+  
+
+    <text x="38" y="2245" font-size="16" font-weight="800" fill="#18251e">읽는 법</text>
+    <rect x="118" y="2219" width="17" height="17" rx="4" fill="#35a77d"/><text x="144" y="2233" font-size="14.5" fill="#526159">선행</text>
+<rect x="216" y="2219" width="17" height="17" rx="4" fill="#087452"/><text x="242" y="2233" font-size="14.5" fill="#526159">핵심</text>
+<rect x="314" y="2219" width="17" height="17" rx="4" fill="#d9901a"/><text x="340" y="2233" font-size="14.5" fill="#526159">병목</text>
+<rect x="412" y="2219" width="17" height="17" rx="4" fill="#3478db"/><text x="438" y="2233" font-size="14.5" fill="#526159">회귀</text>
+    <rect x="500" y="2219" width="17" height="17" rx="4" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="526" y="2233" font-size="14.5" fill="#526159">조문</text>
+    <line x1="648" y1="2237" x2="700" y2="2237" stroke="#53675d" stroke-width="4" marker-end="url(#arrow-sequence)"/>
+    <text x="720" y="2243" font-size="15" fill="#526159">절차 순서</text>
+    <line x1="860" y1="2237" x2="912" y2="2237" stroke="#0f8a65" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-message)"/>
+    <text x="932" y="2243" font-size="15" fill="#526159">정보 전달</text>
+    <line x1="1072" y1="2237" x2="1124" y2="2237" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)"/>
+    <text x="1144" y="2243" font-size="15" fill="#526159">보완 회귀</text>
+    <text x="38" y="2291" font-size="15.5" font-weight="650" fill="#56655d">단계는 위→아래, 행위자 묶음은 좌→우로 읽습니다.</text>
+    <text x="38" y="2321" font-size="14.5" fill="#68776f">원래 3개 행위자 레인을 3개 레이아웃 묶음으로 배치했으며, 8개 업무와 8개 연결 관계는 유지했습니다.</text>
+    <text x="38" y="2361" font-size="13.5" fill="#7b8881">출처: 해당 제도의 법률·시행령·시행규칙 기반 모델 · 실제 사건의 진행 상태나 법률 자문을 의미하지 않습니다.</text>
+    
+  
+</svg>
