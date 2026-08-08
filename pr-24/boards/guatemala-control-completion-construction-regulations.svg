@@ -1,0 +1,402 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400">
+<defs>
+      <filter id="card-shadow" x="-20%" y="-25%" width="140%" height="160%">
+        <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#12271e" flood-opacity="0.10"/>
+      </filter>
+      <marker id="arrow-sequence" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#53675d" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <marker id="arrow-message" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#0f8a65" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <marker id="arrow-loop" markerWidth="17" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M1,1 L16,6.5 L1,12 Z" fill="#3478db" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+  </marker>
+      <style>
+        text { font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR", sans-serif; }
+        .mono { font-family: "SFMono-Regular", "Menlo", monospace; }
+      </style>
+    </defs>
+<rect width="1800" height="2400" fill="#ffffff"/>
+<rect x="0" y="0" width="1800" height="240" fill="#07150f"/>
+<rect x="0" y="0" width="1800" height="9" fill="#18a87b"/>
+
+    <text x="1760" y="45" text-anchor="end" font-size="15" font-weight="700" fill="#8fa299">노드 17 · 레인 4 · 게이트 6</text>
+    <text x="40" y="132" font-size="34" font-weight="850" fill="#ffffff">과테말라 재난저감규정(Normas de Reducción de Desastres, NRD) 안전검토·공사검사·사용결정 — 과테말라시 완료절차 사례</text>
+    <text x="40" y="174" font-size="19" font-weight="520" fill="#b7c7bf">현행 등록 전문가, NRD-1 구조안전·NRD-2 피난안전과 지방검사·obra conforme를 개장 Gate로 둔다.</text>
+    
+  
+<rect x="38" y="260" width="1724" height="1940" rx="10" fill="#ffffff" stroke="#b8c7bf" stroke-width="2"/>
+<rect x="38" y="260" width="190" height="100" rx="10" fill="#eaf2ee"/>
+<text x="58" y="299" font-size="17" font-weight="800" fill="#17231d">단계 ↓</text>
+<text x="58" y="332" font-size="15" font-weight="650" fill="#68776f">행위자 묶음 →</text>
+<rect x="38" y="360" width="1724" height="268.7" fill="#84baa9"/>
+<rect x="38" y="360" width="190" height="268.7" fill="#087452"/>
+<text x="58" y="392" class="mono" font-size="16" font-weight="800" fill="#ffffff">C1</text>
+<text x="58" y="425" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">재난저감규정</tspan><tspan x="58" dy="22">접수</tspan></text>
+<rect x="38" y="628.7" width="1724" height="382.7" fill="#84baa9"/>
+<rect x="38" y="628.7" width="190" height="382.7" fill="#087452"/>
+<text x="58" y="660.7" class="mono" font-size="16" font-weight="800" fill="#ffffff">C2</text>
+<text x="58" y="693.7" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">재난저감규정</tspan><tspan x="58" dy="22">심사·결정</tspan></text>
+<rect x="38" y="1011.3" width="1724" height="268.7" fill="#84baa9"/>
+<rect x="38" y="1011.3" width="190" height="268.7" fill="#087452"/>
+<text x="58" y="1043.3" class="mono" font-size="16" font-weight="800" fill="#ffffff">C3</text>
+<text x="58" y="1076.3" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">공사착수·감독</tspan></text>
+<rect x="38" y="1280" width="1724" height="268.7" fill="#f5f8f6"/>
+<rect x="38" y="1280" width="190" height="268.7" fill="#eef3f0"/>
+<text x="58" y="1312" class="mono" font-size="16" font-weight="800" fill="#53645b">C4</text>
+<text x="58" y="1345" font-size="19" font-weight="800" fill="#53645b"><tspan x="58" dy="0">변경·시정</tspan></text>
+<rect x="38" y="1548.7" width="1724" height="268.7" fill="#84baa9"/>
+<rect x="38" y="1548.7" width="190" height="268.7" fill="#087452"/>
+<text x="58" y="1580.7" class="mono" font-size="16" font-weight="800" fill="#ffffff">C5</text>
+<text x="58" y="1613.7" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">완료검사·시정</tspan></text>
+<rect x="38" y="1817.3" width="1724" height="382.7" fill="#84baa9"/>
+<rect x="38" y="1817.3" width="190" height="382.7" fill="#087452"/>
+<text x="58" y="1849.3" class="mono" font-size="16" font-weight="800" fill="#ffffff">C6</text>
+<text x="58" y="1882.3" font-size="19" font-weight="800" fill="#ffffff"><tspan x="58" dy="0">사용결정</tspan></text>
+<rect x="228" y="260" width="383.5" height="100" fill="#f7faf8"/>
+<rect x="228" y="260" width="383.5" height="7" fill="#0f9f72"/>
+<text x="248" y="299" font-size="20" font-weight="800" fill="#17231d">건축주·신청인</text>
+<text x="248" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="248" dy="0">건축주·신청인</tspan></text>
+<rect x="611.5" y="260" width="383.5" height="100" fill="#f7faf8"/>
+<rect x="611.5" y="260" width="383.5" height="7" fill="#3b82f6"/>
+<text x="631.5" y="299" font-size="20" font-weight="800" fill="#17231d">현지 설계</text>
+<text x="631.5" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="631.5" dy="0">현지 설계·시공 전문가</tspan></text>
+<rect x="995" y="260" width="383.5" height="100" fill="#f7faf8"/>
+<rect x="995" y="260" width="383.5" height="7" fill="#c78116"/>
+<text x="1015" y="299" font-size="20" font-weight="800" fill="#17231d">도시계획</text>
+<text x="1015" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="1015" dy="0">도시계획·건축 허가기관</tspan></text>
+<rect x="1378.5" y="260" width="383.5" height="100" fill="#f7faf8"/>
+<rect x="1378.5" y="260" width="383.5" height="7" fill="#0891b2"/>
+<text x="1398.5" y="299" font-size="20" font-weight="800" fill="#17231d">환경</text>
+<text x="1398.5" y="329" font-size="13.5" font-weight="600" fill="#68776f"><tspan x="1398.5" dy="0">환경·소방·검사기관</tspan></text>
+<line x1="228" y1="260" x2="228" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="611.5" y1="260" x2="611.5" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="995" y1="260" x2="995" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="1378.5" y1="260" x2="1378.5" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="1762" y1="260" x2="1762" y2="2200" stroke="#d3dcd7" stroke-width="1.5"/>
+<line x1="38" y1="360" x2="1762" y2="360" stroke="#b8c7bf" stroke-width="2"/>
+<line x1="38" y1="360" x2="1762" y2="360" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="628.7" x2="1762" y2="628.7" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1011.3" x2="1762" y2="1011.3" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1280" x2="1762" y2="1280" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1548.7" x2="1762" y2="1548.7" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="1817.3" x2="1762" y2="1817.3" stroke="#c8d3cd" stroke-width="1.5"/>
+<line x1="38" y1="2200" x2="1762" y2="2200" stroke="#b8c7bf" stroke-width="2"/>
+<path d="M 668.3 494.3 H 582.8 V 487.8 H 562.8" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 668.3 494.3 H 582.8 V 487.8 H 562.8" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 417.8 539.3 V 600.7 H 1528.3 V 710" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 417.8 539.3 V 600.7 H 1528.3 V 710" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1600.3 808 V 824 H 1580.3 V 824" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1600.3 808 V 824 H 1580.3 V 824" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1435.3 759 H 595.8 V 831.5 H 562.8" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1435.3 759 H 595.8 V 831.5 H 562.8" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 554.8 813.5 H 640.3 V 813.5 H 660.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 554.8 813.5 H 640.3 V 813.5 H 660.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 938.3 834 H 1368.3 V 777 H 1427.3" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 938.3 834 H 1368.3 V 777 H 1427.3" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1572.3 922 V 967.3 H 429.8 V 1092.7" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1572.3 922 V 967.3 H 429.8 V 1092.7" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 554.8 1139.2 H 1023.8 V 1126.2 H 1043.8" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 554.8 1139.2 H 1023.8 V 1126.2 H 1043.8" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1164.8 1190.7 V 1252 H 242 V 1610 H 403.8 V 1630" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1164.8 1190.7 V 1252 H 242 V 1610 H 403.8 V 1630" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1210.8 1190.7 V 1220 H 1178.8 V 1361.3" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1210.8 1190.7 V 1220 H 1178.8 V 1361.3" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1051.8 1407.8 H 966.3 V 1420.8 H 946.3" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1051.8 1407.8 H 966.3 V 1420.8 H 946.3" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 668.3 1410.3 H 216 V 1228 H 1208.8 V 1198.7" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 668.3 1410.3 H 216 V 1228 H 1208.8 V 1198.7" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 429.8 1728 V 1803.3 H 1150.8 V 1736" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 429.8 1728 V 1803.3 H 1150.8 V 1736" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1172.8 1728 V 1757.3 H 1190.8 V 1898.7" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1172.8 1728 V 1757.3 H 1190.8 V 1898.7" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1321.8 1712.5 H 1355.3 V 1699.5 H 1427.3" fill="none" stroke="#ffffff" stroke-width="7.4" stroke-dasharray="11 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1321.8 1712.5 H 1355.3 V 1699.5 H 1427.3" fill="none" stroke="#0f8a65" stroke-width="3.4" stroke-dasharray="11 8" marker-end="url(#arrow-message)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1572.3 1728 V 1771.3 H 807.3 V 1736" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1572.3 1728 V 1771.3 H 807.3 V 1736" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 938.3 1679 H 1010.8 V 1681.5 H 1043.8" fill="none" stroke="#ffffff" stroke-width="8" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 938.3 1679 H 1010.8 V 1681.5 H 1043.8" fill="none" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 1051.8 1945.2 H 582.8 V 2015.2 H 562.8" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 1051.8 1945.2 H 582.8 V 2015.2 H 562.8" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<path d="M 554.8 2004.7 H 1010.8 V 2068.2 H 1043.8" fill="none" stroke="#ffffff" stroke-width="7.4"  stroke-linecap="round" stroke-linejoin="round" opacity="0.94"/>
+<path d="M 554.8 2004.7 H 1010.8 V 2068.2 H 1043.8" fill="none" stroke="#53675d" stroke-width="3.4"  marker-end="url(#arrow-sequence)" stroke-linecap="round" stroke-linejoin="round" opacity="0.96"/>
+<rect x="540.1" y="387.1" width="142.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="611.5" y="407.1" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">재난저감규정 도서</text>
+<rect x="898.2" y="568.7" width="149.6" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="973" y="588.7" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">SIPROCODE 접수</text>
+<rect x="1523.3" y="661" width="183.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1615.3" y="681" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">재난저감규정 제2호 적합</text>
+<rect x="943.5" y="727.3" width="103" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="995" y="747.3" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">수정·명확화</text>
+<rect x="563.5" y="781.5" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="611.5" y="801.5" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">보완요구</text>
+<rect x="1082.4" y="773.5" width="208.7" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="1186.8" y="793.5" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">보완 후 재난저감규정 재평가</text>
+<rect x="943.6" y="935.3" width="114.9" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1001" y="955.3" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">안전평가 완료</text>
+<rect x="755.3" y="1100.7" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="803.3" y="1120.7" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">공사착수</text>
+<rect x="194" y="1416" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="242" y="1436" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">공사 적합</text>
+<rect x="1144.3" y="1224" width="100.9" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="1194.8" y="1244" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">현장 불일치</text>
+<rect x="947" y="1382.3" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="995" y="1402.3" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">시정·변경</text>
+<rect x="279.7" y="1306.2" width="152.7" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="356" y="1326.2" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">시정 후 공사 재검사</text>
+<rect x="742.3" y="1771.3" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="790.3" y="1791.3" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">완료검사</text>
+<rect x="1133.8" y="1761.3" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1181.8" y="1781.3" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">완료 적합</text>
+<rect x="1327" y="1746" width="103" height="30" rx="6" fill="#ffffff" stroke="#0f8a65" stroke-width="1.4"/>
+<text x="1378.5" y="1766" text-anchor="middle" font-size="14" font-weight="750" fill="#0f8a65">결함·불일치</text>
+<rect x="1141.8" y="1811.3" width="96" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="1189.8" y="1831.3" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">시정요구</text>
+<rect x="918.7" y="1576.2" width="152.7" height="30" rx="6" fill="#ffffff" stroke="#3478db" stroke-width="1.4"/>
+<text x="995" y="1596.2" text-anchor="middle" font-size="14" font-weight="750" fill="#3478db">시정 후 완료 재검사</text>
+<rect x="748.3" y="1948.2" width="110" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="803.3" y="1968.2" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">공사적합증명</text>
+<rect x="736.4" y="2004.4" width="133.8" height="30" rx="6" fill="#ffffff" stroke="#53675d" stroke-width="1.4"/>
+<text x="803.3" y="2024.4" text-anchor="middle" font-size="14" font-weight="750" fill="#53675d">해당 시 개장심사</text>
+
+    <g filter="url(#card-shadow)">
+      <rect x="664.3" y="445.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="668.3" y="449.3" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="668.3" y="449.3" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="683.3" y="469.3" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B27</text>
+      <text x="735.3" y="469.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CONRED NRD-2 현행 공식안내</text>
+      <rect x="878.3" y="456.3" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="903.3" y="473.3" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="683.3" y="496.3" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="683.3" dy="0">재난저감규정 제2호 안전평가</tspan><tspan x="683.3" dy="18">도서 작성</tspan></text>
+      <text x="683.3" y="531.3" font-size="11" font-weight="650" fill="#d8f4e8">책임전문가가 공공이용 건축물의 수용인원,…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="280.8" y="445.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="284.8" y="449.3" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="284.8" y="449.3" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="299.8" y="469.3" class="mono" font-size="12.5" font-weight="750" fill="#627169">B28</text>
+      <text x="351.8" y="469.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CONRED SIPROCODE 공식절차</text>
+      <rect x="494.8" y="456.3" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="519.8" y="473.3" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="299.8" y="496.3" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="299.8" dy="0">SIPROCODE 재난저감규정</tspan><tspan x="299.8" dy="18">제2호 자료제출</tspan></text>
+      <text x="299.8" y="531.3" font-size="11" font-weight="650" fill="#627169">적용 사업의 실행기관 또는 신청인이 SIPRO…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1431.3" y="714" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1435.3" y="718" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="1435.3" y="718" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="1450.3" y="738" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B29</text>
+      <text x="1502.3" y="738" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CONRED SIPROCODE 공식절차</text>
+      <rect x="1645.3" y="725" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="1670.3" y="742" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="1450.3" y="765" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="1450.3" dy="0">CONRED 재난저감규정 제2호</tspan><tspan x="1450.3" dy="18">기술평가</tspan></text>
+      <text x="1450.3" y="800" font-size="11" font-weight="650" fill="#d8f4e8">CONRED가 제출요건과 사업정보를 확인하고…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="280.8" y="771" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="284.8" y="775" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="284.8" y="775" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="299.8" y="795" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B30</text>
+      <text x="351.8" y="795" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CONRED SIPROCODE 공식절차</text>
+      <rect x="494.8" y="782" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="519.8" y="799" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="299.8" y="822" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="299.8" dy="0">재난저감규정 제2호 수정·명확화</tspan><tspan x="299.8" dy="18">요구</tspan></text>
+      <text x="299.8" y="857" font-size="11" font-weight="650" fill="#a96008">CONRED가 기준 미충족이나 정보 부족을 특…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="664.3" y="771" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="668.3" y="775" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="668.3" y="775" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="683.3" y="795" class="mono" font-size="12.5" font-weight="750" fill="#627169">B31</text>
+      <text x="735.3" y="795" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CONRED SIPROCODE 공식절차</text>
+      <rect x="878.3" y="782" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="903.3" y="799" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="683.3" y="832" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="683.3" dy="0">재난저감규정 제2호 보완·재평가</tspan></text>
+      <text x="683.3" y="857" font-size="11" font-weight="650" fill="#627169">책임전문가가 피난·수용인원·표지·비상계획…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1431.3" y="828" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1435.3" y="832" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="1435.3" y="832" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="1450.3" y="852" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B32</text>
+      <text x="1502.3" y="852" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · CONRED SIPROCODE 공식절차</text>
+      <rect x="1645.3" y="839" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="1670.3" y="856" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="1450.3" y="879" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="1450.3" dy="0">재난저감규정 제2호</tspan><tspan x="1450.3" dy="18">평가보고서(Informe de…</tspan></text>
+      <text x="1450.3" y="914" font-size="11" font-weight="650" fill="#d8f4e8">CONRED가 적합성을 확인해 SIPROCODE…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="280.8" y="1096.7" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="284.8" y="1100.7" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="284.8" y="1100.7" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="299.8" y="1120.7" class="mono" font-size="12.5" font-weight="750" fill="#627169">B33</text>
+      <text x="351.8" y="1120.7" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 공사조건</text>
+      <rect x="494.8" y="1107.7" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="519.8" y="1124.7" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="299.8" y="1157.7" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="299.8" dy="0">허가조건·승인도서로 공사착수</tspan></text>
+      <text x="299.8" y="1182.7" font-size="11" font-weight="650" fill="#627169">유효한 공사허가(Licencia de Obra), 승인…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1047.8" y="1096.7" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1051.8" y="1100.7" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="1051.8" y="1100.7" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="1066.8" y="1120.7" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B34</text>
+      <text x="1118.8" y="1120.7" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 현행 통합문</text>
+      <rect x="1261.8" y="1107.7" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="1286.8" y="1124.7" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="1066.8" y="1157.7" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="1066.8" dy="0">DCT 공사 중 적합감독</tspan></text>
+      <text x="1066.8" y="1182.7" font-size="11" font-weight="650" fill="#d8f4e8">DCT가 현장 출입과 승인도서 확인을 통해 허…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1047.8" y="1365.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1051.8" y="1369.3" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1051.8" y="1369.3" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1066.8" y="1389.3" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B35</text>
+      <text x="1118.8" y="1389.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 공사조건</text>
+      <rect x="1261.8" y="1376.3" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1286.8" y="1393.3" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1066.8" y="1426.3" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1066.8" dy="0">무단변경·불일치 시정통지</tspan></text>
+      <text x="1066.8" y="1451.3" font-size="11" font-weight="650" fill="#a96008">승인도서 또는 허가조건과 다른 공사에 대해…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="664.3" y="1365.3" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="668.3" y="1369.3" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="668.3" y="1369.3" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="683.3" y="1389.3" class="mono" font-size="12.5" font-weight="750" fill="#627169">B36</text>
+      <text x="735.3" y="1389.3" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 공사조건</text>
+      <rect x="878.3" y="1376.3" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="903.3" y="1393.3" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="683.3" y="1426.3" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="683.3" dy="0">시정·변경허가 후 재검사</tspan></text>
+      <text x="683.3" y="1451.3" font-size="11" font-weight="650" fill="#627169">책임전문가가 현장불일치를 시정하거나 변경…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="280.8" y="1634" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="284.8" y="1638" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="284.8" y="1638" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="299.8" y="1658" class="mono" font-size="12.5" font-weight="750" fill="#627169">B37</text>
+      <text x="351.8" y="1658" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 완료절차</text>
+      <rect x="494.8" y="1645" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="519.8" y="1662" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="299.8" y="1695" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="299.8" dy="0">공사적합 완료검사 신청</tspan></text>
+      <text x="299.8" y="1720" font-size="11" font-weight="650" fill="#627169">공사완료 후 신청인이 승인도서·변경승인과…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1047.8" y="1634" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1051.8" y="1638" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="1051.8" y="1638" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="1066.8" y="1658" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B38</text>
+      <text x="1118.8" y="1658" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 완료절차</text>
+      <rect x="1261.8" y="1645" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="1286.8" y="1662" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="1066.8" y="1695" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="1066.8" dy="0">DCT 최종 적합검사</tspan></text>
+      <text x="1066.8" y="1720" font-size="11" font-weight="650" fill="#d8f4e8">DCT가 완성공사를 허가 프로젝트·승인도서·…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1431.3" y="1634" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1435.3" y="1638" width="270" height="90" rx="8" fill="#fff8e8" stroke="#d9901a" stroke-width="2.3"/>
+      <rect x="1435.3" y="1638" width="6" height="90" rx="3" fill="#d9901a"/>
+      <text x="1450.3" y="1658" class="mono" font-size="12.5" font-weight="750" fill="#a96008">B39</text>
+      <text x="1502.3" y="1658" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 완료절차</text>
+      <rect x="1645.3" y="1645" width="50" height="24" rx="5" fill="#d9901a" opacity="0.14"/>
+      <text x="1670.3" y="1662" text-anchor="middle" font-size="12" font-weight="800" fill="#7a4305">병목</text>
+      <text x="1450.3" y="1695" font-size="15.5" font-weight="800" fill="#7a4305"><tspan x="1450.3" dy="0">완료검사 결함·불일치 통지</tspan></text>
+      <text x="1450.3" y="1720" font-size="11" font-weight="650" fill="#a96008">완성공사가 승인도서와 다르면 DCT가 물리적…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="664.3" y="1634" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="668.3" y="1638" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="668.3" y="1638" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="683.3" y="1658" class="mono" font-size="12.5" font-weight="750" fill="#627169">B40</text>
+      <text x="735.3" y="1658" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 완료절차</text>
+      <rect x="878.3" y="1645" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="903.3" y="1662" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="683.3" y="1695" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="683.3" dy="0">완료결함 시정·재검사</tspan></text>
+      <text x="683.3" y="1720" font-size="11" font-weight="650" fill="#627169">책임전문가가 결함을 시정하고 변경승인·완료…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1047.8" y="1902.7" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1051.8" y="1906.7" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="1051.8" y="1906.7" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="1066.8" y="1926.7" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B41</text>
+      <text x="1118.8" y="1926.7" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT 완료·사용 규정</text>
+      <rect x="1261.8" y="1913.7" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="1286.8" y="1930.7" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="1066.8" y="1963.7" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="1066.8" dy="0">공사적합증명서 결정</tspan></text>
+      <text x="1066.8" y="1988.7" font-size="11" font-weight="650" fill="#d8f4e8">DCT가 승인 프로젝트에 맞게 완성되었음을…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="280.8" y="1959.7" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="284.8" y="1963.7" width="270" height="90" rx="8" fill="#ffffff" stroke="#b9c7bf" stroke-width="2.3"/>
+      <rect x="284.8" y="1963.7" width="6" height="90" rx="3" fill="#b9c7bf"/>
+      <text x="299.8" y="1983.7" class="mono" font-size="12.5" font-weight="750" fill="#627169">B42</text>
+      <text x="351.8" y="1983.7" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT licence 종류</text>
+      <rect x="494.8" y="1970.7" width="50" height="24" rx="5" fill="#b9c7bf" opacity="0.14"/>
+      <text x="519.8" y="1987.7" text-anchor="middle" font-size="12" font-weight="800" fill="#17231d">후속</text>
+      <text x="299.8" y="2020.7" font-size="15.5" font-weight="800" fill="#17231d"><tspan x="299.8" dy="0">필요한 토지사용허가증 신청</tspan></text>
+      <text x="299.8" y="2045.7" font-size="11" font-weight="650" fill="#627169">예정 운영에 별도 토지사용허가증 또는 공개시…</text>
+    </g>
+  
+
+    <g filter="url(#card-shadow)">
+      <rect x="1047.8" y="2016.7" width="278" height="98" rx="11" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5"/>
+      <rect x="1051.8" y="2020.7" width="270" height="90" rx="8" fill="#087452" stroke="#087452" stroke-width="2.3"/>
+      <rect x="1051.8" y="2020.7" width="6" height="90" rx="3" fill="#087452"/>
+      <text x="1066.8" y="2040.7" class="mono" font-size="12.5" font-weight="750" fill="#d8f4e8">B43</text>
+      <text x="1118.8" y="2040.7" font-size="11.5" font-weight="800" fill="#7c3aed">조문 · 과테말라시 POT licence 종류</text>
+      <rect x="1261.8" y="2027.7" width="50" height="24" rx="5" fill="#ffffff" opacity="0.18"/>
+      <text x="1286.8" y="2044.7" text-anchor="middle" font-size="12" font-weight="800" fill="#ffffff">핵심</text>
+      <text x="1066.8" y="2077.7" font-size="15.5" font-weight="800" fill="#ffffff"><tspan x="1066.8" dy="0">토지사용·개장허가증 결정</tspan></text>
+      <text x="1066.8" y="2102.7" font-size="11" font-weight="650" fill="#d8f4e8">DCT 또는 해당 시 부서가 공사적합증명서와…</text>
+    </g>
+  
+
+    <text x="38" y="2245" font-size="16" font-weight="800" fill="#18251e">읽는 법</text>
+    <rect x="118" y="2219" width="17" height="17" rx="4" fill="#35a77d"/><text x="144" y="2233" font-size="14.5" fill="#526159">선행</text>
+<rect x="216" y="2219" width="17" height="17" rx="4" fill="#087452"/><text x="242" y="2233" font-size="14.5" fill="#526159">핵심</text>
+<rect x="314" y="2219" width="17" height="17" rx="4" fill="#d9901a"/><text x="340" y="2233" font-size="14.5" fill="#526159">병목</text>
+<rect x="412" y="2219" width="17" height="17" rx="4" fill="#3478db"/><text x="438" y="2233" font-size="14.5" fill="#526159">회귀</text>
+    <rect x="500" y="2219" width="17" height="17" rx="4" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="526" y="2233" font-size="14.5" fill="#526159">조문</text>
+    <line x1="648" y1="2237" x2="700" y2="2237" stroke="#53675d" stroke-width="4" marker-end="url(#arrow-sequence)"/>
+    <text x="720" y="2243" font-size="15" fill="#526159">절차 순서</text>
+    <line x1="860" y1="2237" x2="912" y2="2237" stroke="#0f8a65" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-message)"/>
+    <text x="932" y="2243" font-size="15" fill="#526159">정보 전달</text>
+    <line x1="1072" y1="2237" x2="1124" y2="2237" stroke="#3478db" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow-loop)"/>
+    <text x="1144" y="2243" font-size="15" fill="#526159">보완 회귀</text>
+    <text x="38" y="2291" font-size="15.5" font-weight="650" fill="#56655d">단계는 위→아래, 행위자 묶음은 좌→우로 읽습니다.</text>
+    <text x="38" y="2321" font-size="14.5" fill="#68776f">원래 4개 행위자 레인을 4개 레이아웃 묶음으로 배치했으며, 17개 업무와 19개 연결 관계는 유지했습니다.</text>
+    <text x="38" y="2361" font-size="13.5" fill="#7b8881">출처: 해당 제도의 법률·시행령·시행규칙 기반 모델 · 실제 사건의 진행 상태나 법률 자문을 의미하지 않습니다.</text>
+    
+  
+</svg>
