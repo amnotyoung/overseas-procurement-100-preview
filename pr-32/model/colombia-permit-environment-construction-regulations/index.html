@@ -241,6 +241,8 @@ section.blk > .desc{color:var(--muted);font-size:13.5px;margin:0 0 20px}
 .drawer::backdrop{background:rgba(0,0,0,.34)}
 .drawer .pane{position:absolute;right:0;top:0;bottom:0;width:min(440px,92vw);background:var(--bg);
   border-left:1px solid var(--line);padding:24px;overflow:auto}
+.guide-comparison summary{cursor:pointer;font-weight:700;color:var(--key)}
+.guide-comparison textarea{width:100%;font:inherit}.guide-comparison p{margin:10px 0}.guide-comparison small{display:block}
 .drawer h3{margin:10px 0 4px;font-size:19px;letter-spacing:-.02em}
 .drawer .close{position:absolute;right:18px;top:18px;background:none;border:0;color:var(--muted);
   font-size:22px;cursor:pointer;line-height:1;padding:4px}
@@ -477,7 +479,7 @@ footer.site a{color:var(--muted)}
   };
 })();
 </script>
-</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #32 · 운영 사이트 아님 · 1e85aa125722 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/32">PR에서 검토하기</a></div>
+</head><body><div class="pages-pr-preview" role="status">미리보기 · PR #32 · 운영 사이트 아님 · f8d0bb535b32 · <a href="https://github.com/amnotyoung/overseas-procurement-100/pull/32">PR에서 검토하기</a></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="../../index.html">그 나라, 조달하고 건축하려면?</a>
   <span class="brand-sub">협력국 조달·건축 법·제도 안내</span>
@@ -685,6 +687,23 @@ document.querySelector('#copy-steps').addEventListener('click', async () => {
     selection.removeAllRanges();
     selection.addRange(range);
     status.textContent = '목록을 선택했습니다. 기기의 복사 기능을 사용하세요.';
+  }
+});
+
+document.querySelector('#dbody').addEventListener('click', async event => {
+  const button = event.target.closest('[data-copy-citation]');
+  if (!button) return;
+  const section = button.closest('details');
+  const field = section.querySelector('textarea');
+  const status = section.querySelector('[role="status"]');
+  try {
+    await navigator.clipboard.writeText(field.value);
+    status.textContent = '인용 문장과 출처를 복사했습니다.';
+  } catch {
+    field.hidden = false;
+    field.focus();
+    field.select();
+    status.textContent = '선택된 문장과 출처를 복사하세요.';
   }
 });
 
@@ -1109,6 +1128,7 @@ function openNode(id){
       return '<div style="margin-bottom:9px">'+nm+' <code>'+l.article+'</code>'+meta
         +(l.note?'<div style="margin-top:3px;color:var(--muted)">'+l.note+'</div>':'')+'</div>';}).join('')+'</dd>';
   }
+  if(n.guide_comparison) h+=n.guide_comparison;
   if(typeof n.confidence==='number'){
     h+='<dt>법령 근거 확신도</dt><dd>'+n.confidence.toFixed(2)
       +(n.confidence<0.8?' <span class="badge warn">현장 검증 필요</span>':'')+'</dd>';
